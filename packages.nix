@@ -57,6 +57,7 @@
       caffeine-ng
       distrobox
       appimage-run
+      shadowsocks-rust
 
       # Misc apps
       transmission_4-qt6
