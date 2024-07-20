@@ -57,7 +57,13 @@
       caffeine-ng
       distrobox
       appimage-run
-      shadowsocks-rust
+      fcitx5
+
+      # Mullvad VPN
+      mullvad-vpn
+      mullvad
+      mullvad-browser
+      mullvad-closest
 
       # Misc apps
       transmission_4-qt6

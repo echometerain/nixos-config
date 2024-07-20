@@ -143,6 +143,17 @@
   };
   # programs.hyprlock.enable = true;
 
+  # Chinese input method
+  i18n.inputMethod = {
+    enabled = "fcitx5";
+    waylandFrontend = true;
+    fcitx5.addons = with pkgs; [
+      rime-data
+      fcitx5-gtk
+      fcitx5-rime
+    ];
+  };
+
   # Misc configuration
   users.defaultUserShell = pkgs.zsh;
   virtualisation.docker.enable = true;
