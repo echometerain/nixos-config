@@ -73,7 +73,6 @@
       libreoffice-qt6-fresh
       discord
       zoom-us
-      megasync
       freefilesync
       firefox
       chromium
