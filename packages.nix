@@ -59,6 +59,7 @@
       distrobox
       appimage-run
       fcitx5
+      rclone
 
       # Mullvad VPN
       mullvad-vpn
