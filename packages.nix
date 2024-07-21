@@ -22,6 +22,7 @@
       cron
       caligula
       lolcat
+      cowsay
       lshw
 
       # Graphical system utils
