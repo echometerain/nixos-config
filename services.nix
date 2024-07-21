@@ -1,4 +1,8 @@
-{inputs, ...}: {
+{
+  pkgs,
+  inputs,
+  ...
+}: {
   services = {
     # Enable the OpenSSH daemon.
     openssh.enable = true;
@@ -51,5 +55,9 @@
     thermald.enable = true;
     safeeyes.enable = true;
     flatpak.enable = true;
+    mullvad-vpn = {
+      enable = true;
+      package = pkgs.mullvad-vpn;
+    };
   };
 }
