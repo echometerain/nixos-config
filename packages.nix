@@ -94,6 +94,8 @@
       bless
       bun
       python311Packages.pip
+      cargo
+      rustycli
 
       # Libraries
       php83
@@ -103,6 +105,7 @@
       python3
       llvmPackages_18.libcxxClang
       temurin-bin
+      rustc
 
       # Learning
       anki-bin
