@@ -25,8 +25,20 @@
       lolcat
       cowsay
       lshw
+      
       webkitgtk
       glib
+      glib.dev
+      gobject-introspection
+      dbus-glib
+      gtk4
+      gtk3
+      gtk2
+      libsoup
+      cairo
+      atkmm
+      pango
+      gdk-pixbuf
 
       # Graphical system utils
       gparted
