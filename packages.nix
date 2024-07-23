@@ -26,6 +26,7 @@
       cowsay
       lshw
       webkitgtk
+      glib
 
       # Graphical system utils
       gparted
@@ -80,6 +81,7 @@
       chromium
       gramps
       subtitlecomposer
+      pot
 
       # Programming tools
       vscode
