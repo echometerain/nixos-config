@@ -18,6 +18,7 @@
       zsh
       neovim
       ffmpeg-full
+      pkg-config
       nmap
       cron
       caligula
