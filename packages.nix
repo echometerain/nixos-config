@@ -25,6 +25,7 @@
       lolcat
       cowsay
       lshw
+      webkitgtk
 
       # Graphical system utils
       gparted
