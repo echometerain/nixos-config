@@ -26,6 +26,9 @@
       lshw
       lf
       networkmanager
+      bat
+      htop
+      fd
 
       # Graphical system utils
       gparted
@@ -63,6 +66,7 @@
       appimage-run
       fcitx5
       rclone
+      firefoxpwa
 
       # Mullvad VPN
       mullvad-vpn
@@ -78,7 +82,6 @@
       zoom-us
       freefilesync
       firefox
-      firefoxpwa
       chromium
       gramps
       subtitlecomposer
