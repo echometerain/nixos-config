@@ -147,6 +147,8 @@
       kdePackages.fcitx5-qt
       kdePackages.fcitx5-chinese-addons
       fcitx5-nord
+      rime-data
+      fcitx5-rime
     ];
   };
 
