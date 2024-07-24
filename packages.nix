@@ -78,6 +78,7 @@
       zoom-us
       freefilesync
       firefox
+      firefoxpwa
       chromium
       gramps
       subtitlecomposer

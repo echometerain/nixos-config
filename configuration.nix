@@ -87,6 +87,7 @@
       enable = true;
       enableSSHSupport = true;
     };
+    firefox.nativeMessagingHosts.packages = [pkgs.firefoxpwa];
   };
 
   # Hardware sound configuration
