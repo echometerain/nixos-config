@@ -24,6 +24,7 @@
       lolcat
       cowsay
       lshw
+      lf
 
       # Graphical system utils
       gparted
@@ -36,6 +37,7 @@
       glaxnimate
       movit
       flatpak
+      wofi
 
       # Hyprland utils
       hyprland
