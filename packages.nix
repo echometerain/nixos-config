@@ -25,6 +25,7 @@
       cowsay
       lshw
       lf
+      networkmanager
 
       # Graphical system utils
       gparted
