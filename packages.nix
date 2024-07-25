@@ -67,6 +67,7 @@
       fcitx5
       rclone
       hunspell
+      aspell
 
       # Mullvad VPN
       mullvad-vpn

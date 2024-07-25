@@ -148,6 +148,7 @@
     fcitx5.waylandFrontend = true;
     fcitx5.addons = with pkgs; [
       kdePackages.fcitx5-qt
+      kdePackages.fcitx5-with-addons
       kdePackages.fcitx5-chinese-addons
       fcitx5-nord
     ];
