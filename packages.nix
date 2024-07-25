@@ -1,4 +1,8 @@
-{pkgs, ...}: {
+{
+  pkgs,
+  inputs,
+  ...
+}: {
   environment.systemPackages = let
     sysPkgs = with pkgs; [
       # Nix utils
@@ -66,7 +70,7 @@
       appimage-run
       fcitx5
       rclone
-      firefoxpwa
+      inputs.newpkgs.legacyPackages.x86_64-linux.firefoxpwa
 
       # Mullvad VPN
       mullvad-vpn

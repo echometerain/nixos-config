@@ -8,11 +8,11 @@
 }: {
   imports = [
     # Include the results of the hardware scan.
-    inputs.home-manager.nixosModules.default
     ./hardware-configuration.nix
     ./packages.nix
     ./nix-ld.nix
     ./services.nix
+    inputs.home-manager.nixosModules.default
   ];
 
   # Bootloader.
