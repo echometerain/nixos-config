@@ -12,7 +12,7 @@
       # CLI utils
       fzf
       wget
-      xclip
+      xsel
       neofetch
       vim
       zsh
