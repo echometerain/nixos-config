@@ -90,6 +90,7 @@
       gramps
       subtitlecomposer
       pot
+      keepassxc
 
       # Programming tools
       vscode
