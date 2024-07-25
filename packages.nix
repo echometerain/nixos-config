@@ -66,6 +66,7 @@
       appimage-run
       fcitx5
       rclone
+      hunspell
 
       # Mullvad VPN
       mullvad-vpn

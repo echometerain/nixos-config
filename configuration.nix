@@ -90,7 +90,6 @@
     firefox = {
       enable = true;
       package = inputs.newpkgs.legacyPackages.x86_64-linux.firefox;
-      nativeMessagingHosts.packages = [inputs.newpkgs.legacyPackages.x86_64-linux.firefoxpwa];
     };
   };
 
@@ -151,8 +150,6 @@
       kdePackages.fcitx5-qt
       kdePackages.fcitx5-chinese-addons
       fcitx5-nord
-      rime-data
-      fcitx5-rime
     ];
   };
 
