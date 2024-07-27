@@ -38,7 +38,7 @@
   # Select internationalisation properties.
   i18n = {
     defaultLocale = "en_US.UTF-8";
-    supportedLocales = ["en_US.UTF-8/UTF-8"];
+    supportedLocales = ["en_US.UTF-8/UTF-8" "zh_CN.UTF-8/UTF-8"];
     extraLocaleSettings = {
       LANG = "en_US.UTF-8";
       LC_ALL = "en_US.UTF-8";
@@ -150,6 +150,7 @@
       kdePackages.fcitx5-qt
       kdePackages.fcitx5-with-addons
       kdePackages.fcitx5-chinese-addons
+      kdePackages.fcitx5-configtool
       fcitx5-nord
     ];
   };
