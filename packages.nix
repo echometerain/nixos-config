@@ -29,6 +29,7 @@
       bat
       htop
       fd
+      auto-cpufreq
 
       # Graphical system utils
       gparted
