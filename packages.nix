@@ -88,7 +88,7 @@
       gramps
       subtitlecomposer
       pot
-      keepassxc
+      zed-editor
 
       # Programming tools
       vscode
