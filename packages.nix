@@ -30,6 +30,7 @@
       htop
       fd
       auto-cpufreq
+      unar
 
       # Graphical system utils
       gparted
