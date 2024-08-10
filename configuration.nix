@@ -93,6 +93,12 @@
     };
   };
 
+  # Logitech
+  hardware.logitech.wireless = {
+    enable = true;
+    enableGraphical = true;
+  };
+
   # Hardware sound configuration
   hardware.pulseaudio.enable = false;
   hardware.bluetooth = {
