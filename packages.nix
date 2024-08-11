@@ -68,7 +68,7 @@
       appimage-run
       fcitx5
       rclone
-      sox
+      mp3cat
 
       # Mullvad VPN
       mullvad-vpn
