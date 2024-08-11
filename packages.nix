@@ -68,7 +68,6 @@
       appimage-run
       fcitx5
       rclone
-      mp3cat
 
       # Mullvad VPN
       mullvad-vpn
@@ -117,6 +116,7 @@
       llvmPackages_18.libcxxClang
       temurin-bin
       rustc
+      go
 
       # Learning
       anki-bin
