@@ -68,6 +68,7 @@
       appimage-run
       fcitx5
       rclone
+      logitech-udev-rules
 
       # Mullvad VPN
       mullvad-vpn
