@@ -108,6 +108,7 @@
       python311Packages.pip
       cargo
       rustycli
+      micromamba
 
       # Libraries
       php83
