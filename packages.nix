@@ -32,6 +32,7 @@
       auto-cpufreq
       unar
       ntfs3g
+      aria2
 
       # Graphical system utils
       gparted
