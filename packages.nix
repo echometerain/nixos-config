@@ -13,7 +13,7 @@
       fzf
       wget
       xsel
-      neofetch
+      fastfetch
       vim
       zsh
       neovim
