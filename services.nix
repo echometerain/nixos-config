@@ -72,5 +72,10 @@
         turbo = "auto";
       };
     };
+
+    mysql = {
+      enable = true;
+      package = pkgs.mariadb;
+    };
   };
 }

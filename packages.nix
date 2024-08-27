@@ -110,7 +110,7 @@
       cargo
       rustycli
       micromamba
-      android-studio
+      # android-studio
 
       # Libraries
       php83

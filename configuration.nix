@@ -168,10 +168,12 @@
   environment.sessionVariables.NIXOS_OZONE_WL = "1";
   hardware.opengl.enable = true;
 
-  services.mysql = {
-    enable = true;
-    package = pkgs.mariadb;
-  };
+  swapDevices = [
+    {
+      device = "/var/lib/swapfile";
+      size = 8 * 1024;
+    }
+  ];
 
   # This value determines the NixOS release from which the default
   # settings for stateful data, like file locations and database versions
