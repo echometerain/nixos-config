@@ -21,8 +21,6 @@
       nmap
       cron
       caligula
-      lolcat
-      cowsay
       lshw
       lf
       networkmanager
@@ -33,6 +31,12 @@
       unar
       ntfs3g
       aria2
+
+      # CLI fun
+      fortune
+      cmatrix
+      lolcat
+      cowsay
 
       # Graphical system utils
       gparted
@@ -71,12 +75,6 @@
       fcitx5
       rclone
       logitech-udev-rules
-
-      # Mullvad VPN
-      mullvad-vpn
-      mullvad
-      mullvad-browser
-      mullvad-closest
 
       # Misc apps
       transmission_4-qt6
@@ -128,7 +126,6 @@
       qalculate-qt
       obsidian
       foliate
-      fortune
       remnote
 
       # Productivity
