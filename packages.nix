@@ -89,6 +89,7 @@
       subtitlecomposer
       pot
       zed-editor
+      protonvpn-gui
 
       # Programming tools
       vscode
