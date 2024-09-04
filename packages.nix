@@ -109,7 +109,7 @@
       cargo
       rustycli
       micromamba
-      # android-studio
+      gdb
 
       # Libraries
       php83
