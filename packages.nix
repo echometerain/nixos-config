@@ -122,6 +122,7 @@
       temurin-bin
       rustc
       go
+      texliveSmall
 
       # Learning
       anki-bin
