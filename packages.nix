@@ -90,6 +90,7 @@
       pot
       zed-editor
       protonvpn-gui
+      xournalpp
 
       # Programming tools
       vscode
