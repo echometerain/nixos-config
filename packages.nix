@@ -111,7 +111,6 @@
       rustycli
       micromamba
       gdb
-      platformio
 
       # Libraries
       php83
