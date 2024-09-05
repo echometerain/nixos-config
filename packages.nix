@@ -91,6 +91,7 @@
       zed-editor
       protonvpn-gui
       xournalpp
+      calc
 
       # Programming tools
       vscode
