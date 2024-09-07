@@ -104,14 +104,12 @@
       docker-client
       git
       gh
-      mongodb-compass
       bless
       bun
-      python311Packages.pip
       cargo
       rustycli
       micromamba
-      gdb
+      stm32cubemx
 
       # Libraries
       php83
