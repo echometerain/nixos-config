@@ -76,6 +76,7 @@
       rclone
       logitech-udev-rules
       flatpak-builder
+      appstream
 
       # Misc apps
       transmission_4-qt6
