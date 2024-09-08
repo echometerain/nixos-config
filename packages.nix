@@ -75,7 +75,7 @@
       fcitx5
       rclone
       logitech-udev-rules
-      lynx
+      flatpak-builder
 
       # Misc apps
       transmission_4-qt6
