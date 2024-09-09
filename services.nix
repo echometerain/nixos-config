@@ -7,6 +7,9 @@
     # Enable the OpenSSH daemon.
     openssh.enable = true;
 
+    # Allow libusb to access STM32 devices.
+    udev.extraRules = ''SUBSYSTEM=="usb", MODE="0666"'';
+
     # Enable the KDE Plasma Desktop Environment.
     displayManager.sddm = {
       enable = true;
