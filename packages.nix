@@ -28,9 +28,11 @@
       htop
       fd
       auto-cpufreq
+      unzip
       unar
       ntfs3g
       aria2
+      axel
 
       # CLI fun
       fortune
@@ -113,7 +115,6 @@
       micromamba
       stlink
       stlink-gui
-      libusb1
 
       # Libraries
       php83
