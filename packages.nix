@@ -111,6 +111,10 @@
       cargo
       rustycli
       micromamba
+      stlink
+      stlink-gui
+      libusb1
+      notion-app-enhanced
 
       # Libraries
       php83
