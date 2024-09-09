@@ -111,7 +111,6 @@
       cargo
       rustycli
       micromamba
-      stm32cubemx
 
       # Libraries
       php83
