@@ -10,29 +10,33 @@
       nix-ld
 
       # CLI utils
-      fzf
-      wget
       xsel
       fastfetch
       vim
       zsh
       neovim
-      ffmpeg-full
-      nmap
-      cron
-      caligula
-      lshw
-      lf
-      networkmanager
       bat
-      htop
-      fd
-      auto-cpufreq
+
+      # Media and networking CLI utils
+      ffmpeg-full
+      wget
+      nmap
+      networkmanager
       unzip
       unar
       ntfs3g
       aria2
       axel
+
+      # Filesystem CLI utils
+      caligula
+      fzf
+      lf
+      lshw
+      cron
+      htop
+      fd
+      auto-cpufreq
 
       # CLI fun
       fortune
@@ -180,6 +184,7 @@
       dolphin
       kmenuedit
       okular
+      kalgebra
     ];
   in
     sysPkgs ++ kdePkgs;
