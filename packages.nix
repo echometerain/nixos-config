@@ -119,6 +119,8 @@
       micromamba
       stlink
       stlink-gui
+      cmake
+      gnumake
 
       # Libraries
       php83
