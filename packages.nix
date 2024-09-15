@@ -84,7 +84,6 @@
       flatpak-builder
       appstream
       opentabletdriver
-      veikk-linux-driver-gui
 
       # Misc apps
       transmission_4-qt6
@@ -190,7 +189,6 @@
       kmenuedit
       okular
       kalgebra
-      wacomtablet
     ];
   in
     sysPkgs ++ kdePkgs;
