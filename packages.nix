@@ -121,6 +121,7 @@
       stlink-gui
       cmake
       gnumake
+      gitkraken
 
       # Libraries
       php83
