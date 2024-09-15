@@ -83,6 +83,7 @@
       logitech-udev-rules
       flatpak-builder
       appstream
+      opentabletdriver
 
       # Misc apps
       transmission_4-qt6
