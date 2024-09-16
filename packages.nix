@@ -78,12 +78,10 @@
       caffeine-ng
       distrobox
       appimage-run
-      fcitx5
       rclone
       logitech-udev-rules
       flatpak-builder
       appstream
-      veikk-linux-driver-gui
 
       # Misc apps
       transmission_4-qt6

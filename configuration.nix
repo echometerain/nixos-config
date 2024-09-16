@@ -72,6 +72,7 @@
   fonts.packages = with pkgs; [
     hack-font
     corefonts
+    vistafonts
   ];
 
   # Programs configuration
