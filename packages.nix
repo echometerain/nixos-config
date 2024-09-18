@@ -99,6 +99,7 @@
       protonvpn-gui
       xournalpp
       calc
+      freeoffice
 
       # Programming tools
       vscode
