@@ -100,6 +100,7 @@
       xournalpp
       calc
       freeoffice
+      kicad
 
       # Programming tools
       vscode
