@@ -101,6 +101,7 @@
       calc
       freeoffice
       kicad
+      ghostscript
 
       # Programming tools
       vscode
