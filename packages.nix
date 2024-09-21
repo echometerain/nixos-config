@@ -102,6 +102,7 @@
       freeoffice
       kicad
       ghostscript
+      matlab
 
       # Programming tools
       vscode

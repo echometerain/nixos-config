@@ -31,7 +31,6 @@
       modules = [
         ./configuration.nix
         inputs.home-manager.nixosModules.default
-        # (import ./configuration.nix [nix-matlab.overlay])
       ];
     };
     devShell.x86_64-linux = nixpkgs.legacyPackages.x86_64-linux.mkShell {
