@@ -95,7 +95,7 @@
       gramps
       subtitlecomposer
       pot
-      zed-editor
+      # zed-editor
       protonvpn-gui
       xournalpp
       calc
@@ -139,7 +139,7 @@
       # Learning
       anki-bin
       qalculate-qt
-      obsidian
+      # obsidian
       foliate
       remnote
 
