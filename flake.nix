@@ -9,12 +9,21 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
     phps.url = "github:fossar/nix-phps";
+    nix-matlab = {
+      # nix-matlab's Nixpkgs input follows Nixpkgs' nixos-unstable branch. However
+      # your Nixpkgs revision might not follow the same branch. You'd want to
+      # match your Nixpkgs and nix-matlab to ensure fontconfig related
+      # compatibility.
+      inputs.nixpkgs.follows = "nixpkgs";
+      url = "gitlab:doronbehar/nix-matlab";
+    };
   };
 
   outputs = {
     nixpkgs,
     newpkgs,
     phps,
+    nix-matlab,
     ...
   } @ inputs: {
     nixosConfigurations.default = nixpkgs.lib.nixosSystem {
@@ -22,6 +31,7 @@
       modules = [
         ./configuration.nix
         inputs.home-manager.nixosModules.default
+        # (import ./configuration.nix [nix-matlab.overlay])
       ];
     };
     devShell.x86_64-linux = nixpkgs.legacyPackages.x86_64-linux.mkShell {

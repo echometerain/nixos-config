@@ -90,7 +90,6 @@
     };
     firefox = {
       enable = true;
-      package = inputs.newpkgs.legacyPackages.x86_64-linux.firefox;
     };
   };
 
@@ -148,19 +147,6 @@
     xwayland.enable = true;
   };
   # programs.hyprlock.enable = true;
-
-  # Chinese input method
-  i18n.inputMethod = {
-    enabled = "fcitx5";
-    fcitx5.waylandFrontend = true;
-    fcitx5.addons = with pkgs; [
-      kdePackages.fcitx5-qt
-      kdePackages.fcitx5-with-addons
-      kdePackages.fcitx5-chinese-addons
-      kdePackages.fcitx5-configtool
-      fcitx5-nord
-    ];
-  };
 
   # Misc configuration
   users.defaultUserShell = pkgs.zsh;

@@ -1,6 +1,6 @@
 {
   pkgs,
-  inputs,
+  # inputs,
   ...
 }: {
   services = {
@@ -44,25 +44,23 @@
     # Enable touchpad support (enabled default in most desktopManager).
     libinput.enable = true;
 
-    # Xampp stuff
-    httpd = {
-      enable = true;
-      enablePHP = true;
-      enablePerl = true;
-      phpPackage = inputs.phps.packages.x86_64-linux.php74;
-      virtualHosts = {
-        localhost = {
-          documentRoot = "/opt/htdocs";
-        };
-      };
-    };
+    # # Xampp stuff
+    # httpd = {
+    #   enable = true;
+    #   enablePHP = true;
+    #   enablePerl = true;
+    #   phpPackage = inputs.phps.packages.x86_64-linux.php74;
+    #   virtualHosts = {
+    #     localhost = {
+    #       documentRoot = "/opt/htdocs";
+    #     };
+    #   };
+    # };
+
+    # Various stuff
     thermald.enable = true;
     safeeyes.enable = true;
     flatpak.enable = true;
-    mullvad-vpn = {
-      enable = true;
-      package = pkgs.mullvad-vpn;
-    };
 
     # Enable the auto-cpufreq service.
     auto-cpufreq.enable = true;

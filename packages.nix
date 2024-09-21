@@ -119,8 +119,6 @@
       cargo
       rustycli
       micromamba
-      stlink
-      stlink-gui
       cmake
       gnumake
       gitkraken
