@@ -152,7 +152,7 @@
       thunderbird
 
       # Visual media
-      aseprite
+      # aseprite
       vlc
       mpv
       krita
@@ -160,7 +160,7 @@
       gimp-with-plugins
       krita-plugin-gmic
       obs-studio
-      freetube
+      # freetube
       yt-dlp
 
       # Audio media
