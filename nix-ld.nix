@@ -21,6 +21,7 @@
       xorg.libXxf86vm
       libelf
       sqlite
+      fuse
 
       # Required
       glib
