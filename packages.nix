@@ -95,7 +95,6 @@
       gramps
       subtitlecomposer
       pot
-      # zed-editor
       protonvpn-gui
       xournalpp
       calc
@@ -103,6 +102,7 @@
       kicad
       ghostscript
       matlab
+      brave
 
       # Programming tools
       vscode
@@ -152,7 +152,6 @@
       thunderbird
 
       # Visual media
-      # aseprite
       vlc
       mpv
       krita
@@ -160,7 +159,6 @@
       gimp-with-plugins
       krita-plugin-gmic
       obs-studio
-      # freetube
       yt-dlp
 
       # Audio media
