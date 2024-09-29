@@ -187,6 +187,7 @@
       kmenuedit
       okular
       kalgebra
+      plasma-integration
     ];
   in
     sysPkgs ++ kdePkgs;
