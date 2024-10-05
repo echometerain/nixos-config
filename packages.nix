@@ -8,6 +8,7 @@
       patchelf
       nil
       nix-ld
+      nix-du
 
       # CLI utils
       xsel
@@ -139,7 +140,6 @@
       # Learning
       anki-bin
       qalculate-qt
-      # obsidian
       foliate
       remnote
 
