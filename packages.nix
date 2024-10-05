@@ -17,6 +17,7 @@
       zsh
       neovim
       bat
+      graphviz
 
       # Media and networking CLI utils
       ffmpeg-full
