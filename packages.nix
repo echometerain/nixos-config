@@ -101,7 +101,6 @@
       xournalpp
       calc
       freeoffice
-      kicad
       ghostscript
       matlab
       brave
