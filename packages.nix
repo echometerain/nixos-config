@@ -136,7 +136,6 @@
       rustc
       go
       texliveSmall
-      sage
 
       # Learning
       anki-bin
