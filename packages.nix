@@ -8,7 +8,6 @@
       patchelf
       nil
       nix-ld
-      nix-du
 
       # CLI utils
       xsel
@@ -17,7 +16,6 @@
       zsh
       neovim
       bat
-      graphviz
 
       # Media and networking CLI utils
       ffmpeg-full
