@@ -49,7 +49,7 @@
   users.users.hhwl = {
     isNormalUser = true;
     description = "hhwl";
-    extraGroups = ["networkmanager" "wheel" "dialout"];
+    extraGroups = ["networkmanager" "wheel" "dialout" "audio"];
   };
 
   # Enable home-manager

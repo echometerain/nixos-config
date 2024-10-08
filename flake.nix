@@ -17,6 +17,7 @@
       inputs.nixpkgs.follows = "nixpkgs";
       url = "gitlab:doronbehar/nix-matlab";
     };
+    musnix = {url = "github:musnix/musnix";};
   };
 
   outputs = {
@@ -31,6 +32,7 @@
       modules = [
         ./configuration.nix
         inputs.home-manager.nixosModules.default
+        inputs.musnix.nixosModules.musnix
       ];
     };
     devShell.x86_64-linux = nixpkgs.legacyPackages.x86_64-linux.mkShell {
