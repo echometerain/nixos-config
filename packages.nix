@@ -128,7 +128,7 @@
       openssl_3_3
       nodejs_22
       gcc14
-      python3
+      python3Full
       pixi
       poetry
       llvmPackages_18.libcxxClang
