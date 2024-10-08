@@ -128,6 +128,9 @@
       openssl_3_3
       nodejs_22
       gcc14
+      python3
+      pixi
+      poetry
       llvmPackages_18.libcxxClang
       temurin-bin
       rustc
