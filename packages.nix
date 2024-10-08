@@ -170,6 +170,7 @@
       picard
       libsForQt5.soundkonverter
       yabridge
+      vital
     ];
     kdePkgs = with pkgs.kdePackages; [
       plasma-desktop
