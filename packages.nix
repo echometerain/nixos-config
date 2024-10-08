@@ -118,7 +118,7 @@
       bun
       cargo
       rustycli
-      conda
+      micromamba
       cmake
       gnumake
       gitkraken
