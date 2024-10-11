@@ -122,6 +122,7 @@
       cmake
       gnumake
       gitkraken
+      gdb
 
       # Libraries
       php83
