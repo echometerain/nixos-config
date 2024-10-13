@@ -135,7 +135,7 @@
       temurin-bin
       rustc
       go
-      # texliveMedium
+      texliveMedium
 
       # Learning
       anki-bin
