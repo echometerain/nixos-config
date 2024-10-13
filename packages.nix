@@ -135,7 +135,7 @@
       temurin-bin
       rustc
       go
-      texliveMedium
+      texliveSmall
 
       # Learning
       anki-bin
@@ -171,6 +171,9 @@
       libsForQt5.soundkonverter
       yabridge
       vital
+    ];
+    texPkgs = with pkgs.textlivePackages; [
+      chktex
     ];
     kdePkgs = with pkgs.kdePackages; [
       plasma-desktop
