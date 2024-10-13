@@ -121,8 +121,7 @@
       micromamba
       cmake
       gnumake
-      gitkraken
-      gdb
+      # gdb
 
       # Libraries
       php83
@@ -136,7 +135,7 @@
       temurin-bin
       rustc
       go
-      texliveSmall
+      # texliveMedium
 
       # Learning
       anki-bin
