@@ -172,7 +172,7 @@
       yabridge
       vital
     ];
-    texPkgs = with pkgs.textlivePackages; [
+    texPkgs = with pkgs.texlivePackages; [
       chktex
     ];
     kdePkgs = with pkgs.kdePackages; [
@@ -194,5 +194,5 @@
       plasma-integration
     ];
   in
-    sysPkgs ++ kdePkgs;
+    sysPkgs ++ kdePkgs ++ texPkgs;
 }
