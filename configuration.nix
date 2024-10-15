@@ -166,6 +166,7 @@
       size = 8 * 1024;
     }
   ];
+
   # VST support
   musnix.enable = true;
 

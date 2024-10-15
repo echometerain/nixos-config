@@ -6,7 +6,8 @@
       nixpkgs-fmt
       alejandra
       patchelf
-      nil
+      # nil
+      nixd
       nix-ld
 
       # CLI utils
@@ -123,7 +124,7 @@
       cmake
       gnumake
       gdb
-      lunarvim
+      # lunarvim
 
       # Libraries
       php83
@@ -136,6 +137,7 @@
       temurin-bin
       rustc
       go
+      (texlive.combine {inherit (texlive) scheme-small chktex;})
 
       # Learning
       anki-bin
