@@ -17,7 +17,7 @@
       inputs.nixpkgs.follows = "nixpkgs";
       url = "gitlab:doronbehar/nix-matlab";
     };
-    musnix = {url = "github:musnix/musnix";};
+    musnix.url = "github:musnix/musnix";
   };
 
   outputs = {
@@ -25,8 +25,12 @@
     newpkgs,
     phps,
     nix-matlab,
+    musnix,
     ...
-  } @ inputs: {
+  } @ inputs: let
+    system = "x86_64-linux";
+    pkgs = nixpkgs.legacyPackages.${system};
+  in {
     nixosConfigurations.default = nixpkgs.lib.nixosSystem {
       specialArgs = {inherit inputs;};
       modules = [
@@ -35,9 +39,10 @@
         inputs.musnix.nixosModules.musnix
       ];
     };
-    devShell.x86_64-linux = nixpkgs.legacyPackages.x86_64-linux.mkShell {
+    # Sikee shell
+    devShell.${system} = pkgs.mkShell {
       buildInputs = [
-        phps.packages.x86_64-linux.php74
+        phps.packages.${system}.php74
       ];
     };
   };

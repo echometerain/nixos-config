@@ -16,6 +16,8 @@
       zsh
       neovim
       bat
+      ranger
+      tmux
 
       # Media and networking CLI utils
       ffmpeg-full
@@ -94,7 +96,6 @@
       chromium
       gramps
       subtitlecomposer
-      pot
       protonvpn-gui
       xournalpp
       calc
@@ -121,7 +122,8 @@
       micromamba
       cmake
       gnumake
-      # gdb
+      gdb
+      lunarvim
 
       # Libraries
       php83
@@ -129,7 +131,6 @@
       nodejs_22
       gcc14
       python3Full
-      pixi
       poetry
       llvmPackages_18.libcxxClang
       temurin-bin
@@ -171,10 +172,6 @@
       yabridge
       vital
     ];
-    texPkgs = with pkgs.texlivePackages; [
-      scheme-small
-      chktex
-    ];
     kdePkgs = with pkgs.kdePackages; [
       plasma-desktop
       kate
@@ -194,5 +191,5 @@
       plasma-integration
     ];
   in
-    sysPkgs ++ kdePkgs ++ texPkgs;
+    sysPkgs ++ kdePkgs;
 }
