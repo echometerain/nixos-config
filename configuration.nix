@@ -31,8 +31,17 @@
 
   # Nix settings
   nix.settings.experimental-features = ["nix-command" "flakes"];
-  nixpkgs.config.allowUnfree = true;
-
+  nixpkgs = {
+    overlays = [
+      (final: prev: {
+        mpv = prev.mpv.override {
+          scripts = [final.mpvScripts.uosc];
+        };
+      })
+      inputs.nix-matlab.overlay
+    ];
+    config.allowUnfree = true;
+  };
   # Set your time zone.
   time.timeZone = "America/New_York";
 
@@ -155,9 +164,6 @@
   powerManagement.enable = true;
   environment.sessionVariables.NIXOS_OZONE_WL = "1";
   hardware.opengl.enable = true;
-
-  # MatLab configuration
-  nixpkgs.overlays = [inputs.nix-matlab.overlay];
 
   # Swap configuration
   swapDevices = [

@@ -136,7 +136,7 @@
       temurin-bin
       rustc
       go
-      (texlive.combine {inherit (texlive) scheme-small chktex latexmk;})
+      (texlive.combine {inherit (texlive) scheme-small chktex latexmk titlesec;})
 
       # Learning
       anki-bin
@@ -156,7 +156,6 @@
       vlc
       mpv
       krita
-      mpvScripts.uosc
       gimp-with-plugins
       krita-plugin-gmic
       obs-studio
