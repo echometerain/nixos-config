@@ -135,7 +135,6 @@
       temurin-bin
       rustc
       go
-      texliveSmall
 
       # Learning
       anki-bin
@@ -173,6 +172,7 @@
       vital
     ];
     texPkgs = with pkgs.texlivePackages; [
+      scheme-small
       chktex
     ];
     kdePkgs = with pkgs.kdePackages; [
