@@ -22,10 +22,7 @@
 
   outputs = {
     nixpkgs,
-    newpkgs,
     phps,
-    nix-matlab,
-    musnix,
     ...
   } @ inputs: let
     system = "x86_64-linux";
