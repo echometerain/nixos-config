@@ -19,7 +19,6 @@
       ranger
       tmux
       lazygit
-      nerdfonts
 
       # Media and networking CLI utils
       ffmpeg-full

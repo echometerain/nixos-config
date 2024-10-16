@@ -83,6 +83,7 @@
     hack-font
     corefonts
     vistafonts
+    nerdfonts
   ];
 
   # Programs configuration
