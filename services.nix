@@ -27,7 +27,10 @@
     };
 
     # Enable CUPS to print documents.
-    printing.enable = true;
+    printing = {
+      enable = true;
+      drivers = [pkgs.brlaser pkgs.brgenml1lpr pkgs.brgenml1cupswrapper];
+    };
     avahi = {
       enable = true;
       nssmdns4 = true;
