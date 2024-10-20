@@ -16,7 +16,7 @@
       zsh
       neovim
       bat
-      ranger
+      lf
       tmux
       lazygit
 
