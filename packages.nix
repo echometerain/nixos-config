@@ -105,7 +105,6 @@
       ghostscript
       matlab
       brave
-      obsidian
 
       # Programming tools
       vscode
