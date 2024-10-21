@@ -53,6 +53,7 @@
       fsearch
       qdirstat
       terminator
+      alacritty
       rsync
       xwayland
       glaxnimate
@@ -104,6 +105,7 @@
       ghostscript
       matlab
       brave
+      obsidian
 
       # Programming tools
       vscode
@@ -125,6 +127,7 @@
       gnumake
       gdb
       lunarvim
+      pulseview
 
       # Libraries
       php83

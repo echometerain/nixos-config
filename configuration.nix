@@ -163,6 +163,7 @@
   users.defaultUserShell = pkgs.zsh;
   virtualisation.docker.enable = true;
   powerManagement.enable = true;
+  xdg.portal.enable = true;
   environment.sessionVariables.NIXOS_OZONE_WL = "1";
   hardware.opengl.enable = true;
 
