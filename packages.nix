@@ -10,7 +10,7 @@
       nix-ld
 
       # CLI utils
-      xsel
+      wl-clipboard-rs
       fastfetch
       vim
       zsh
