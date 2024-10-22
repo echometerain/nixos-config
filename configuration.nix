@@ -166,6 +166,7 @@
   xdg.portal.enable = true;
   environment.sessionVariables.NIXOS_OZONE_WL = "1";
   hardware.opengl.enable = true;
+  services.SystemdJournal2Gelf.extraOptions = "--vacuum-size=500M";
 
   # Swap configuration
   swapDevices = [
