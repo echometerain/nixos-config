@@ -155,6 +155,8 @@
       pdfarranger
       authenticator
       thunderbird
+      sticky
+      gnome.gnome-notes
 
       # Visual media
       vlc
@@ -193,7 +195,6 @@
       okular
       kalgebra
       plasma-integration
-      knotes
     ];
   in
     sysPkgs ++ kdePkgs;
