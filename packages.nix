@@ -155,8 +155,6 @@
       pdfarranger
       authenticator
       thunderbird
-      sticky
-      gnome.gnome-notes
 
       # Visual media
       vlc

@@ -80,7 +80,6 @@
 
   # Font configuration
   fonts.packages = with pkgs; [
-    hack-font
     corefonts
     vistafonts
     nerdfonts
