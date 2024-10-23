@@ -193,6 +193,7 @@
       okular
       kalgebra
       plasma-integration
+      knotes
     ];
   in
     sysPkgs ++ kdePkgs;
