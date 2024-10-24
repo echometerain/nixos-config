@@ -72,13 +72,6 @@
     };
   };
 
-  programs.neovim = {
-    enable = true;
-    defaultEditor = true;
-    viAlias = true;
-    vimAlias = true;
-  };
-
   environment.sessionVariables = {
     XDG_CACHE_HOME = "$HOME/.cache";
     XDG_CONFIG_HOME = "$HOME/.config";
@@ -95,6 +88,31 @@
 
   # Programs configuration
   programs = {
+    neovim = {
+      enable = true;
+      defaultEditor = true;
+      viAlias = true;
+      vimAlias = true;
+    };
+    tmux = {
+      enable = true;
+      plugins = [
+        pkgs.tmuxPlugins.sensible
+      ];
+      extraConfig = ''
+        set -g default-terminal 'screen-256color'
+        set -g mouse on
+        unbind C-b
+        set-option -g prefix C-a
+        bind-key C-a send-prefix
+      '';
+    };
+    # Hyprland configuration
+    hyprland = {
+      enable = true;
+      xwayland.enable = true;
+    };
+    # programs.hyprlock.enable = true;
     kdeconnect.enable = true;
     openvpn3.enable = true;
     zsh.enable = true;
@@ -154,13 +172,6 @@
       ];
     };
   };
-
-  # Hyprland configuration
-  programs.hyprland = {
-    enable = true;
-    xwayland.enable = true;
-  };
-  # programs.hyprlock.enable = true;
 
   # Misc configuration
   users.defaultUserShell = pkgs.zsh;
