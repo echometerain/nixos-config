@@ -96,16 +96,15 @@
     };
     tmux = {
       enable = true;
+      shortcut = "a";
       plugins = [
         pkgs.tmuxPlugins.sensible
         pkgs.tmuxPlugins.vim-tmux-navigator
+        pkgs.tmuxPlugins.better-mouse-mode
       ];
       extraConfig = ''
         set -g default-terminal 'screen-256color'
         set -g mouse on
-        unbind C-b
-        set-option -g prefix C-a
-        bind-key C-a send-prefix
       '';
     };
     # Hyprland configuration
