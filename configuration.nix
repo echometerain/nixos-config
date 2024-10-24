@@ -31,11 +31,16 @@
 
   # Nix settings
   nix.settings.experimental-features = ["nix-command" "flakes"];
+
+  # Custom packages
   nixpkgs = {
     overlays = [
       (final: prev: {
         mpv = prev.mpv.override {
           scripts = [final.mpvScripts.uosc];
+        };
+        nerdfonts = prev.nerdfonts.override {
+          fonts = ["Hack"];
         };
       })
       inputs.nix-matlab.overlay
