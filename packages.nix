@@ -12,7 +12,6 @@
       # CLI utils
       wl-clipboard-rs
       fastfetch
-      vim
       zsh
       neovim
       bat
@@ -140,7 +139,21 @@
       temurin-bin
       rustc
       go
-      (texlive.combine {inherit (texlive) scheme-small chktex latexmk titlesec preprint;})
+      (texlive.combine {
+        inherit
+          (texlive)
+          scheme-small
+          chktex
+          latexmk
+          titlesec
+          preprint
+          marvosym
+          enumitem
+          hyperref
+          fancyhdr
+          babel
+          ;
+      })
 
       # Learning
       anki-bin
@@ -158,7 +171,7 @@
 
       # Visual media
       vlc
-      mpv
+      (mpv.override {scripts = [mpvScripts.uosc];})
       krita
       gimp-with-plugins
       krita-plugin-gmic

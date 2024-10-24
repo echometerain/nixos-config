@@ -39,14 +39,6 @@
   # Custom packages
   nixpkgs = {
     overlays = [
-      (final: prev: {
-        mpv = prev.mpv.override {
-          scripts = [final.mpvScripts.uosc];
-        };
-        nerdfonts = prev.nerdfonts.override {
-          fonts = ["Hack"];
-        };
-      })
       inputs.nix-matlab.overlay
     ];
     config.allowUnfree = true;
@@ -80,6 +72,13 @@
     };
   };
 
+  programs.neovim = {
+    enable = true;
+    defaultEditor = true;
+    viAlias = true;
+    vimAlias = true;
+  };
+
   environment.sessionVariables = {
     XDG_CACHE_HOME = "$HOME/.cache";
     XDG_CONFIG_HOME = "$HOME/.config";
@@ -91,7 +90,7 @@
   fonts.packages = with pkgs; [
     corefonts
     vistafonts
-    nerdfonts
+    (nerdfonts.override {fonts = ["Hack"];})
   ];
 
   # Programs configuration
