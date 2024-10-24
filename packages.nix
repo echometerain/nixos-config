@@ -140,7 +140,7 @@
       temurin-bin
       rustc
       go
-      (texlive.combine {inherit (texlive) scheme-small chktex latexmk titlesec;})
+      (texlive.combine {inherit (texlive) scheme-small chktex latexmk titlesec preprint;})
 
       # Learning
       anki-bin
