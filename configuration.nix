@@ -98,6 +98,7 @@
       enable = true;
       plugins = [
         pkgs.tmuxPlugins.sensible
+        pkgs.tmuxPlugins.vim-tmux-navigator
       ];
       extraConfig = ''
         set -g default-terminal 'screen-256color'

@@ -46,6 +46,30 @@
     # # the Nix store. Activating the configuration will then make '~/.screenrc' a
     # # symlink to the Nix store copy.
     # ".screenrc".source = dotfiles/screenrc;
+    ".config/nvim" = {
+      source = config.lib.file.mkOutOfStoreSymlink "/opt/dotfiles/nvim";
+    };
+    "nvim" = {
+      source = config.lib.file.mkOutOfStoreSymlink "/opt/dotfiles/nvim";
+    };
+    ".config/lvim" = {
+      source = config.lib.file.mkOutOfStoreSymlink "/opt/dotfiles/lvim";
+    };
+    ".alacritty.toml" = {
+      source = config.lib.file.mkOutOfStoreSymlink "/opt/dotfiles/.alacritty.toml";
+    };
+    ".zshrc" = {
+      source = config.lib.file.mkOutOfStoreSymlink "/opt/dotfiles/.zshrc";
+    };
+    ".bashrc" = {
+      source = config.lib.file.mkOutOfStoreSymlink "/opt/dotfiles/.bashrc";
+    };
+    ".shrc" = {
+      source = config.lib.file.mkOutOfStoreSymlink "/opt/dotfiles/.shrc";
+    };
+    ".vimrc" = {
+      source = config.lib.file.mkOutOfStoreSymlink "/opt/dotfiles/.vimrc";
+    };
 
     # # You can also set the file content immediately.
     # ".gradle/gradle.properties".text = ''
@@ -71,7 +95,7 @@
   #  /etc/profiles/per-user/hhwl/etc/profile.d/hm-session-vars.sh
   #
   home.sessionVariables = {
-    EDITOR = "nvim";
+    # EDITOR = "emacs";
   };
 
   # Let Home Manager install and manage itself.
