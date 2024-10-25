@@ -101,10 +101,13 @@
         pkgs.tmuxPlugins.sensible
         pkgs.tmuxPlugins.vim-tmux-navigator
         pkgs.tmuxPlugins.better-mouse-mode
+        pkgs.tmuxPlugins.catppuccin
       ];
       extraConfig = ''
         set -g default-terminal 'screen-256color'
         set -g mouse on
+        bind | split-window -h
+        unbind '%'
       '';
     };
     # Hyprland configuration
