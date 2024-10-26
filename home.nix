@@ -49,9 +49,6 @@
     ".config/nvim" = {
       source = config.lib.file.mkOutOfStoreSymlink "/opt/dotfiles/nvim";
     };
-    "nvim" = {
-      source = config.lib.file.mkOutOfStoreSymlink "/opt/dotfiles/nvim";
-    };
     ".config/lvim/config.lua" = {
       source = config.lib.file.mkOutOfStoreSymlink "/opt/dotfiles/lvim/config.lua";
     };

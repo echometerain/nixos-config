@@ -108,6 +108,8 @@
         set -g mouse on
         bind | split-window -h
         unbind '%'
+        bind | split-window -v
+        unbind '"'
       '';
     };
     # Hyprland configuration
