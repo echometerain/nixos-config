@@ -110,6 +110,7 @@
         unbind '%'
         bind | split-window -v
         unbind '"'
+        set-option -sa terminal-features ',XXX:RGB'
       '';
     };
     # Hyprland configuration
