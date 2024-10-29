@@ -20,6 +20,8 @@
       lf
       tmux
       lazygit
+      asciinema
+      asciinema-agg
 
       # Media and networking CLI utils
       ffmpeg-full
