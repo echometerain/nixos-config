@@ -109,6 +109,7 @@
       matlab
       brave
       obsidian
+      kicad
 
       # Programming tools
       vscode
