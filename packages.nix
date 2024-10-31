@@ -142,6 +142,7 @@
       python3Full
       poetry
       llvmPackages_18.libcxxClang
+      portaudio
       temurin-bin
       rustc
       go
