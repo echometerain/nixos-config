@@ -22,6 +22,7 @@
       libelf
       sqlite
       fuse
+      portaudio
 
       # Required
       glib
