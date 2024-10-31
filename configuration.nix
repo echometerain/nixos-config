@@ -109,6 +109,7 @@
         bind | split-window -h
         unbind '%'
         set-option -sa terminal-features ',XXX:RGB'
+        set -sg escape-time 10
       '';
     };
     # Hyprland configuration
