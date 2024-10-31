@@ -132,6 +132,7 @@
       gdb
       lunarvim
       pulseview
+      netbeans
 
       # Libraries
       php83
