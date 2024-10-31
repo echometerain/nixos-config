@@ -108,8 +108,6 @@
         set -g mouse on
         bind | split-window -h
         unbind '%'
-        bind | split-window -v
-        unbind '"'
         set-option -sa terminal-features ',XXX:RGB'
       '';
     };
