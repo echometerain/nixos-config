@@ -49,6 +49,7 @@
       cmatrix
       lolcat
       cowsay
+      pipes-rs
 
       # Graphical system utils
       gparted
@@ -89,6 +90,7 @@
       logitech-udev-rules
       flatpak-builder
       appstream
+      sqlitebrowser
 
       # Misc apps
       transmission_4-qt6
