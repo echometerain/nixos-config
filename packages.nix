@@ -22,6 +22,7 @@
       lazygit
       asciinema
       asciinema-agg
+      nushell
 
       # Media and networking CLI utils
       ffmpeg-full
