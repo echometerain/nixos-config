@@ -113,6 +113,7 @@
       brave
       obsidian
       kicad
+      nextcloud-client
 
       # Programming tools
       vscode
