@@ -97,11 +97,12 @@
     tmux = {
       enable = true;
       shortcut = "a";
-      plugins = [
-        pkgs.tmuxPlugins.sensible
-        pkgs.tmuxPlugins.vim-tmux-navigator
-        pkgs.tmuxPlugins.better-mouse-mode
-        pkgs.tmuxPlugins.catppuccin
+      plugins = with pkgs.tmuxPlugins; [
+        sensible
+        vim-tmux-navigator
+        better-mouse-mode
+        catppuccin
+        resurrect
       ];
       extraConfig = ''
         set -g default-terminal 'screen-256color'
