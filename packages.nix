@@ -143,12 +143,11 @@
       openssl_3_3
       nodejs_22
       gcc14
-      (python311Full.override {
-        packageOverrides = with python311Packages; [
+      (python3.withPackages (python-pkgs:
+        with python-pkgs; [
           pynvim
           numpy
-        ];
-      })
+        ]))
       poetry
       llvmPackages.libcxxClang
       clang-tools
