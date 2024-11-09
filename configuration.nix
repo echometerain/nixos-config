@@ -111,6 +111,7 @@
         unbind '%'
         set-option -sa terminal-features ',XXX:RGB'
         set -sg escape-time 10
+        set -g repeat-time 1000
       '';
     };
     # Hyprland configuration
