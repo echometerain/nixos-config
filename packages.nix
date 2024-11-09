@@ -145,7 +145,8 @@
       gcc14
       python3Full
       poetry
-      llvmPackages_18.libcxxClang
+      llvmPackages.libcxxClang
+      clang-tools
       temurin-bin
       rustc
       go
