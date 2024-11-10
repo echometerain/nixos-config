@@ -94,6 +94,9 @@
       enableGraphical = true;
     };
 
+    # Enable OpenGL
+    opengl.enable = true;
+
     # Hardware sound configuration
     pulseaudio.enable = false;
     bluetooth = {
@@ -103,11 +106,8 @@
         Experimental = true;
       };
     };
-    security.rtkit.enable = true;
   };
-
-  # Enable OpenGL
-  opengl.enable = true;
+  security.rtkit.enable = true;
 
   # Networking configuration
   networking = {
@@ -153,8 +153,7 @@
 
   # Chinese language support
   i18n.inputMethod = {
-    type = "fcitx5";
-    enable = true;
+    enabled = "fcitx5";
     fcitx5 = {
       waylandFrontend = true;
       plasma6Support = true;
@@ -163,7 +162,6 @@
         fcitx5-mozc
         fcitx5-gtk # Fcitx5 gtk im module and glib based dbus client library
         fcitx5-rime
-        fcitx5-pinyin-zhwiki
       ];
     };
   };
