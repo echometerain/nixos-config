@@ -80,9 +80,13 @@
       };
     };
 
+    # MySQL
     mysql = {
       enable = true;
       package = pkgs.mariadb;
     };
+
+    # Journald clean
+    SystemdJournal2Gelf.extraOptions = "--vacuum-size=500M";
   };
 }

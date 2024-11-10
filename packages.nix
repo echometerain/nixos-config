@@ -150,6 +150,7 @@
         ]))
       poetry
       llvmPackages.libcxxClang
+      clang
       clang-tools
       temurin-bin
       rustc
