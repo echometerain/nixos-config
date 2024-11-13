@@ -23,6 +23,7 @@
       asciinema
       asciinema-agg
       nushell
+      killall
 
       # Media and networking CLI utils
       ffmpeg-full
