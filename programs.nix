@@ -20,14 +20,15 @@
         continuum
       ];
       extraConfig = ''
+        set -g @continuum-restore 'on'
         set -g default-terminal 'screen-256color'
+        set-option -sa terminal-features ',XXX:RGB'
         set -g mouse on
         bind | split-window -h
         unbind '%'
-        set-option -sa terminal-features ',XXX:RGB'
         set -sg escape-time 10
         set -g repeat-time 1000
-        set -g @continuum-restore 'on'
+        new
       '';
     };
 
