@@ -11,6 +11,7 @@
     tmux = {
       enable = true;
       shortcut = "a";
+      newSession = true;
       plugins = with pkgs.tmuxPlugins; [
         sensible
         vim-tmux-navigator
