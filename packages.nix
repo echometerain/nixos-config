@@ -138,6 +138,7 @@
       lunarvim
       pulseview
       netbeans
+      seer
 
       # Libraries
       php83
