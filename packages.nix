@@ -140,6 +140,11 @@
       netbeans
       seer
 
+      # STM32
+      stlink-gui
+      stlink-tool
+      stm32flash
+
       # Libraries
       php83
       openssl_3_3
