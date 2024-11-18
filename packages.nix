@@ -24,6 +24,7 @@
       asciinema-agg
       nushell
       killall
+      file
 
       # Media and networking CLI utils
       ffmpeg-full
@@ -143,7 +144,6 @@
       # STM32
       stlink-gui
       stlink-tool
-      stm32flash
 
       # Libraries
       php83
