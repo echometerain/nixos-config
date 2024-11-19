@@ -25,6 +25,7 @@
       nushell
       killall
       file
+      lazygit
 
       # Media and networking CLI utils
       ffmpeg-full
