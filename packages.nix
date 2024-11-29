@@ -11,6 +11,8 @@
 
       # CLI utils
       wl-clipboard-rs
+      tealdeer
+      navi
       fastfetch
       zsh
       neovim
