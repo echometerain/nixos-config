@@ -143,6 +143,7 @@
       pulseview
       netbeans
       seer
+      valgrind
 
       # STM32
       stlink-gui
