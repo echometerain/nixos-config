@@ -119,6 +119,7 @@
       obsidian
       kicad
       nextcloud-client
+      wechat-uos
 
       # Programming tools
       vscode
