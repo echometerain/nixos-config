@@ -144,11 +144,6 @@
   xdg.portal.enable = true;
   environment.sessionVariables.NIXOS_OZONE_WL = "1";
 
-  # Getting wechat to work
-  nixpkgs.config.permittedInsecurePackages = [
-    "openssl-1.1.1w"
-  ];
-
   # Swap configuration
   swapDevices = [
     {
