@@ -28,6 +28,7 @@
       killall
       file
       lazygit
+      zoxide
 
       # Media and networking CLI utils
       ffmpeg-full
