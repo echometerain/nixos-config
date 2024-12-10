@@ -96,7 +96,7 @@
     };
 
     # Enable OpenGL
-    opengl.enable = true;
+    graphics.enable = true;
 
     # Hardware sound configuration
     pulseaudio.enable = false;

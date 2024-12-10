@@ -97,7 +97,7 @@
       fontconfig
       freetype
       dbus
-      alsaLib
+      alsa-lib
       expat
 
       # Needed for electron

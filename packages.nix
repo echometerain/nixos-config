@@ -15,7 +15,7 @@
       navi
       fastfetch
       zsh
-      neovim
+      # neovim
       nvimpager
       vimgolf
       bat
@@ -109,17 +109,16 @@
       firefox
       chromium
       gramps
-      subtitlecomposer
+      # subtitlecomposer
       protonvpn-gui
       xournalpp
       calc
       freeoffice
       ghostscript
-      matlab
+      # matlab
       brave
       obsidian
       kicad
-      nextcloud-client
 
       # Programming tools
       vscode
@@ -132,7 +131,7 @@
       docker-client
       git
       gh
-      bless
+      ghex
       bun
       cargo
       rustycli
@@ -140,7 +139,7 @@
       cmake
       gnumake
       gdb
-      lunarvim
+      # lunarvim
       pulseview
       netbeans
       seer
@@ -153,7 +152,7 @@
       # Libraries
       php83
       openssl_3_3
-      nodejs_22
+      # nodejs_22
       gcc14
       (python3.withPackages (python-pkgs:
         with python-pkgs; [
@@ -189,7 +188,7 @@
       remnote
 
       # Productivity
-      gnome.simple-scan
+      simple-scan
       safeeyes
       freeplane
       pdfarranger

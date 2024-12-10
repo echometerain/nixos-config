@@ -1,12 +1,12 @@
 {pkgs, ...}: {
   # Programs configuration
   programs = {
-    neovim = {
-      enable = true;
-      defaultEditor = true;
-      viAlias = true;
-      vimAlias = true;
-    };
+    # neovim = {
+    #   enable = true;
+    #   defaultEditor = true;
+    #   viAlias = true;
+    #   vimAlias = true;
+    # };
 
     tmux = {
       enable = true;

@@ -68,7 +68,7 @@
     flatpak.enable = true;
 
     # Enable the auto-cpufreq service.
-    auto-cpufreq.enable = true;
+    # auto-cpufreq.enable = true;
     auto-cpufreq.settings = {
       battery = {
         governor = "powersave";
