@@ -15,7 +15,7 @@
       navi
       fastfetch
       zsh
-      # neovim
+      neovim
       nvimpager
       vimgolf
       bat
@@ -112,10 +112,11 @@
       # subtitlecomposer
       protonvpn-gui
       xournalpp
+      rnote
       calc
       freeoffice
       ghostscript
-      # matlab
+      matlab
       brave
       obsidian
       kicad
@@ -145,14 +146,10 @@
       seer
       valgrind
 
-      # STM32
-      stlink-gui
-      stlink-tool
-
       # Libraries
       php83
       openssl_3_3
-      # nodejs_22
+      nodejs_23
       gcc14
       (python3.withPackages (python-pkgs:
         with python-pkgs; [
