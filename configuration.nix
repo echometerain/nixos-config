@@ -85,6 +85,7 @@
     corefonts
     vistafonts
     (nerdfonts.override {fonts = ["Hack"];})
+    siji
   ];
 
   hardware = {
