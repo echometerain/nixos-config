@@ -8,7 +8,7 @@
       url = "github:nix-community/home-manager/release-24.11";
       inputs.nixpkgs.follows = "nixpkgs";
     };
-    phps.url = "github:fossar/nix-phps";
+    # phps.url = "github:fossar/nix-phps";
     nix-matlab = {
       # nix-matlab's Nixpkgs input follows Nixpkgs' nixos-unstable branch. However
       # your Nixpkgs revision might not follow the same branch. You'd want to
@@ -22,11 +22,11 @@
 
   outputs = {
     nixpkgs,
-    phps,
+    # phps,
     ...
   } @ inputs: let
-    system = "x86_64-linux";
-    pkgs = nixpkgs.legacyPackages.${system};
+    # system = "x86_64-linux";
+    # pkgs = nixpkgs.legacyPackages.${system};
   in {
     nixosConfigurations.default = nixpkgs.lib.nixosSystem {
       specialArgs = {inherit inputs;};
@@ -36,11 +36,11 @@
         inputs.musnix.nixosModules.musnix
       ];
     };
-    # Sikee shell
-    devShell.${system} = pkgs.mkShell {
-      buildInputs = [
-        phps.packages.${system}.php74
-      ];
-    };
+    # # Sikee shell
+    # devShell.${system} = pkgs.mkShell {
+    #   buildInputs = [
+    #     phps.packages.${system}.php74
+    #   ];
+    # };
   };
 }
