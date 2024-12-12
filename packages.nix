@@ -10,7 +10,7 @@
       nix-ld
 
       # CLI utils
-      wl-clipboard-rs
+      wl-clipboard
       tealdeer
       navi
       fastfetch
@@ -28,7 +28,9 @@
       killall
       file
       lazygit
-      zoxide
+      clipboard-jh
+      cliphist
+      wl-clip-persist
 
       # Media and networking CLI utils
       ffmpeg-full
@@ -49,7 +51,6 @@
       cron
       htop
       fd
-      auto-cpufreq
 
       # CLI fun
       fortune
@@ -63,20 +64,24 @@
       bleachbit
       fsearch
       qdirstat
-      terminator
       alacritty
       rsync
       xwayland
-      glaxnimate
       movit
       flatpak
       wofi
+      networkmanagerapplet
+      playerctl
 
       # Hyprland utils
       hyprland
       hyprlock
       eww
       waybar
+      libsForQt5.qt5ct
+      qt6ct
+      nwg-look
+      dunst
 
       # Hack the box
       burpsuite
@@ -104,8 +109,6 @@
       calibre
       libreoffice-qt6-fresh
       discord
-      zoom-us
-      freefilesync
       firefox
       chromium
       gramps
