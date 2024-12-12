@@ -109,7 +109,11 @@
   };
   security = {
     rtkit.enable = true;
-    pam.services.hhwl.kwallet.enable = true;
+    pam.services.hhwl.kwallet = {
+      enable = true;
+      package = pkgs.kdePackages.kwallet-pam;
+      forceRun = true;
+    };
   };
 
   # Networking configuration

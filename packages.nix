@@ -31,6 +31,7 @@
       clipboard-jh
       cliphist
       wl-clip-persist
+      kwalletcli
 
       # Media and networking CLI utils
       ffmpeg-full
@@ -232,6 +233,8 @@
       okular
       kalgebra
       plasma-integration
+      kwallet
+      kwallet-pam
     ];
   in
     sysPkgs ++ kdePkgs;
