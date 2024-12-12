@@ -110,7 +110,7 @@
   };
   security = {
     rtkit.enable = true;
-    pam.services.hhwl.kwallet = {
+    pam.services.sddm.kwallet = {
       enable = true;
       package = pkgs.kdePackages.kwallet-pam;
       forceRun = true;
