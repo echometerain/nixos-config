@@ -31,7 +31,7 @@
       clipboard-jh
       cliphist
       wl-clip-persist
-      kwalletcli
+      brightnessctl
 
       # Media and networking CLI utils
       ffmpeg-full
@@ -59,6 +59,7 @@
       lolcat
       cowsay
       pipes-rs
+      cool-retro-term
 
       # Graphical system utils
       gparted
