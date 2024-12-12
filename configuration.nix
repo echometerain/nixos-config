@@ -107,7 +107,10 @@
       };
     };
   };
-  security.rtkit.enable = true;
+  security = {
+    rtkit.enable = true;
+    pam.services.hhwl.kwallet.enable = true;
+  };
 
   # Networking configuration
   networking = {
