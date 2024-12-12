@@ -233,7 +233,6 @@
       okular
       kalgebra
       plasma-integration
-      kwallet
       kwallet-pam
     ];
   in
