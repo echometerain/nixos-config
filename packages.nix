@@ -10,7 +10,7 @@
       nix-ld
 
       # CLI utils
-      wl-clipboard
+      wl-clipboard-rs
       tealdeer
       navi
       fastfetch
@@ -32,6 +32,7 @@
       cliphist
       wl-clip-persist
       brightnessctl
+      ripgrep
 
       # Media and networking CLI utils
       ffmpeg-full
@@ -52,6 +53,7 @@
       cron
       htop
       fd
+      gnome-keyring
 
       # CLI fun
       fortune

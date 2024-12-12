@@ -61,6 +61,11 @@
     #     };
     #   };
     # };
+    # # MySQL
+    # mysql = {
+    #   enable = true;
+    #   package = pkgs.mariadb;
+    # };
 
     # Various stuff
     thermald.enable = true;
@@ -80,11 +85,8 @@
     #   };
     # };
 
-    # MySQL
-    mysql = {
-      enable = true;
-      package = pkgs.mariadb;
-    };
+    # Gnome keyring
+    gnome.gnome-keyring.enable = true;
 
     # Journald clean
     SystemdJournal2Gelf.extraOptions = "--vacuum-size=500M";
