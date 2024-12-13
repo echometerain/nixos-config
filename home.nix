@@ -51,6 +51,13 @@
     ".config/hypr" = {
       source = config.lib.file.mkOutOfStoreSymlink "/opt/dotfiles/hypr";
     };
+    ".config/wofi" = {
+      source = config.lib.file.mkOutOfStoreSymlink "/opt/dotfiles/wofi";
+    };
+    ".config/waybar" = {
+      source = config.lib.file.mkOutOfStoreSymlink "/opt/dotfiles/waybar";
+    };
+    
     ".config/lvim/config.lua" = {
       source = config.lib.file.mkOutOfStoreSymlink "/opt/dotfiles/lvim/config.lua";
     };

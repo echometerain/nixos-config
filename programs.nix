@@ -22,7 +22,7 @@
       extraConfig = ''
         set -g @continuum-restore 'on'
         set -g default-terminal 'screen-256color'
-        set-option -sa terminal-features ',XXX:RGB'
+	set-option -a terminal-features 'XXX:RGB'
         set -g mouse on
         bind | split-window -h
         unbind '%'
