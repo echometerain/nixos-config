@@ -10,7 +10,7 @@
       nix-ld
 
       # CLI utils
-      wl-clipboard-rs
+      wl-clipboard
       tealdeer
       navi
       fastfetch
