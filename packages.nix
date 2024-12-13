@@ -33,6 +33,8 @@
       wl-clip-persist
       brightnessctl
       ripgrep
+      grim
+      slurp
 
       # Media and networking CLI utils
       ffmpeg-full
