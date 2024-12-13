@@ -38,8 +38,8 @@
       xwayland.enable = true;
       withUWSM = true;
     };
+    hyprlock.enable = true;
 
-    # programs.hyprlock.enable = true;
     kdeconnect.enable = true;
     openvpn3.enable = true;
     zsh.enable = true;

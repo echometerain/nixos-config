@@ -93,5 +93,8 @@
 
     # Journald clean
     SystemdJournal2Gelf.extraOptions = "--vacuum-size=500M";
+
+    # hypr stuff
+    hypridle.enable = true;
   };
 }

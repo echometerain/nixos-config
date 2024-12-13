@@ -79,6 +79,7 @@
       # Hyprland utils
       hyprland
       hyprlock
+      hypridle
       hyprshot
       hyprsunset
       wlogout
