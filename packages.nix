@@ -33,7 +33,6 @@
       wl-clip-persist
       brightnessctl
       ripgrep
-      hyprshot
 
       # Media and networking CLI utils
       ffmpeg-full
@@ -75,18 +74,21 @@
       movit
       flatpak
       wofi
-      networkmanagerapplet
       playerctl
 
       # Hyprland utils
       hyprland
       hyprlock
-      eww
+      hyprshot
+      hyprsunset
+      wlogout
       waybar
       libsForQt5.qt5ct
       qt6ct
       nwg-look
       dunst
+      blueman
+      networkmanagerapplet
 
       # Hack the box
       burpsuite

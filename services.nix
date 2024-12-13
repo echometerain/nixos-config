@@ -84,6 +84,9 @@
     #     turbo = "auto";
     #   };
     # };
+    
+    # Disable power button
+    logind.powerKey = "ignore";
 
     # Gnome keyring
     gnome.gnome-keyring.enable = true;
