@@ -1,4 +1,4 @@
-{pkgs, ...}: {
+{pkgs, inputs, ...}: {
   environment.systemPackages = let
     sysPkgs = with pkgs; [
       # Nix utils
@@ -150,7 +150,7 @@
       cmake
       gnumake
       gdb
-      # lunarvim
+      inputs.newpkgs.legacyPackages.x86_64-linux.lunarvim
       pulseview
       netbeans
       seer
