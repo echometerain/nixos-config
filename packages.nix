@@ -33,6 +33,9 @@
       wl-clip-persist
       brightnessctl
       ripgrep
+      jq
+      htop
+      cava
 
       # Media and networking CLI utils
       ffmpeg-full
@@ -81,6 +84,7 @@
       hyprlock
       hypridle
       hyprshot
+      hyprpicker
       hyprsunset
       wlogout
       waybar
