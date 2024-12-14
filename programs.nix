@@ -4,7 +4,7 @@
     neovim = {
       enable = true;
       configure = {
-      	customRC = "source /dotfiles/nvim/init.vim";
+      	customRC = "source /opt/dotfiles/.vimrc";
       	packages.myVimPackage = with pkgs.vimPlugins; {
 	  start = [ pkgs.vimPlugins.vim-tmux-navigator pkgs.vimPlugins.vim-sleuth ];
 	};
