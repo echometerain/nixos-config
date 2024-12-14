@@ -16,8 +16,8 @@
       fastfetch
       zsh
       neovim
-      nvimpager
       vimgolf
+      page
       bat
       lf
       tmux

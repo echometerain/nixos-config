@@ -3,6 +3,9 @@
   programs = {
     neovim = {
       enable = true;
+      configure.packages.myVimPackage = with pkgs.vimPlugins; {
+        start = [ pkgs.vimPlugins.vim-tmux-navigator pkgs.vimPlugins.vim-sleuth ];
+      };
       defaultEditor = true;
       viAlias = true;
       vimAlias = true;
