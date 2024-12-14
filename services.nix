@@ -73,17 +73,18 @@
     flatpak.enable = true;
 
     # Enable the auto-cpufreq service.
-    # auto-cpufreq.enable = true;
-    # auto-cpufreq.settings = {
-    #   battery = {
-    #     governor = "powersave";
-    #     turbo = "never";
-    #   };
-    #   charger = {
-    #     governor = "performance";
-    #     turbo = "auto";
-    #   };
-    # };
+    auto-cpufreq.enable = true;
+    auto-cpufreq.settings = {
+      battery = {
+        governor = "powersave";
+        turbo = "never";
+      };
+      charger = {
+        governor = "performance";
+        turbo = "auto";
+      };
+    };
+    power-profiles-daemon.enable = false;
     
     # Disable power button
     logind.powerKey = "ignore";
