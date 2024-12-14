@@ -15,7 +15,6 @@
       navi
       fastfetch
       zsh
-      neovim
       vimgolf
       page
       bat
