@@ -18,6 +18,7 @@
       url = "gitlab:doronbehar/nix-matlab";
     };
     musnix.url = "github:musnix/musnix";
+    clipboard-sync.url = "github:dnut/clipboard-sync";
   };
 
   outputs = {
@@ -34,6 +35,7 @@
         ./configuration.nix
         inputs.home-manager.nixosModules.default
         inputs.musnix.nixosModules.musnix
+	inputs.clipboard-sync.nixosModules.default
       ];
     };
     # # Sikee shell
