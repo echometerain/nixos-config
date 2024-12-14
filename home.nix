@@ -42,12 +42,13 @@
     # # the Nix store. Activating the configuration will then make '~/.screenrc' a
     # # symlink to the Nix store copy.
     # ".screenrc".source = dotfiles/screenrc;
-    ".config/nvim" = {
-      source = config.lib.file.mkOutOfStoreSymlink "/opt/dotfiles/nvim";
-    };
-    "nvim" = {
-      source = config.lib.file.mkOutOfStoreSymlink "/opt/dotfiles/nvim";
-    };
+
+    # ".config/nvim" = {
+    #   source = config.lib.file.mkOutOfStoreSymlink "/opt/dotfiles/nvim";
+    # };
+    # "nvim" = {
+    #   source = config.lib.file.mkOutOfStoreSymlink "/opt/dotfiles/nvim";
+    # };
     ".config/hypr" = {
       source = config.lib.file.mkOutOfStoreSymlink "/opt/dotfiles/hypr";
     };
