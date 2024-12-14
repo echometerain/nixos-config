@@ -69,7 +69,6 @@
 
     # Various stuff
     thermald.enable = true;
-    safeeyes.enable = true;
     flatpak.enable = true;
 
     # Enable the auto-cpufreq service.
