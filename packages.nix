@@ -58,6 +58,7 @@
       gnome-keyring
 
       # CLI fun
+      hollywood
       fortune
       cmatrix
       lolcat
