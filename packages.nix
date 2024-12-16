@@ -153,6 +153,7 @@
       cargo-watch
       rustfmt
       rustycli
+      rust-analyzer
       micromamba
       cmake
       gnumake
