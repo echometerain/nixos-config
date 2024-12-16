@@ -46,7 +46,6 @@
       ntfs3g
       aria2
       axel
-      mp3cat
 
       # Filesystem CLI utils
       caligula
