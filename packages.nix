@@ -150,6 +150,8 @@
       ghex
       bun
       cargo
+      cargo-watch
+      rustfmt
       rustycli
       micromamba
       cmake
