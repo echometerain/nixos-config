@@ -20,7 +20,7 @@
     tmux = {
       enable = true;
       shortcut = "a";
-      terminal = "screen-256color";
+      terminal = "tmux-256color";
       newSession = true;
       plugins = with pkgs.tmuxPlugins; [
         sensible
@@ -38,6 +38,7 @@
         set -sg escape-time 10
         set -g repeat-time 1000
         set -g terminal-features 'XXX:RGB'
+        run-shell ${pkgs.tmuxPlugins.continuum}/share/tmux-plugins/continuum/continuum.tmux
         set -g @continuum-restore 'on'
       '';
     };

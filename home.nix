@@ -105,7 +105,7 @@
     # EDITOR = "emacs";
   };
 
-  programs.neovim.plugins = [ pkgs.vimPlugins.vim-tmux-navigator pkgs.vimPlugins.vim-sleuth ];
+  # programs.neovim.plugins = with pkgs.vimPlugins; [ vim-tmux-navigator vim-sleuth ];
 
   # Let Home Manager install and manage itself.
   programs.home-manager.enable = true;
