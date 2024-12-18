@@ -6,7 +6,10 @@
       configure = {
       	customRC = "source /opt/dotfiles/.vimrc";
       	packages.myVimPackage = with pkgs.vimPlugins; {
-	  start = [ vim-tmux-navigator vim-sleuth ];
+	  start = [
+            vim-tmux-navigator
+            vim-sleuth
+          ];
 	};
       };
       defaultEditor = true;
@@ -24,6 +27,7 @@
         vim-tmux-navigator
         better-mouse-mode
         catppuccin
+        resurrect
         continuum
       ];
       extraConfig = ''
