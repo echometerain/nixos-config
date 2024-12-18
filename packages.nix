@@ -20,6 +20,7 @@
       bat
       lf
       tmux
+      tmuxifier
       lazygit
       asciinema
       asciinema-agg

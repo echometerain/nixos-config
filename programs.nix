@@ -6,7 +6,7 @@
       configure = {
       	customRC = "source /opt/dotfiles/.vimrc";
       	packages.myVimPackage = with pkgs.vimPlugins; {
-	  start = [ pkgs.vimPlugins.vim-tmux-navigator pkgs.vimPlugins.vim-sleuth ];
+	  start = [ vim-tmux-navigator vim-sleuth ];
 	};
       };
       defaultEditor = true;
@@ -17,24 +17,23 @@
     tmux = {
       enable = true;
       shortcut = "a";
+      terminal = "screen-256color";
+      newSession = true;
       plugins = with pkgs.tmuxPlugins; [
         sensible
         vim-tmux-navigator
         better-mouse-mode
         catppuccin
-        resurrect
         continuum
       ];
       extraConfig = ''
-        set -g @continuum-restore 'on'
-        set -g default-terminal 'screen-256color'
-	set-option -a terminal-features 'XXX:RGB'
         set -g mouse on
         bind | split-window -h
         unbind '%'
         set -sg escape-time 10
         set -g repeat-time 1000
-        new
+        set-option -a terminal-features 'XXX:RGB'
+        set -g @continuum-restore 'on'
       '';
     };
 
