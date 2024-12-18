@@ -27,12 +27,13 @@
         continuum
       ];
       extraConfig = ''
+        set -g mode-keys vi
         set -g mouse on
         bind | split-window -h
         unbind '%'
         set -sg escape-time 10
         set -g repeat-time 1000
-        set-option -a terminal-features 'XXX:RGB'
+        set -g terminal-features 'XXX:RGB'
         set -g @continuum-restore 'on'
       '';
     };
