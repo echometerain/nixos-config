@@ -107,6 +107,31 @@
 
   # programs.neovim.plugins = with pkgs.vimPlugins; [ vim-tmux-navigator vim-sleuth ];
 
+  programs.tmux = {
+    enable = true;
+    shortcut = "a";
+    terminal = "tmux-256color";
+    newSession = true;
+    plugins = with pkgs.tmuxPlugins; [
+      sensible
+      vim-tmux-navigator
+      better-mouse-mode
+      catppuccin
+      resurrect
+      continuum
+    ];
+    extraConfig = ''
+      set -g mode-keys vi
+      set -g mouse on
+      bind | split-window -h
+      unbind '%'
+      set -sg escape-time 10
+      set -g repeat-time 1000
+      set -g terminal-features 'XXX:RGB'
+      set -g @continuum-restore 'on'
+    '';
+  };
+
   # Let Home Manager install and manage itself.
   programs.home-manager.enable = true;
 

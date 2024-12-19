@@ -17,32 +17,6 @@
       vimAlias = true;
     };
 
-    tmux = {
-      enable = true;
-      shortcut = "a";
-      terminal = "tmux-256color";
-      newSession = true;
-      plugins = with pkgs.tmuxPlugins; [
-        sensible
-        vim-tmux-navigator
-        better-mouse-mode
-        catppuccin
-        resurrect
-        continuum
-      ];
-      extraConfig = ''
-        set -g mode-keys vi
-        set -g mouse on
-        bind | split-window -h
-        unbind '%'
-        set -sg escape-time 10
-        set -g repeat-time 1000
-        set -g terminal-features 'XXX:RGB'
-        run-shell ${pkgs.tmuxPlugins.continuum}/share/tmux-plugins/continuum/continuum.tmux
-        set -g @continuum-restore 'on'
-      '';
-    };
-
     # Hyprland configuration
     hyprland = {
       enable = true;
