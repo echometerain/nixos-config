@@ -34,6 +34,7 @@
       jq
       htop
       cava
+      tmux
 
       # Media and networking CLI utils
       ffmpeg-full
