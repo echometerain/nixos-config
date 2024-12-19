@@ -35,7 +35,6 @@
       htop
       cava
       tmux
-      oh-my-zsh
 
       # Media and networking CLI utils
       ffmpeg-full
@@ -177,7 +176,6 @@
           numpy
         ]))
       poetry
-      clang
       clang-tools
       temurin-bin
       rustc
