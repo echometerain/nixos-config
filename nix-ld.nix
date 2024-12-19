@@ -3,7 +3,6 @@
     enable = true;
     package = pkgs.nix-ld-rs;
     libraries = with pkgs; [
-      llvmPackages.libcxxClang
       libcxx
       stdenv.cc.cc
       openssl

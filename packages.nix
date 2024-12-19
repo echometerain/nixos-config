@@ -175,6 +175,7 @@
           numpy
         ]))
       poetry
+      clang
       clang-tools
       temurin-bin
       rustc
