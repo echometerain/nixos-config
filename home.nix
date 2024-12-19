@@ -74,6 +74,12 @@
     ".shrc" = {
       source = config.lib.file.mkOutOfStoreSymlink "/opt/dotfiles/.shrc";
     };
+    ".tmux.conf" = {
+      source = config.lib.file.mkOutOfStoreSymlink "/opt/dotfiles/.tmux.conf";
+    };
+    ".tmux" = {
+      source = config.lib.file.mkOutOfStoreSymlink "/opt/dotfiles/.tmux";
+    };
     ".vimrc" = {
       source = config.lib.file.mkOutOfStoreSymlink "/opt/dotfiles/.vimrc";
     };

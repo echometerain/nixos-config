@@ -35,6 +35,7 @@
       htop
       cava
       tmux
+      oh-my-zsh
 
       # Media and networking CLI utils
       ffmpeg-full
