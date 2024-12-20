@@ -136,6 +136,7 @@
       brave
       obsidian
       kicad
+      freetube
 
       # Programming tools
       vscode

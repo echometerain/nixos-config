@@ -1,7 +1,28 @@
 {pkgs, ...}: {
   # Programs configuration
   programs = {
-    neovim = {
+   tmux = {
+    enable = true;
+    shortcut = "a";
+    terminal = "screen-256color";
+    newSession = true;
+    plugins = with pkgs.tmuxPlugins; [
+      sensible
+      vim-tmux-navigator
+      better-mouse-mode
+      catppuccin
+    ];
+    extraConfig = ''
+      set -g mode-keys vi
+      set -g mouse on
+      bind | split-window -h
+      unbind '%'
+      set -sg escape-time 10
+      set -g repeat-time 1000
+      set -g terminal-features 'XXX:RGB'
+    '';
+  };
+  neovim = {
       enable = true;
       configure = {
       	customRC = "source /opt/dotfiles/.vimrc";

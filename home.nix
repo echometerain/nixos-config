@@ -43,12 +43,6 @@
     # # symlink to the Nix store copy.
     # ".screenrc".source = dotfiles/screenrc;
 
-    # ".config/nvim" = {
-    #   source = config.lib.file.mkOutOfStoreSymlink "/opt/dotfiles/nvim";
-    # };
-    # "nvim" = {
-    #   source = config.lib.file.mkOutOfStoreSymlink "/opt/dotfiles/nvim";
-    # };
     ".config/hypr" = {
       source = config.lib.file.mkOutOfStoreSymlink "/opt/dotfiles/hypr";
     };
@@ -58,7 +52,7 @@
     ".config/waybar" = {
       source = config.lib.file.mkOutOfStoreSymlink "/opt/dotfiles/waybar";
     };
-    
+
     ".config/lvim/config.lua" = {
       source = config.lib.file.mkOutOfStoreSymlink "/opt/dotfiles/lvim/config.lua";
     };
@@ -74,12 +68,13 @@
     ".shrc" = {
       source = config.lib.file.mkOutOfStoreSymlink "/opt/dotfiles/.shrc";
     };
-    ".tmux.conf" = {
-      source = config.lib.file.mkOutOfStoreSymlink "/opt/dotfiles/.tmux.conf";
-    };
-    ".tmux" = {
-      source = config.lib.file.mkOutOfStoreSymlink "/opt/dotfiles/.tmux";
-    };
+
+    # ".tmux.conf" = {
+    #   source = config.lib.file.mkOutOfStoreSymlink "/opt/dotfiles/.tmux.conf";
+    # };
+    # ".tmux" = {
+    #   source = config.lib.file.mkOutOfStoreSymlink "/opt/dotfiles/.tmux";
+    # };
     ".vimrc" = {
       source = config.lib.file.mkOutOfStoreSymlink "/opt/dotfiles/.vimrc";
     };
