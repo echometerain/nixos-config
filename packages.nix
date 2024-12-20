@@ -35,6 +35,7 @@
       htop
       cava
       tmux
+      tmuxinator
 
       # Media and networking CLI utils
       ffmpeg-full
