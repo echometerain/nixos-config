@@ -3,8 +3,9 @@
     enable = true;
     package = pkgs.nix-ld-rs;
     libraries = with pkgs; [
-      libcxx
-      stdenv.cc.cc
+      # libcxx
+      # stdenv.cc.cc
+      stdenv.cc.cc.lib
       openssl
       xorg.libXcomposite
       xorg.libXtst
