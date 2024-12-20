@@ -169,6 +169,7 @@
 
       # Libraries
       php83
+      llvmPackages.libcxxClang
       openssl_3_3
       nodejs_23
       gcc14
