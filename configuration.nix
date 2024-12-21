@@ -130,6 +130,7 @@
 
     # Enable networking
     networkmanager.enable = true;
+    wireless.userControlled.enable = true;
 
     # Open ports in the firewall.
     firewall = {

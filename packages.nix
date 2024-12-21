@@ -178,7 +178,6 @@
           numpy
         ]))
       poetry
-      clang-tools
       temurin-bin
       rustc
       go
