@@ -91,6 +91,9 @@
   ];
 
   hardware = {
+    enableAllFirmware = true;
+    firmware = [ pkgs.wireless-regdb ];
+
     # Logitech
     logitech.wireless = {
       enable = true;
