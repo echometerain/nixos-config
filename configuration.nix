@@ -127,9 +127,10 @@
   networking = {
     hostName = "moving-castle"; # Define your hostname.
 
-    # Enable networking
-    wireless.enable = true;  # Enables wireless support via wpa_supplicant.
-    wireless.userControlled.enable = true;
+    # # Enable networking
+    # wireless.enable = true;  # Enables wireless support via wpa_supplicant.
+    # wireless.userControlled.enable = true;
+    networkmanager.enable = true;
 
     # Open ports in the firewall.
     firewall = {
