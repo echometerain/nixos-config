@@ -48,6 +48,7 @@
       ntfs3g
       aria2
       axel
+      iw
 
       # Filesystem CLI utils
       caligula
