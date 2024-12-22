@@ -16,7 +16,7 @@
       availableKernelModules = ["xhci_pci" "thunderbolt" "vmd" "nvme" "usbhid" "usb_storage" "sd_mod"];
       kernelModules = [];
     };
-    kernelModules = ["kvm-intel"];
+    kernelModules = ["kvm-intel" "iwlwifi"];
     extraModulePackages = [];
     extraModprobeConfig = "options snd-intel-dspcfg dsp_driver=1";
   };
