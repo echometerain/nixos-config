@@ -42,6 +42,7 @@
       wget
       nmap
       networkmanager
+      wpa_supplicant_gui
       unzip
       unar
       ntfs3g
