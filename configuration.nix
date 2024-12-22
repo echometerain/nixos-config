@@ -126,10 +126,9 @@
   # Networking configuration
   networking = {
     hostName = "moving-castle"; # Define your hostname.
-    # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
 
     # Enable networking
-    networkmanager.enable = true;
+    wireless.enable = true;  # Enables wireless support via wpa_supplicant.
     wireless.userControlled.enable = true;
 
     # Open ports in the firewall.
@@ -167,20 +166,20 @@
     }
   ];
 
-  # Chinese language support
-  i18n.inputMethod = {
-    enabled = "fcitx5";
-    fcitx5 = {
-      waylandFrontend = true;
-      plasma6Support = true;
-      addons = with pkgs; [
-        fcitx5-chinese-addons
-        fcitx5-mozc
-        fcitx5-gtk # Fcitx5 gtk im module and glib based dbus client library
-        fcitx5-rime
-      ];
-    };
-  };
+  # # Chinese language support
+  # i18n.inputMethod = {
+  #   enabled = "fcitx5";
+  #   fcitx5 = {
+  #     waylandFrontend = true;
+  #     plasma6Support = true;
+  #     addons = with pkgs; [
+  #       fcitx5-chinese-addons
+  #       fcitx5-mozc
+  #       fcitx5-gtk # Fcitx5 gtk im module and glib based dbus client library
+  #       fcitx5-rime
+  #     ];
+  #   };
+  # };
 
   # VST support
   musnix.enable = true;
