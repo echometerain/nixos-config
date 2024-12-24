@@ -87,7 +87,7 @@
     corefonts
     vistafonts
     (nerdfonts.override {fonts = ["Hack"];})
-    siji
+    # siji
   ];
 
   hardware = {
@@ -137,6 +137,7 @@
 
     # Open ports in the firewall.
     firewall = {
+      enable = true;
       allowedTCPPorts = [80 443]; # http https
       allowedUDPPorts = [80 443];
       allowedTCPPortRanges = [
@@ -156,7 +157,7 @@
 
   # Misc configuration
   users.defaultUserShell = pkgs.zsh;
-  virtualisation.docker.enable = true;
+  # virtualisation.docker.enable = true;
   powerManagement.enable = true;
   xdg.portal.enable = true;
   environment.sessionVariables.NIXOS_OZONE_WL = "1";
