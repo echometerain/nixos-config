@@ -42,7 +42,6 @@
       wget
       nmap
       networkmanager
-      wpa_supplicant_gui
       unzip
       unar
       ntfs3g
@@ -147,8 +146,8 @@
       github-desktop
       arduino-ide
       git-lfs
-      docker
-      docker-client
+      # docker
+      # docker-client
       git
       gh
       ghex
@@ -162,7 +161,7 @@
       cmake
       gnumake
       gdb
-      inputs.newpkgs.legacyPackages.x86_64-linux.lunarvim
+      lunarvim
       pulseview
       netbeans
       seer
