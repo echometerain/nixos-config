@@ -23,20 +23,20 @@
 
   fileSystems = {
     "/" = {
-      label = "nixos";
+      # label = "nixos";
       device = "/dev/disk/by-uuid/6e0392be-bd09-4a8b-84be-74dd99b91c13";
       fsType = "ext4";
     };
 
     "/boot" = {
-      label = "nixos-root";
+      # label = "nixos-root";
       device = "/dev/disk/by-uuid/BA02-46C7";
       fsType = "vfat";
       options = ["fmask=0022" "dmask=0022"];
     };
 
     "/mnt/windows" = {
-      label = "windows";
+      # label = "windows";
       device = "/dev/disk/by-uuid/D85AD0505AD02CCE";
       fsType = "ntfs";
       options = ["users" "nofail"];
