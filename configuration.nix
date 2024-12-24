@@ -162,6 +162,7 @@
   xdg.portal.enable = true;
   environment.sessionVariables.NIXOS_OZONE_WL = "1";
   qt.platformTheme = "kde";
+  boot.kernelPackages = pkgs.linuxPackages_latest;
 
   # Swap configuration
   swapDevices = [

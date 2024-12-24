@@ -83,6 +83,7 @@
 
       # Hyprland utils
       hyprland
+      inputs.hyprland-qtutils.packages."${pkgs.system}".default
       hyprlock
       hypridle
       hyprshot

@@ -2,8 +2,8 @@
   programs.nix-ld = {
     enable = true;
     libraries = with pkgs; [
-      libcxx
-      stdenv.cc.cc
+      # libcxx
+      # stdenv.cc.cc
       # stdenv.cc.cc.lib
       openssl
       xorg.libXcomposite
