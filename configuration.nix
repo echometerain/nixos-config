@@ -133,7 +133,10 @@
     # # Enable networking
     # wireless.enable = true;  # Enables wireless support via wpa_supplicant.
     # wireless.userControlled.enable = true;
-    networkmanager.enable = true;
+    networkmanager = {
+      enable = true;
+      wifi.backend = "iwd";
+    };
 
     # Open ports in the firewall.
     firewall = {
