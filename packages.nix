@@ -84,6 +84,7 @@
       # Hyprland utils
       hyprland
       inputs.hyprland-qtutils.packages."${pkgs.system}".default
+      xdg-desktop-portal-hyprland
       hyprlock
       hypridle
       hyprshot
