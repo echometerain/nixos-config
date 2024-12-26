@@ -166,7 +166,7 @@
       dbeaver-bin
 
       # Libraries
-      xcb-util-cursor
+      xcb-util-cursor-HEAD
       php83
       openssl_3_3
       nodejs_23
