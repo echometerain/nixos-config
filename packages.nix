@@ -121,13 +121,13 @@
 
       # Misc apps
       transmission_4-qt6
+      logisim-evolution
       calibre
       libreoffice-qt6-fresh
       discord
       firefox
       chromium
       gramps
-      # subtitlecomposer
       protonvpn-gui
       xournalpp
       rnote
@@ -145,8 +145,6 @@
       github-desktop
       arduino-ide
       git-lfs
-      # docker
-      # docker-client
       git
       gh
       ghex
@@ -232,6 +230,7 @@
       vital
     ];
     kdePkgs = with pkgs.kdePackages; [
+      partitionmanager
       plasma-desktop
       kate
       kolourpaint
