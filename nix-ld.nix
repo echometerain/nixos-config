@@ -4,7 +4,7 @@
     libraries = with pkgs; [
 
       # libcxx
-      # stdenv.cc.cc
+      stdenv.cc.cc
       # stdenv.cc.cc.lib
       openssl
       xorg.libXcomposite
@@ -100,6 +100,7 @@
       dbus
       alsa-lib
       expat
+      libjack2
 
       # Needed for electron
       libdrm

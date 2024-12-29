@@ -2,9 +2,6 @@
   environment.systemPackages = let
     sysPkgs = with pkgs; [
 
-      pkg-config
-      zlib
-    
       # Nix utils
       home-manager
       nixpkgs-fmt
