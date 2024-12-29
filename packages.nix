@@ -1,6 +1,7 @@
 {pkgs, inputs, ...}: {
   environment.systemPackages = let
     sysPkgs = with pkgs; [
+    
       # Nix utils
       home-manager
       nixpkgs-fmt
@@ -9,36 +10,29 @@
       nixd
       nix-ld
 
-      # CLI utils
+      # CLI essentials
+      lsof
+      zsh
       wl-clipboard
+      wl-clip-persist
+      killall
+      
+      # Misc CLI
+      jq
       tealdeer
       navi
       fastfetch
-      zsh
-      vimgolf
       page
       bat
-      lf
       lazygit
       asciinema
       asciinema-agg
-      nushell
-      killall
-      file
-      lazygit
-      clipboard-jh
-      cliphist
-      wl-clip-persist
-      brightnessctl
       ripgrep
-      jq
-      htop
-      cava
       tmux
       tmuxinator
+      ghostscript
 
-      # Media and networking CLI utils
-      ffmpeg-full
+      # Networking CLI
       wget
       nmap
       networkmanager
@@ -49,7 +43,8 @@
       axel
       iw
 
-      # Filesystem CLI utils
+      # Filesystem CLI
+      file
       caligula
       fzf
       lf
@@ -59,7 +54,7 @@
       fd
       gnome-keyring
 
-      # CLI fun
+      # Fun CLI
       hollywood
       fortune
       cmatrix
@@ -67,6 +62,8 @@
       cowsay
       pipes-rs
       cool-retro-term
+      vimgolf
+      cava
 
       # Graphical system utils
       gparted
@@ -76,7 +73,6 @@
       alacritty
       rsync
       xwayland
-      movit
       flatpak
       wofi
       playerctl
@@ -93,12 +89,13 @@
       hyprsunset
       wlogout
       waybar
-      libsForQt5.qt5ct
-      qt6ct
       nwg-look
       dunst
       blueman
       networkmanagerapplet
+      cliphist
+      brightnessctl
+      htop
 
       # Hack the box
       burpsuite
@@ -123,65 +120,59 @@
 
       # Misc apps
       transmission_4-qt6
-      logisim-evolution
       calibre
       libreoffice-qt6-fresh
       discord
       firefox
-      chromium
-      gramps
       protonvpn-gui
-      xournalpp
-      rnote
-      calc
       freeoffice
-      ghostscript
       matlab
       brave
       obsidian
-
-      # Programming tools
-      vscode
+      
+      # Web
       apacheHttpd
-      mysql-workbench
-      github-desktop
-      arduino-ide
-      git-lfs
-      git
-      gh
-      ghex
+      php83
+      openssl_3_3
+      nodejs_23
       bun
+      mysql-workbench
+      
+      # Low Level
+      ghex
+      cmake
+      gnumake
+      gdb
+      pulseview
+      seer
+      valgrind
+      gcc14
+      
+      # Rust
+      rustc
       cargo
       cargo-watch
       rustfmt
       rustycli
       rust-analyzer
+      
+      # Git
+      github-desktop
+      git-lfs
+      git
+      gh
+      
+      # Python
       micromamba
-      cmake
-      gnumake
-      gdb
-      lunarvim
-      pulseview
-      netbeans
-      seer
-      valgrind
-      dbeaver-bin
-
-      # Libraries
-      xcb-util-cursor-HEAD
-      php83
-      openssl_3_3
-      nodejs_23
-      gcc14
       (python3.withPackages (python-pkgs:
         with python-pkgs; [
           pynvim
           numpy
         ]))
       poetry
-      temurin-bin
-      rustc
-      go
+      
+      # Text
+      lunarvim
       (texlive.combine {
         inherit
           (texlive)
@@ -198,11 +189,22 @@
           ;
       })
 
+      # Misc tooling
+      vscode
+      arduino-ide
+      movit
+      xcb-util-cursor-HEAD
+      ffmpeg-full
+      temurin-bin
+      netbeans
+
       # Learning
       anki-bin
       qalculate-qt
       foliate
       remnote
+      logisim-evolution
+      gramps
 
       # Productivity
       simple-scan
@@ -220,6 +222,8 @@
       krita-plugin-gmic
       obs-studio
       yt-dlp
+      xournalpp
+      rnote
 
       # Audio media
       audacity
@@ -240,8 +244,6 @@
       kdeconnect-kde
       qtimageformats
       kimageformats
-      kaccounts-providers
-      kaccounts-integration
       kdenlive
       spectacle
       ark
@@ -249,7 +251,6 @@
       kmenuedit
       okular
       kalgebra
-      plasma-integration
       kwallet-pam
     ];
   in
