@@ -50,7 +50,7 @@
       lf
       lshw
       cron
-      htop
+      btop
       fd
       gnome-keyring
 
