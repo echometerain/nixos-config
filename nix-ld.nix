@@ -6,6 +6,7 @@
       # libcxx
       # stdenv.cc.cc
       # stdenv.cc.cc.lib
+      pkg-config
       zlib
       openssl
       xorg.libXcomposite
