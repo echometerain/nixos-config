@@ -77,7 +77,7 @@
       wofi
       playerctl
 
-      # Hyprland utils
+      # Hypr packages
       hyprland
       inputs.hyprland-qtutils.packages."${pkgs.system}".default
       hyprpolkitagent
@@ -87,6 +87,8 @@
       hyprshot
       hyprpicker
       hyprsunset
+
+      # Hypr utils
       wlogout
       waybar
       nwg-look
@@ -236,6 +238,7 @@
       libsForQt5.soundkonverter
       yabridge
       vital
+
     ];
     kdePkgs = with pkgs.kdePackages; [
       partitionmanager
