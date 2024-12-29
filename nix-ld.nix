@@ -100,7 +100,7 @@
       dbus
       alsa-lib
       expat
-      libjack2
+      # libjack2
 
       # Needed for electron
       libdrm
