@@ -145,7 +145,7 @@
       cmake
       gnumake
       gdb
-      clangStdenv
+      clang
       pulseview
       seer
       valgrind
