@@ -15,7 +15,9 @@
     extraConfig = ''
       set -g mode-keys vi
       set -g mouse on
-      bind | split-window -h
+      bind c new-window -c "#{pane_current_path}"
+      bind '"' split-window -c "#{pane_current_path}"
+      bind | split-window -h -c "#{pane_current_path}"
       unbind '%'
       set -sg escape-time 10
       set -g repeat-time 1000

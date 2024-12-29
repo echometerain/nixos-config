@@ -146,6 +146,7 @@
       gnumake
       gdb
       clang
+      clang-tools
       pulseview
       seer
       valgrind
