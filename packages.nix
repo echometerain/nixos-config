@@ -16,7 +16,8 @@
       wl-clipboard
       wl-clip-persist
       killall
-      
+      pkg-config
+
       # Misc CLI
       jq
       tealdeer
