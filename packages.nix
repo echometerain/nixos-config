@@ -163,6 +163,7 @@
       gh
       
       # Python
+      pipx
       micromamba
       (python3.withPackages (python-pkgs:
         with python-pkgs; [
