@@ -99,5 +99,9 @@
 
     # Clipboard sync
     clipboard-sync.enable = true;
+    
+    # Enable /usr/bin
+    envfs.enable = true;
+
   };
 }
