@@ -71,6 +71,8 @@
       fsearch
       qdirstat
       alacritty
+      kitty
+      kitty-themes
       rsync
       xwayland
       flatpak
