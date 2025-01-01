@@ -43,6 +43,9 @@
     # # symlink to the Nix store copy.
     # ".screenrc".source = dotfiles/screenrc;
 
+    ".config/kitty" = {
+      source = config.lib.file.mkOutOfStoreSymlink "/opt/dotfiles/kitty";
+    };
     ".config/hypr" = {
       source = config.lib.file.mkOutOfStoreSymlink "/opt/dotfiles/hypr";
     };
