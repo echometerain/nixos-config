@@ -59,9 +59,9 @@
     ".config/lvim/config.lua" = {
       source = config.lib.file.mkOutOfStoreSymlink "/opt/dotfiles/lvim/config.lua";
     };
-    ".alacritty.toml" = {
-      source = config.lib.file.mkOutOfStoreSymlink "/opt/dotfiles/.alacritty.toml";
-    };
+    # ".alacritty.toml" = {
+    #   source = config.lib.file.mkOutOfStoreSymlink "/opt/dotfiles/.alacritty.toml";
+    # };
     ".zshrc" = {
       source = config.lib.file.mkOutOfStoreSymlink "/opt/dotfiles/.zshrc";
     };

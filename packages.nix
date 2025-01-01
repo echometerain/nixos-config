@@ -70,7 +70,6 @@
       bleachbit
       fsearch
       qdirstat
-      alacritty
       kitty
       rsync
       xwayland
