@@ -177,6 +177,7 @@
       poetry
       
       # Text
+      vale
       lunarvim
       (texlive.combine {
         inherit
