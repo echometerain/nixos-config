@@ -211,6 +211,7 @@
       remnote
       logisim-evolution
       gramps
+      sdrpp
 
       # Productivity
       simple-scan
