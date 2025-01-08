@@ -16,6 +16,7 @@
       wl-clipboard
       wl-clip-persist
       killall
+      usbutils
 
       # Misc CLI
       jq
@@ -217,6 +218,7 @@
       gramps
       sdrpp
       rtl-sdr
+      stlink-tool
 
       # Productivity
       simple-scan
