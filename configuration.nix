@@ -17,16 +17,20 @@
   ];
 
   # Bootloader.
-  boot.loader = {
-    grub = {
-      enable = true;
-      device = "nodev";
-      efiSupport = true;
-      useOSProber = true;
+  boot = {
+    kernelPackages = pkgs.linuxPackages_latest;
+    loader = {
+      grub = {
+        enable = true;
+        device = "nodev";
+        efiSupport = true;
+        useOSProber = true;
+      };
+      efi = {
+        canTouchEfiVariables = true;
+      };
     };
-    efi = {
-      canTouchEfiVariables = true;
-    };
+    blacklistedKernelModules = [ "dvb_usb_rtl28xxu" ];
   };
 
   # Nix settings
@@ -58,10 +62,13 @@
   };
 
   # Define a user account. Don't forget to set a password with ‘passwd’.
-  users.users.hhwl = {
-    isNormalUser = true;
-    description = "hhwl";
-    extraGroups = ["networkmanager" "wheel" "dialout" "audio"];
+  users = {
+    groups.plugdev =  {};
+    users.hhwl = {
+      isNormalUser = true;
+      description = "hhwl";
+      extraGroups = ["plugdev" "networkmanager" "wheel" "dialout" "audio"];
+    };
   };
 
   # Enable home-manager
@@ -168,7 +175,6 @@
   xdg.portal.enable = true;
   environment.sessionVariables.NIXOS_OZONE_WL = "1";
   qt.platformTheme = "kde";
-  boot.kernelPackages = pkgs.linuxPackages_latest;
 
   # Swap configuration
   swapDevices = [

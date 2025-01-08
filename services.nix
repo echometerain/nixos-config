@@ -12,6 +12,7 @@
     #   SUBSYSTEM=="usb",        ATTRS{idVendor}=="2226", MODE="0666"
     #   SUBSYSTEM=="usb_device", ATTRS{idVendor}=="2226", MODE="0666"
     # '';
+    udev.packages = [ pkgs.rtl-sdr pkgs.logitech-udev-rules ];
 
     # Enable the KDE Plasma Desktop Environment.
     displayManager.sddm = {

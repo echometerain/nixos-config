@@ -116,7 +116,6 @@
       distrobox
       appimage-run
       rclone
-      logitech-udev-rules
       flatpak-builder
       appstream
       sqlitebrowser
@@ -217,7 +216,6 @@
       logisim-evolution
       gramps
       sdrpp
-      rtl-sdr
       stlink-tool
 
       # Productivity
