@@ -30,7 +30,7 @@
         canTouchEfiVariables = true;
       };
     };
-    blacklistedKernelModules = [ "dvb_usb_rtl28xxu" ];
+    # blacklistedKernelModules = [ "dvb_usb_rtl28xxu" ];
   };
 
   # Nix settings
@@ -63,7 +63,7 @@
 
   # Define a user account. Don't forget to set a password with ‘passwd’.
   users = {
-    groups.plugdev =  {};
+    defaultUserShell = pkgs.zsh;
     users.hhwl = {
       isNormalUser = true;
       description = "hhwl";
@@ -112,7 +112,7 @@
       enable = true;
       enable32Bit = true;
     };
-
+    rtl-sdr.enable = true;
 
     # Hardware sound configuration
     pulseaudio.enable = false;
@@ -169,7 +169,6 @@
   };
 
   # Misc configuration
-  users.defaultUserShell = pkgs.zsh;
   # virtualisation.docker.enable = true;
   powerManagement.enable = true;
   xdg.portal.enable = true;
