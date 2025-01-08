@@ -217,6 +217,7 @@
       logisim-evolution
       gramps
       sdrpp
+      rtl-sdr
       stlink-tool
 
       # Productivity
