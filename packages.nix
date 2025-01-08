@@ -77,6 +77,7 @@
       flatpak
       wofi
       playerctl
+      logitech-udev-rules 
 
       # Hypr packages
       hyprland
