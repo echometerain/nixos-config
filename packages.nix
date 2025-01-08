@@ -141,6 +141,10 @@
       mysql-workbench
       
       # Low Level
+      apio
+      # yosys
+      # nextpnrWithGui
+      # gtkwave
       ghex
       cmake
       gnumake
@@ -212,6 +216,7 @@
       logisim-evolution
       gramps
       sdrpp
+      rtl-sdr
 
       # Productivity
       simple-scan
