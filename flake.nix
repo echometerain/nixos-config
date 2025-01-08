@@ -35,9 +35,8 @@
       modules = [
         ./configuration.nix
         inputs.home-manager.nixosModules.default
-        inputs.musnix.nixosModules.musnix
+        # inputs.musnix.nixosModules.musnix
 	inputs.clipboard-sync.nixosModules.default
-        # inputs.hyprland-qtutils.packages.x86_64-linux.default
       ];
     };
     # # Sikee shell

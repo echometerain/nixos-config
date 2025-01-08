@@ -13,7 +13,7 @@
     ./nix-ld.nix
     ./services.nix
     inputs.home-manager.nixosModules.default
-    inputs.musnix.nixosModules.musnix
+    # inputs.musnix.nixosModules.musnix
   ];
 
   # Bootloader.
@@ -193,8 +193,8 @@
   #   };
   # };
 
-  # VST support
-  musnix.enable = true;
+  # # VST support
+  # musnix.enable = true;
 
   # This value determines the NixOS release from which the default
   # settings for stateful data, like file locations and database versions
