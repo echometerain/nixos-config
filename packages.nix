@@ -210,6 +210,7 @@
       netbeans
 
       # Learning
+      lammps
       anki-bin
       qalculate-qt
       foliate
