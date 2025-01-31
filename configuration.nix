@@ -67,7 +67,7 @@
     users.hhwl = {
       isNormalUser = true;
       description = "hhwl";
-      extraGroups = ["plugdev" "networkmanager" "wheel" "dialout" "audio"];
+      extraGroups = ["plugdev" "networkmanager" "wheel" "dialout" "audio" "scanner" "lp"];
     };
   };
 
@@ -101,6 +101,10 @@
     enableAllFirmware = true;
     firmware = [ pkgs.wireless-regdb ];
 
+    sane = {
+      brscan5.enable = true;
+      enable = true;
+    };
     # Logitech
     logitech.wireless = {
       enable = true;
