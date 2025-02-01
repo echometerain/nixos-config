@@ -2,11 +2,11 @@
   description = "Nixos config flake";
 
   inputs = {
-    nixpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
+    nixpkgs.url = "github:nixos/nixpkgs/nixos-24.11";
     hyprland-qtutils.url = "github:hyprwm/hyprland-qtutils";
     # newpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
     home-manager = {
-      url = "github:nix-community/home-manager"; # remove release-24.11
+      url = "github:nix-community/home-manager/release-24.11";
       inputs.nixpkgs.follows = "nixpkgs";
     };
     # phps.url = "github:fossar/nix-phps";
@@ -26,10 +26,7 @@
     nixpkgs,
     # phps,
     ...
-  } @ inputs: let
-    # system = "x86_64-linux";
-    # pkgs = nixpkgs.legacyPackages.${system};
-  in {
+  } @ inputs: {
     nixosConfigurations.default = nixpkgs.lib.nixosSystem {
       specialArgs = {inherit inputs;};
       modules = [

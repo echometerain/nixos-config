@@ -142,10 +142,7 @@
       mysql-workbench
       
       # Low Level
-      apio
-      # yosys
-      # nextpnrWithGui
-      # gtkwave
+      # apio
       ghex
       cmake
       gnumake
@@ -210,7 +207,7 @@
       netbeans
 
       # Learning
-      lammps
+      # lammps
       anki-bin
       qalculate-qt
       foliate

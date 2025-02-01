@@ -18,7 +18,7 @@
 
   # Bootloader.
   boot = {
-    kernelPackages = pkgs.linuxPackages_latest;
+    # kernelPackages = pkgs.linuxPackages_latest;
     loader = {
       grub = {
         enable = true;
@@ -93,7 +93,8 @@
   fonts.packages = with pkgs; [
     corefonts
     vistafonts
-    nerd-fonts.hack
+    # nerd-fonts.hack
+    (nerdfonts.override {fonts = ["Hack"];})
     # siji
   ];
 
