@@ -55,13 +55,13 @@
     ".config/waybar" = {
       source = config.lib.file.mkOutOfStoreSymlink "/opt/dotfiles/waybar";
     };
+    ".config/zathura" = {
+      source = config.lib.file.mkOutOfStoreSymlink "/opt/dotfiles/zathura";
+    };
 
     ".config/lvim/config.lua" = {
       source = config.lib.file.mkOutOfStoreSymlink "/opt/dotfiles/lvim/config.lua";
     };
-    # ".alacritty.toml" = {
-    #   source = config.lib.file.mkOutOfStoreSymlink "/opt/dotfiles/.alacritty.toml";
-    # };
     ".zshrc" = {
       source = config.lib.file.mkOutOfStoreSymlink "/opt/dotfiles/.zshrc";
     };
@@ -71,13 +71,6 @@
     ".shrc" = {
       source = config.lib.file.mkOutOfStoreSymlink "/opt/dotfiles/.shrc";
     };
-
-    # ".tmux.conf" = {
-    #   source = config.lib.file.mkOutOfStoreSymlink "/opt/dotfiles/.tmux.conf";
-    # };
-    # ".tmux" = {
-    #   source = config.lib.file.mkOutOfStoreSymlink "/opt/dotfiles/.tmux";
-    # };
     ".vimrc" = {
       source = config.lib.file.mkOutOfStoreSymlink "/opt/dotfiles/.vimrc";
     };
