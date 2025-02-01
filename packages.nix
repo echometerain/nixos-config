@@ -184,16 +184,16 @@
       (texlive.combine {
         inherit
           (texlive)
-          scheme-small
-          chktex
-          latexmk
-          titlesec
-          preprint
-          marvosym
-          enumitem
-          hyperref
-          fancyhdr
-          babel
+          scheme-medium
+          # chktex
+          # latexmk
+          # titlesec
+          # preprint
+          # marvosym
+          # enumitem
+          # hyperref
+          # fancyhdr
+          # babel
           ;
       })
 
