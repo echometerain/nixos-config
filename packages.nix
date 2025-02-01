@@ -227,6 +227,7 @@
       thunderbird
 
       # Visual media
+      zathura
       vlc
       (mpv.override {scripts = [mpvScripts.uosc];})
       krita
