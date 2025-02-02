@@ -181,6 +181,7 @@
       # Text
       vale
       lunarvim
+      texlab
       (texlive.combine {
         inherit
           (texlive)
