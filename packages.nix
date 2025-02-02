@@ -187,7 +187,7 @@
           scheme-medium
           # chktex
           # latexmk
-          # titlesec
+          titlesec
           # preprint
           # marvosym
           # enumitem
