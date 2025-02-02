@@ -187,12 +187,12 @@
           scheme-medium
           # chktex
           # latexmk
-          # titlesec
+          titlesec
           # preprint
           # marvosym
           # enumitem
           # hyperref
-          # fancyhdr
+          fancyhdr
           # babel
           ;
       })
