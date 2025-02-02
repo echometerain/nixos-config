@@ -186,8 +186,8 @@
         inherit
           (texlive)
           scheme-medium
-          hvfloat
           preprint
+          titlesec
           enumitem
           # fancyhdr
           ;
