@@ -186,12 +186,11 @@
         inherit
           (texlive)
           scheme-medium
-          # chktex
-          # latexmk
           titlesec
+          hvfloat
           # preprint
           # marvosym
-          # enumitem
+          enumitem
           # hyperref
           fancyhdr
           # babel
