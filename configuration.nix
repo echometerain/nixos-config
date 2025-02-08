@@ -130,9 +130,10 @@
     };
   };
   security = {
-    polkit = {
-      enable = true;
-    };
+    # polkit = {
+    #   enable = true;
+    #   package = pkgs.hyprpolkitagent;
+    # };
     rtkit.enable = true;
     pam.services.sddm.kwallet = {
       enable = true;
