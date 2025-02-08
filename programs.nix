@@ -39,7 +39,6 @@
       viAlias = true;
       vimAlias = true;
     };
-    steam.enable = true;
 
 # Hyprland configuration
     hyprland = {

@@ -223,7 +223,6 @@
       thunderbird
 
       # Visual media
-      blender
       zathura
       vlc
       (mpv.override {scripts = [mpvScripts.uosc];})
