@@ -30,8 +30,8 @@
       asciinema-agg
       ripgrep
       tmux
-      tmuxinator
       ghostscript
+      xxd
 
       # Networking CLI
       wget
