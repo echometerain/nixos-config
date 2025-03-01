@@ -17,6 +17,7 @@
       wl-clip-persist
       killall
       usbutils
+      traceroute
 
       # Misc CLI
       jq
