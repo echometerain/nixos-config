@@ -22,6 +22,7 @@
       libqalculate
       fakeroot
       dpkg
+      rpm
 
       # Misc CLI
       jq
