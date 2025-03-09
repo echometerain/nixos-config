@@ -23,7 +23,7 @@
       fakeroot
       dpkg
       rpm
-      google-chrome
+      chromium
 
       # Misc CLI
       jq
