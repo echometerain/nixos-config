@@ -18,6 +18,10 @@
       killall
       usbutils
       traceroute
+      calc
+      libqalculate
+      fakeroot
+      dpkg
 
       # Misc CLI
       jq
