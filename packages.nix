@@ -21,9 +21,9 @@
       calc
       libqalculate
       fakeroot
-      dpkg
-      rpm
-      chromium
+      # dpkg
+      # rpm
+      # chromium
 
       # Misc CLI
       jq
