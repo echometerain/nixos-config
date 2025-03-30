@@ -138,6 +138,7 @@
       freeoffice
       matlab
       brave
+      vivaldi
       obsidian
       
       # Web
