@@ -31,7 +31,7 @@
     };
 
     "/mnt/windows" = {
-      device = "/dev/disk/by-uuid/D8DAFCB8DAFC944A";
+      device = "/dev/disk/by-uuid/622AD1D32AD1A3F7";
       fsType = "ntfs";
       options = ["users" "nofail"];
     };

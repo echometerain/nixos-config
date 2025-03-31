@@ -21,9 +21,6 @@
       calc
       libqalculate
       fakeroot
-      # dpkg
-      # rpm
-      # chromium
 
       # Misc CLI
       jq
@@ -61,6 +58,7 @@
       btop
       fd
       gnome-keyring
+      ventoy-full
 
       # Fun CLI
       hollywood
@@ -138,7 +136,11 @@
       freeoffice
       matlab
       brave
-      vivaldi
+      (vivaldi.override {
+        proprietaryCodecs = true;
+        enableWidevine = false;
+      })
+      vivaldi-ffmpeg-codecs
       obsidian
       
       # Web
