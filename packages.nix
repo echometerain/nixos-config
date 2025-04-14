@@ -57,7 +57,7 @@
       cron
       btop
       fd
-      gnome-keyring
+      # gnome-keyring
       ventoy-full
 
       # Fun CLI
@@ -88,7 +88,6 @@
       hyprland
       inputs.hyprland-qtutils.packages."${pkgs.system}".default
       hyprpolkitagent
-      xdg-desktop-portal-hyprland
       hyprlock
       hypridle
       hyprshot
@@ -134,7 +133,6 @@
       firefox
       protonvpn-gui
       freeoffice
-      matlab
       brave
       (vivaldi.override {
         proprietaryCodecs = true;
@@ -271,7 +269,6 @@
       kmenuedit
       okular
       kalgebra
-      kwallet-pam
     ];
   in
     sysPkgs ++ kdePkgs;

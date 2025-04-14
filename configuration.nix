@@ -18,7 +18,6 @@
 
   # Bootloader.
   boot = {
-    # kernelPackages = pkgs.linuxPackages_latest;
     loader = {
       grub = {
         enable = true;
@@ -43,9 +42,6 @@
 
   # Custom packages
   nixpkgs = {
-    overlays = [
-      inputs.nix-matlab.overlay
-    ];
     config.allowUnfree = true;
   };
   # Set your time zone.
@@ -137,7 +133,6 @@
     rtkit.enable = true;
     pam.services.sddm.kwallet = {
       enable = true;
-      package = pkgs.kdePackages.kwallet-pam;
       forceRun = true;
     };
   };
