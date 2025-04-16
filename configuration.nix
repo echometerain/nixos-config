@@ -81,6 +81,7 @@
     XDG_CONFIG_HOME = "$HOME/.config";
     XDG_DATA_HOME = "$HOME/.local/share";
     XDG_STATE_HOME = "$HOME/.local/state";
+    XDG_RUNTIME_DIR = "/run/user/$UID";
     HYPRSHOT_DIR = "$HOME/Pictures/Screenshots";
     SUDO_EDITOR = "lvim";
   };
@@ -131,10 +132,7 @@
     #   package = pkgs.hyprpolkitagent;
     # };
     rtkit.enable = true;
-    pam.services.sddm.kwallet = {
-      enable = true;
-      forceRun = true;
-    };
+    pam.services.sddm.enableGnomeKeyring = true;
   };
 
   # Networking configuration
