@@ -49,24 +49,6 @@
     # Enable touchpad support (enabled default in most desktopManager).
     libinput.enable = true;
 
-    # # Xampp stuff
-    # httpd = {
-    #   enable = true;
-    #   enablePHP = true;
-    #   enablePerl = true;
-    #   phpPackage = inputs.phps.packages.x86_64-linux.php74;
-    #   virtualHosts = {
-    #     localhost = {
-    #       documentRoot = "/opt/htdocs";
-    #     };
-    #   };
-    # };
-    # # MySQL
-    # mysql = {
-    #   enable = true;
-    #   package = pkgs.mariadb;
-    # };
-
     # Various stuff
     thermald.enable = true;
     flatpak.enable = true;

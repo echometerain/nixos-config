@@ -8,9 +8,9 @@
       newSession = true;
       plugins = with pkgs.tmuxPlugins; [
         sensible
-          vim-tmux-navigator
-          better-mouse-mode
-          catppuccin
+        vim-tmux-navigator
+        better-mouse-mode
+        catppuccin
       ];
       extraConfig = ''
         set -g mode-keys vi
@@ -22,7 +22,7 @@
         set -sg escape-time 10
         set -g repeat-time 1000
         set -g terminal-features 'XXX:RGB'
-        '';
+      '';
     };
     neovim = {
       enable = true;
@@ -40,7 +40,7 @@
       vimAlias = true;
     };
 
-# Hyprland configuration
+    # Hyprland configuration
     hyprland = {
       enable = true;
       xwayland.enable = true;
@@ -53,8 +53,8 @@
     zsh.enable = true;
     nm-applet.enable = true;
 
-# Some programs need SUID wrappers, can be configured further or are
-# started in user sessions.
+    # Some programs need SUID wrappers, can be configured further or are
+    # started in user sessions.
     mtr.enable = true;
 
     gnupg.agent = {
@@ -66,4 +66,4 @@
       enable = true;
     };
   };
-             }
+}

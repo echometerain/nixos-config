@@ -57,7 +57,6 @@
       cron
       btop
       fd
-      # gnome-keyring
       ventoy-full
 
       # Fun CLI
@@ -83,12 +82,12 @@
       wofi
       playerctl
       logitech-udev-rules 
+      seahorse
 
       # Hypr packages
       hyprland
       inputs.hyprland-qtutils.packages."${pkgs.system}".default
       hyprpolkitagent
-      hyprlock
       hypridle
       hyprshot
       hyprpicker
@@ -211,7 +210,6 @@
       netbeans
 
       # Learning
-      # lammps
       anki-bin
       qalculate-qt
       foliate
