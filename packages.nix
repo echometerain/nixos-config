@@ -94,6 +94,7 @@
       hyprsunset
 
       # Hypr utils
+      swaylock
       wlogout
       waybar
       nwg-look
@@ -132,7 +133,6 @@
       firefox
       protonvpn-gui
       freeoffice
-      brave
       (vivaldi.override {
         proprietaryCodecs = true;
         enableWidevine = false;
