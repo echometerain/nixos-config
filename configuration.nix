@@ -127,12 +127,11 @@
     };
   };
   security = {
-    # polkit = {
-    #   enable = true;
-    #   package = pkgs.hyprpolkitagent;
-    # };
+    polkit = {
+      enable = true;
+    };
     rtkit.enable = true;
-    pam.services.sddm.enableGnomeKeyring = true;
+    pam.services.hyprland.enableGnomeKeyring = true;
   };
 
   # Networking configuration

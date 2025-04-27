@@ -31,7 +31,7 @@
         packages.myVimPackage = with pkgs.vimPlugins; {
           start = [
             vim-tmux-navigator
-              vim-sleuth
+            vim-sleuth
           ];
         };
       };
@@ -46,7 +46,6 @@
       xwayland.enable = true;
       withUWSM = true;
     };
-    hyprlock.enable = true;
 
     kdeconnect.enable = true;
     openvpn3.enable = true;
