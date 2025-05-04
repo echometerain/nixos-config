@@ -143,7 +143,7 @@
     # wireless.userControlled.enable = true;
     networkmanager = {
       enable = true;
-      wifi.backend = "iwd";
+      # wifi.backend = "iwd";
     };
 
     # Open ports in the firewall.
