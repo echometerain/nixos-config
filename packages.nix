@@ -124,6 +124,7 @@
       flatpak-builder
       appstream
       sqlitebrowser
+      mesa-demos
 
       # Misc apps
       transmission_4-qt6
