@@ -83,6 +83,7 @@
       playerctl
       logitech-udev-rules 
       seahorse
+      alsa-utils
 
       # Hypr packages
       hyprland
