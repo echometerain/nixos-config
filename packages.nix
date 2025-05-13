@@ -126,6 +126,7 @@
       appstream
       sqlitebrowser
       mesa-demos
+      quartus-prime-lite
 
       # Misc apps
       transmission_4-qt6
