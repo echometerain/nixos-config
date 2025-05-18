@@ -127,6 +127,7 @@
       sqlitebrowser
       mesa-demos
       quartus-prime-lite
+      google-chrome
 
       # Misc apps
       transmission_4-qt6
