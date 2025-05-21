@@ -128,6 +128,7 @@
       mesa-demos
       quartus-prime-lite
       google-chrome
+      kmymoney
 
       # Misc apps
       transmission_4-qt6
