@@ -127,7 +127,6 @@
       sqlitebrowser
       mesa-demos
       quartus-prime-lite
-      google-chrome
       kmymoney
 
       # Misc apps
