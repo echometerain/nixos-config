@@ -125,7 +125,6 @@
       flatpak-builder
       appstream
       sqlitebrowser
-      mesa-demos
       quartus-prime-lite
       kmymoney
 
@@ -153,6 +152,7 @@
       mysql-workbench
       
       # Low Level
+      yosys
       # apio
       ghex
       cmake
