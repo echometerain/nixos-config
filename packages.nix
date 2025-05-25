@@ -113,6 +113,7 @@
       metasploit
 
       # User utils
+      openscad
       candy-icons
       wineWow64Packages.waylandFull
       winetricks
