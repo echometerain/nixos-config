@@ -113,6 +113,7 @@
       metasploit
 
       # User utils
+      gnuradio
       openscad
       candy-icons
       wineWow64Packages.waylandFull
