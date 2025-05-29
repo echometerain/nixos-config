@@ -10,6 +10,14 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
     # musnix.url = "github:musnix/musnix";
+
+    claude-desktop = {
+      url = "github:k3d3/claude-desktop-linux-flake";
+      inputs = {
+        nixpkgs.follows = "nixpkgs";
+        # flake-utils.follows = "nixpkgs";
+      };
+    };
     clipboard-sync.url = "github:dnut/clipboard-sync";
   };
 

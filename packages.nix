@@ -129,6 +129,7 @@
       sqlitebrowser
       quartus-prime-lite
       kmymoney
+      inputs.claude-desktop.packages."${pkgs.system}".claude-desktop
 
       # Misc apps
       transmission_4-qt6
