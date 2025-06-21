@@ -86,13 +86,6 @@
     SUDO_EDITOR = "lvim";
   };
 
-  xdg.mime.defaultApplications = {
-    "application/pdf" = "org.kde.okular.desktop";
-    "text/html" = "com.google.Chrome.desktop";
-    "x-scheme-handler/http" = "com.google.Chrome.desktop";
-    "x-scheme-handler/https" = "com.google.Chrome.desktop";
-  };
-
   # Font configuration
   fonts.packages = with pkgs; [
     corefonts
