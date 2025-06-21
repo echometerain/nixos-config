@@ -145,6 +145,7 @@
       })
       vivaldi-ffmpeg-codecs
       obsidian
+      google-chrome
       
       # Web
       apacheHttpd
