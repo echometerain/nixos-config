@@ -36,6 +36,7 @@
       tmux
       ghostscript
       xxd
+      zoxide
 
       # Networking CLI
       wget
