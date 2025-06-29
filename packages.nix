@@ -37,6 +37,7 @@
       ghostscript
       xxd
       zoxide
+      graphviz
 
       # Networking CLI
       wget
