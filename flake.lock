@@ -8,11 +8,11 @@
         ]
       },
       "locked": {
-        "lastModified": 1751245961,
-        "narHash": "sha256-OGnx7vKSh3C+b04nw+p6mHquNHX/6lbhhoEDsMi2ZUs=",
+        "lastModified": 1751285864,
+        "narHash": "sha256-KoCLVUzVkKn8yW3DIXEJfkeEHPRIiNuN74OBVpEa9RE=",
         "owner": "k3d3",
         "repo": "claude-desktop-linux-flake",
-        "rev": "6cec073f16e3dd19ccc6ce89ed1a8574c136136a",
+        "rev": "a134ac2ad29bafc9ba23f7944a20ebd708cd3134",
         "type": "github"
       },
       "original": {
@@ -220,11 +220,11 @@
     },
     "nixpkgs_3": {
       "locked": {
-        "lastModified": 1751048012,
-        "narHash": "sha256-MYbotu4UjWpTsq01wglhN5xDRfZYLFtNk7SBY0BcjkU=",
+        "lastModified": 1751274312,
+        "narHash": "sha256-/bVBlRpECLVzjV19t5KMdMFWSwKLtb5RyXdjz3LJT+g=",
         "owner": "nixos",
         "repo": "nixpkgs",
-        "rev": "a684c58d46ebbede49f280b653b9e56100aa3877",
+        "rev": "50ab793786d9de88ee30ec4e4c24fb4236fc2674",
         "type": "github"
       },
       "original": {
