@@ -59,7 +59,7 @@
       cron
       btop
       fd
-      ventoy-full
+      # ventoy-full
 
       # Fun CLI
       hollywood
@@ -151,9 +151,8 @@
       
       # Web
       apacheHttpd
-      php83
-      openssl_3_3
-      nodejs_23
+      # php83
+      nodejs_24
       bun
       mysql-workbench
       

@@ -90,8 +90,8 @@
   fonts.packages = with pkgs; [
     corefonts
     vistafonts
-    # nerd-fonts.hack
-    (nerdfonts.override {fonts = ["Hack"];})
+    nerd-fonts.hack
+    # (nerdfonts.override {fonts = ["Hack"];})
     # siji
   ];
 
