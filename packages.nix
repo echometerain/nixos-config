@@ -119,7 +119,6 @@
       openscad
       candy-icons
       wineWow64Packages.stable
-      winetricks
       pavucontrol
       grsync
       caffeine-ng
