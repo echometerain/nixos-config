@@ -118,7 +118,7 @@
       gnuradio
       openscad
       candy-icons
-      wineWow64Packages.stable
+      wineWow64Packages.stableFull
       winetricks
       pavucontrol
       grsync
