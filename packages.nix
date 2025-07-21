@@ -141,11 +141,11 @@
       firefox
       protonvpn-gui
       freeoffice
+      inputs.zen-browser.packages."${system}".default
       (vivaldi.override {
         proprietaryCodecs = true;
-        enableWidevine = false;
+        vivaldi-ffmpeg-codecs = pkgs.vivaldi-ffmpeg-codecs;
       })
-      vivaldi-ffmpeg-codecs
       obsidian
       google-chrome
       

@@ -4,6 +4,7 @@
   inputs = {
     nixpkgs.url = "github:nixos/nixpkgs/nixos-25.05";
     hyprland-qtutils.url = "github:hyprwm/hyprland-qtutils";
+    zen-browser.url = "github:MarceColl/zen-browser-flake";
     # newpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
     home-manager = {
       url = "github:nix-community/home-manager/release-25.05";
