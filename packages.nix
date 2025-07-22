@@ -137,7 +137,7 @@
       transmission_4-qt6
       calibre
       libreoffice-qt6-fresh
-      discord
+      # discord
       firefox
       protonvpn-gui
       freeoffice
