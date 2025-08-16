@@ -120,6 +120,7 @@
       candy-icons
       # wineWow64Packages.stableFull
       # winetricks
+      flutter
       pavucontrol
       grsync
       caffeine-ng
@@ -154,7 +155,7 @@
       # php83
       nodejs_24
       bun
-      mysql-workbench
+      # mysql-workbench
       
       # Low Level
       yosys

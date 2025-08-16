@@ -117,7 +117,6 @@
     rtl-sdr.enable = true;
 
     # Hardware sound configuration
-    pulseaudio.enable = false;
     bluetooth = {
       enable = true;
       settings.General = {
