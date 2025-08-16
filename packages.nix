@@ -142,7 +142,7 @@
       firefox
       protonvpn-gui
       freeoffice
-      inputs.zen-browser.packages."${system}".default
+      inputs.zen-browser.packages."${system}".twilight
       # (vivaldi.override {
       #   proprietaryCodecs = true;
       #   vivaldi-ffmpeg-codecs = pkgs.vivaldi-ffmpeg-codecs;
