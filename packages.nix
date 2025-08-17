@@ -124,6 +124,7 @@
       # wineWow64Packages.stableFull
       # winetricks
       flutter
+      geary
       pavucontrol
       grsync
       caffeine-ng
