@@ -13,15 +13,14 @@
     #   SUBSYSTEM=="usb_device", ATTRS{idVendor}=="2226", MODE="0666"
     # '';
 
-    # Enable the KDE Plasma Desktop Environment.
     displayManager.sddm = {
       enable = true;
       wayland.enable = true;
     };
-    desktopManager.plasma6.enable = true;
 
     # Configure keymap in X11
     xserver = {
+      desktopManager.gnome.enable = true;
       xkb.layout = "us";
       xkb.variant = "";
     };

@@ -126,8 +126,6 @@
       # winetricks
       flutter
       geary
-      gnome-calendar
-      gnome-tweaks
       pavucontrol
       grsync
       caffeine-ng
@@ -271,7 +269,6 @@
     ];
     kdePkgs = with pkgs.kdePackages; [
       partitionmanager
-      plasma-desktop
       kate
       kolourpaint
       kdeconnect-kde
