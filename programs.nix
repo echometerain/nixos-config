@@ -10,7 +10,7 @@
         sensible
         vim-tmux-navigator
         better-mouse-mode
-        catppuccin
+        rose-pine
       ];
       extraConfig = ''
         set -g mode-keys vi

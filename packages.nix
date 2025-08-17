@@ -80,7 +80,8 @@
       rsync
       xwayland
       flatpak
-      wofi
+      rofi
+      rofi-calc
       playerctl
       logitech-udev-rules 
       seahorse
