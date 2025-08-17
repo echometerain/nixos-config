@@ -125,6 +125,7 @@
       # winetricks
       flutter
       geary
+      gnome-calendar
       pavucontrol
       grsync
       caffeine-ng
