@@ -126,6 +126,7 @@
       flutter
       geary
       gnome-calendar
+      gnome-online-accounts
       pavucontrol
       grsync
       caffeine-ng
