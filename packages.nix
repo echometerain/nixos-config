@@ -127,6 +127,7 @@
       flutter
       geary
       pavucontrol
+      gnome-shell
       grsync
       caffeine-ng
       distrobox
@@ -143,7 +144,6 @@
       transmission_4-qt6
       calibre
       libreoffice-qt6-fresh
-      # discord
       firefox
       protonvpn-gui
       freeoffice
@@ -160,7 +160,6 @@
       # php83
       nodejs_24
       bun
-      # mysql-workbench
       
       # Low Level
       yosys
