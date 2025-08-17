@@ -80,8 +80,11 @@
       rsync
       xwayland
       flatpak
-      rofi
-      rofi-calc
+      (rofi.override {
+        plugins = with pkgs; [
+          rofi-calc
+        ];
+      })
       playerctl
       logitech-udev-rules 
       seahorse

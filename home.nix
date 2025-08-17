@@ -49,9 +49,6 @@
     ".config/hypr" = {
       source = config.lib.file.mkOutOfStoreSymlink "/opt/dotfiles/hypr";
     };
-    ".config/rofi" = {
-      source = config.lib.file.mkOutOfStoreSymlink "/opt/dotfiles/rofi";
-    };
     ".config/waybar" = {
       source = config.lib.file.mkOutOfStoreSymlink "/opt/dotfiles/waybar";
     };
@@ -104,13 +101,7 @@
 
   # Let Home Manager install and manage itself.
   programs = {
-    tmux.plugins = with pkgs.tmuxPlugins; [
-      rose-pine
-    ];
     home-manager.enable = true;
-    rofi.plugins = with pkgs; [
-      rofi-calc
-    ];
   };
 
   wayland.windowManager.hyprland.systemd.enable = false;
