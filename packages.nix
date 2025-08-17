@@ -127,7 +127,7 @@
       flutter
       geary
       gnome-calendar
-      gnome-online-accounts-gtk
+      gnome-tweaks
       pavucontrol
       grsync
       caffeine-ng
