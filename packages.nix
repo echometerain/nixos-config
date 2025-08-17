@@ -80,6 +80,7 @@
       rsync
       xwayland
       flatpak
+      rofi
       rofi-calc
       playerctl
       logitech-udev-rules 
