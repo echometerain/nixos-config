@@ -22,6 +22,20 @@
         set -sg escape-time 10
         set -g repeat-time 1000
         set -g terminal-features 'XXX:RGB'
+
+
+        set -gF window-status-style "bg=#{@thm_surface_1},fg=#{@thm_fg}"
+        set -gF window-status-current-style "bg=#{@thm_peach},fg=#{@thm_crust}"
+
+        set -g window-status-format " #T | #I "
+        set -g window-status-current-format " #T | #I "
+
+        set -g status-left ""
+        set -g  status-right "#{E:@catppuccin_status_application}"
+        set -ag status-right "#{E:@catppuccin_status_session}"
+        set -ag status-right "#{E:@catppuccin_status_user}"
+        set -ag status-right "#{E:@catppuccin_status_host}"
+        set -ag status-right "#{E:@catppuccin_status_date_time}"
       '';
     };
     neovim = {
