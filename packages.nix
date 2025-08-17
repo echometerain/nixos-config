@@ -33,7 +33,6 @@
       asciinema
       asciinema-agg
       ripgrep
-      tmux
       ghostscript
       xxd
       zoxide
@@ -236,7 +235,7 @@
       freeplane
       pdfarranger
       authenticator
-      thunderbird
+      neomutt
 
       # Visual media
       zathura
