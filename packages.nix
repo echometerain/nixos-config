@@ -70,6 +70,7 @@
       cool-retro-term
       vimgolf
       cava
+      speechd
 
       # Graphical system utils
       gparted
