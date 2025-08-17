@@ -127,7 +127,8 @@
       flutter
       geary
       pavucontrol
-      gnome-shell
+      # gnome-shell
+      gnome-tweaks
       grsync
       caffeine-ng
       distrobox
