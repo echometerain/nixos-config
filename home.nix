@@ -1,4 +1,4 @@
-{config, ...}: {
+{config, pkgs, ...}: {
   # Home Manager needs a bit of information about you and the paths it should
   # manage.
   home.username = "hhwl";
@@ -49,8 +49,8 @@
     ".config/hypr" = {
       source = config.lib.file.mkOutOfStoreSymlink "/opt/dotfiles/hypr";
     };
-    ".config/wofi" = {
-      source = config.lib.file.mkOutOfStoreSymlink "/opt/dotfiles/wofi";
+    ".config/rofi" = {
+      source = config.lib.file.mkOutOfStoreSymlink "/opt/dotfiles/rofi";
     };
     ".config/waybar" = {
       source = config.lib.file.mkOutOfStoreSymlink "/opt/dotfiles/waybar";
@@ -103,7 +103,15 @@
   };
 
   # Let Home Manager install and manage itself.
-  programs.home-manager.enable = true;
+  programs = {
+    tmux.plugins = with pkgs.tmuxPlugins; [
+      rose-pine
+    ];
+    home-manager.enable = true;
+    rofi.plugins = with pkgs; [
+      rofi-calc
+    ];
+  };
 
   wayland.windowManager.hyprland.systemd.enable = false;
 }
