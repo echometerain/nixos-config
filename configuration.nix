@@ -130,7 +130,8 @@
       enable = true;
     };
     rtkit.enable = true;
-    pam.services.hypr.enableGnomeKeyring = true;
+    pam.services.hyprland.enableGnomeKeyring = true;
+    # pam.services.hypr.enableGnomeKeyring = true;
   };
 
   # Networking configuration
