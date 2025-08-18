@@ -70,7 +70,6 @@
       cool-retro-term
       vimgolf
       cava
-      speechd
 
       # Graphical system utils
       gparted
@@ -268,6 +267,7 @@
 
     ];
     kdePkgs = with pkgs.kdePackages; [
+      breeze
       partitionmanager
       kate
       kolourpaint
