@@ -269,6 +269,7 @@
     kdePkgs = with pkgs.kdePackages; [
       breeze
       breeze-icons
+      breeze-gtk
       partitionmanager
       kate
       kolourpaint
