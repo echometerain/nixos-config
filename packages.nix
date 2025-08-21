@@ -270,6 +270,8 @@
       breeze
       breeze-icons
       breeze-gtk
+      ffmpegthumbs
+      kde-cli-tools
       partitionmanager
       kate
       kolourpaint
