@@ -272,6 +272,7 @@
       breeze-gtk
       ffmpegthumbs
       kde-cli-tools
+      plasma-workspace
       partitionmanager
       kate
       kolourpaint
