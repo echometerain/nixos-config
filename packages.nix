@@ -118,6 +118,7 @@
       metasploit
 
       # User utils
+      bulky
       gnuradio
       openscad
       candy-icons
