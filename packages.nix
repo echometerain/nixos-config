@@ -153,7 +153,7 @@
       #   proprietaryCodecs = true;
       #   vivaldi-ffmpeg-codecs = pkgs.vivaldi-ffmpeg-codecs;
       # })
-      obsidian
+      # obsidian
       google-chrome
       
       # Web
