@@ -33,7 +33,6 @@
         set -g status-left ""
         set -g  status-right "#{E:@catppuccin_status_application}"
         set -ag status-right "#{E:@catppuccin_status_session}"
-        set -ag status-right "#{E:@catppuccin_status_user}"
         set -ag status-right "#{E:@catppuccin_status_host}"
         set -ag status-right "#{E:@catppuccin_status_date_time}"
       '';

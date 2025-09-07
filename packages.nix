@@ -94,7 +94,6 @@
       hyprland
       inputs.hyprland-qtutils.packages."${pkgs.system}".default
       hyprpolkitagent
-      hypridle
       hyprshot
       hyprpicker
       hyprsunset
