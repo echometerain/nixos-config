@@ -2,6 +2,10 @@
   environment.systemPackages = let
     sysPkgs = with pkgs; [
 
+      # HTN
+      qemu
+      virt-manager
+
       # Nix utils
       home-manager
       nixpkgs-fmt
