@@ -6,6 +6,7 @@
       qemu
       virt-manager
       ncurses
+      dialog
 
       # Nix utils
       home-manager
