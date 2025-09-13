@@ -5,7 +5,6 @@
       # HTN
       qemu
       virt-manager
-      docker
 
       # Nix utils
       home-manager

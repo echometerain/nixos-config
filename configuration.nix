@@ -16,6 +16,8 @@
     # inputs.musnix.nixosModules.musnix
   ];
 
+  virtualisation.docker.enable = true;
+
   # Bootloader.
   boot = {
     loader = {
@@ -63,7 +65,7 @@
     users.hhwl = {
       isNormalUser = true;
       description = "hhwl";
-      extraGroups = ["plugdev" "networkmanager" "wheel" "dialout" "audio" "scanner" "lp"];
+      extraGroups = ["plugdev" "networkmanager" "wheel" "dialout" "audio" "scanner" "lp" "docker"];
     };
   };
 
