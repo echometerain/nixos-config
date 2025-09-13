@@ -5,6 +5,7 @@
       # HTN
       qemu
       virt-manager
+      ncurses
 
       # Nix utils
       home-manager
