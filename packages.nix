@@ -4,8 +4,6 @@
 
       # HTN
       qemu
-      virt-manager
-      ncurses
       dialog
 
       # Nix utils
@@ -123,9 +121,9 @@
       metasploit
 
       # User utils
+      spyder
       bulky
       gnuradio
-      openscad
       candy-icons
       # wineWow64Packages.stableFull
       # winetricks
