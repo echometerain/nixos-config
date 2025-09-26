@@ -274,7 +274,8 @@
       breeze
       breeze-icons
       breeze-gtk
-      ffmpegthumbs
+      # ffmpegthumbs
+      kdegraphics-thumbnailers
       kde-cli-tools
       plasma-workspace
       partitionmanager
