@@ -134,7 +134,7 @@
       gnome-tweaks
       grsync
       caffeine-ng
-      distrobox
+      # distrobox
       appimage-run
       rclone
       flatpak-builder
