@@ -250,6 +250,7 @@
       zathura
       vlc
       (mpv.override {scripts = [mpvScripts.uosc];})
+      inkscape
       krita
       gimp-with-plugins
       krita-plugin-gmic
