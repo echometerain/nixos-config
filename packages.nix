@@ -195,13 +195,13 @@
       
       # Python
       pipx
-      micromamba
-      (python3.withPackages (python-pkgs:
-        with python-pkgs; [
-          pynvim
-          numpy
-        ]))
-      poetry
+      # micromamba
+      # (python3.withPackages (python-pkgs:
+      #   with python-pkgs; [
+      #     pynvim
+      #     numpy
+      #   ]))
+      # poetry
       
       # Text
       vale
