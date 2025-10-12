@@ -121,6 +121,7 @@
       metasploit
 
       # User utils
+      thunderbird
       spyder
       bulky
       gnuradio
