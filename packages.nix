@@ -129,7 +129,7 @@
       # wineWow64Packages.stableFull
       # winetricks
       flutter
-      geary
+      # geary
       pavucontrol
       # gnome-shell
       gnome-tweaks
