@@ -101,6 +101,7 @@
       hyprshot
       hyprpicker
       hyprsunset
+      hyprpaper
 
       # Hypr utils
       swaylock
