@@ -166,6 +166,7 @@
       # php83
       nodejs_24
       ruby
+      ruby-lsp
       deno
       
       # Low Level
