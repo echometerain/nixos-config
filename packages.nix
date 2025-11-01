@@ -165,7 +165,8 @@
       apacheHttpd
       # php83
       nodejs_24
-      bun
+      ruby
+      deno
       
       # Low Level
       yosys
