@@ -166,7 +166,7 @@
       apacheHttpd
       nodejs_24
       ruby
-      ruby-lsp
+      solargraph
       deno
       
       # Low Level
