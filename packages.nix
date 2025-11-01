@@ -162,8 +162,8 @@
       google-chrome
       
       # Web
+      libyaml
       apacheHttpd
-      # php83
       nodejs_24
       ruby
       ruby-lsp
