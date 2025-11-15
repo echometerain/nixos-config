@@ -192,7 +192,7 @@
       rust-analyzer
       
       # Git
-      github-desktop
+      # github-desktop
       git-lfs
       git
       gh
