@@ -5,9 +5,14 @@
 
       # libcxx
       stdenv.cc.cc
+      # stdenv.cc.cc.lib
+      
+      # Cake Wallet
       lz4
       libgpg-error
-      # stdenv.cc.cc.lib
+      libepoxy
+      harfbuzz
+
       openssl
       xorg.libXcomposite
       xorg.libXtst
