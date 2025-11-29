@@ -274,6 +274,12 @@
       yabridge
       vital
 
+      # Coins
+      wasabiwallet
+      inputs.newpkgs.legacyPackages."${pkgs.system}".eigenwallet
+      monero-gui
+      xmrig
+
     ];
     kdePkgs = with pkgs.kdePackages; [
       breeze
