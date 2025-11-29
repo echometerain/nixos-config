@@ -6,6 +6,7 @@
       # libcxx
       stdenv.cc.cc
       lz4
+      libgpg-error
       # stdenv.cc.cc.lib
       openssl
       xorg.libXcomposite
