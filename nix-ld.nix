@@ -5,6 +5,7 @@
 
       # libcxx
       stdenv.cc.cc
+      lz4
       # stdenv.cc.cc.lib
       openssl
       xorg.libXcomposite
