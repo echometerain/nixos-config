@@ -7,12 +7,10 @@
     # Enable the OpenSSH daemon.
     openssh.enable = true;
 
-    # # Allow libusb to access STM32 devices.
-    # udev.extraRules = ''
-    #   SUBSYSTEM=="usb",        ATTRS{idVendor}=="2226", MODE="0666"
-    #   SUBSYSTEM=="usb_device", ATTRS{idVendor}=="2226", MODE="0666"
-    # '';
-    udev.packages = [ pkgs.usb-blaster-udev-rules ];
+    # Allow libusb to access STM32 devices.
+    udev.extraRules = ''
+      SUBSYSTEMS=="usb", ATTRS{idVendor}=="09fb", ATTRS{idProduct}=="6010", MODE="0660", GROUP="plugdev"
+    '';
 
     desktopManager.gnome.enable = true;
     displayManager.gdm.enable = true;
