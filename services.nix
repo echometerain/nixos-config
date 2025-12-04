@@ -12,11 +12,13 @@
     #   SUBSYSTEM=="usb",        ATTRS{idVendor}=="2226", MODE="0666"
     #   SUBSYSTEM=="usb_device", ATTRS{idVendor}=="2226", MODE="0666"
     # '';
+    udev.packages = [ pkgs.usb-blaster-udev-rules ];
+
+    desktopManager.gnome.enable = true;
+    displayManager.gdm.enable = true;
 
     # Configure keymap in X11
     xserver = {
-      desktopManager.gnome.enable = true;
-      displayManager.gdm.enable = true;
       xkb.layout = "us";
       xkb.variant = "";
     };
@@ -63,7 +65,7 @@
     power-profiles-daemon.enable = false;
     
     # Disable power button
-    logind.powerKey = "ignore";
+    logind.settings.Login.HandlePowerKey = "ignore";
 
     # Gnome keyring
     gnome.gnome-keyring.enable = true;

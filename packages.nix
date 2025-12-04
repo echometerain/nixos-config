@@ -96,7 +96,7 @@
 
       # Hypr packages
       hyprland
-      inputs.hyprland-qtutils.packages."${pkgs.system}".default
+      inputs.hyprland-qtutils.packages."${pkgs.stdenv.hostPlatform.system}".default
       hyprpolkitagent
       hyprshot
       hyprpicker
@@ -123,13 +123,13 @@
 
       # User utils
       thunderbird
-      spyder
+      # spyder
       bulky
       gnuradio
       candy-icons
       # wineWow64Packages.stableFull
       # winetricks
-      flutter
+      # flutter
       # geary
       pavucontrol
       # gnome-shell
@@ -143,6 +143,7 @@
       appstream
       sqlitebrowser
       quartus-prime-lite
+      usb-blaster-udev-rules
       kmymoney
       # inputs.claude-desktop.packages."${pkgs.system}".claude-desktop
 
@@ -270,7 +271,6 @@
       reaper
       musescore
       picard
-      libsForQt5.soundkonverter
       yabridge
       vital
 
