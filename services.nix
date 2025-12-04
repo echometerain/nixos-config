@@ -9,7 +9,7 @@
 
     # Allow libusb to access STM32 devices.
     udev.extraRules = ''
-      SUBSYSTEMS=="usb", ATTRS{idVendor}=="09fb", ATTRS{idProduct}=="6010", MODE="0660", GROUP="plugdev"
+      SUBSYSTEMS=="usb", ATTRS{idVendor}=="09fb", ATTRS{idProduct}=="6810", MODE="0660", GROUP="plugdev"
     '';
 
     desktopManager.gnome.enable = true;
