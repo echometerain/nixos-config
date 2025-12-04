@@ -96,7 +96,7 @@
 
       # Hypr packages
       hyprland
-      inputs.hyprland-qtutils.packages."${pkgs.stdenv.hostPlatform.system}".default
+      inputs.hyprland-qtutils.packages."${stdenv.hostPlatform.system}".default
       hyprpolkitagent
       hyprshot
       hyprpicker
@@ -114,6 +114,7 @@
       cliphist
       brightnessctl
       htop
+      kanshi
 
       # Hack the box
       burpsuite
@@ -154,7 +155,7 @@
       firefox
       protonvpn-gui
       freeoffice
-      inputs.zen-browser.packages."${system}".twilight
+      inputs.zen-browser.packages."${stdenv.hostPlatform.system}".twilight
       # (vivaldi.override {
       #   proprietaryCodecs = true;
       #   vivaldi-ffmpeg-codecs = pkgs.vivaldi-ffmpeg-codecs;
@@ -276,7 +277,7 @@
 
       # Coins
       wasabiwallet
-      inputs.newpkgs.legacyPackages."${pkgs.system}".eigenwallet
+      eigenwallet
       monero-gui
       xmrig
 
