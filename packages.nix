@@ -114,7 +114,6 @@
       cliphist
       brightnessctl
       htop
-      kanshi
 
       # Hack the box
       burpsuite
@@ -167,6 +166,7 @@
       libyaml
       apacheHttpd
       nodejs_24
+      bun
       ruby
       solargraph
       deno

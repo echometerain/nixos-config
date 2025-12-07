@@ -55,9 +55,6 @@
     ".config/zathura" = {
       source = config.lib.file.mkOutOfStoreSymlink "/opt/dotfiles/zathura";
     };
-    ".config/kanshi" = {
-      source = config.lib.file.mkOutOfStoreSymlink "/opt/dotfiles/kanshi";
-    };
 
     ".config/lvim/config.lua" = {
       source = config.lib.file.mkOutOfStoreSymlink "/opt/dotfiles/lvim/config.lua";
