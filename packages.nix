@@ -167,6 +167,7 @@
       apacheHttpd
       nodejs_24
       bun
+      hoppscotch
       ruby
       solargraph
       deno
