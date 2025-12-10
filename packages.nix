@@ -145,6 +145,7 @@
       quartus-prime-lite
       usb-blaster-udev-rules
       kmymoney
+      qwen-code
       # inputs.claude-desktop.packages."${pkgs.system}".claude-desktop
 
       # Misc apps
@@ -167,7 +168,6 @@
       apacheHttpd
       nodejs_24
       bun
-      hoppscotch
       ruby
       solargraph
       deno
