@@ -137,6 +137,7 @@
       grsync
       caffeine-ng
       # distrobox
+      x11docker
       appimage-run
       rclone
       flatpak-builder
