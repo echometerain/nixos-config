@@ -96,7 +96,7 @@
 
       # Hypr packages
       hyprland
-      inputs.hyprland-qtutils.packages."${pkgs.system}".default
+      inputs.hyprland-qtutils.packages."${stdenv.hostPlatform.system}".default
       hyprpolkitagent
       hyprshot
       hyprpicker
@@ -123,13 +123,13 @@
 
       # User utils
       thunderbird
-      spyder
+      # spyder
       bulky
       gnuradio
       candy-icons
       # wineWow64Packages.stableFull
       # winetricks
-      flutter
+      # flutter
       # geary
       pavucontrol
       # gnome-shell
@@ -137,13 +137,16 @@
       grsync
       caffeine-ng
       # distrobox
+      x11docker
       appimage-run
       rclone
       flatpak-builder
       appstream
       sqlitebrowser
       quartus-prime-lite
+      usb-blaster-udev-rules
       kmymoney
+      qwen-code
       # inputs.claude-desktop.packages."${pkgs.system}".claude-desktop
 
       # Misc apps
@@ -153,7 +156,7 @@
       firefox
       protonvpn-gui
       freeoffice
-      inputs.zen-browser.packages."${system}".twilight
+      inputs.zen-browser.packages."${stdenv.hostPlatform.system}".twilight
       # (vivaldi.override {
       #   proprietaryCodecs = true;
       #   vivaldi-ffmpeg-codecs = pkgs.vivaldi-ffmpeg-codecs;
@@ -165,8 +168,9 @@
       libyaml
       apacheHttpd
       nodejs_24
+      bun
       ruby
-      ruby-lsp
+      solargraph
       deno
       
       # Low Level
@@ -192,7 +196,7 @@
       rust-analyzer
       
       # Git
-      github-desktop
+      # github-desktop
       git-lfs
       git
       gh
@@ -270,9 +274,14 @@
       reaper
       musescore
       picard
-      libsForQt5.soundkonverter
       yabridge
       vital
+
+      # Coins
+      wasabiwallet
+      eigenwallet
+      monero-gui
+      xmrig
 
     ];
     kdePkgs = with pkgs.kdePackages; [

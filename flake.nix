@@ -2,7 +2,7 @@
   description = "Nixos config flake";
 
   inputs = {
-    nixpkgs.url = "github:nixos/nixpkgs/nixos-25.05";
+    nixpkgs.url = "github:nixos/nixpkgs/nixos-25.11";
     hyprland-qtutils.url = "github:hyprwm/hyprland-qtutils";
     zen-browser = {
       url = "github:0xc000022070/zen-browser-flake";
@@ -10,9 +10,9 @@
       # to have it up-to-date or simply don't specify the nixpkgs input
       inputs.nixpkgs.follows = "nixpkgs";
     };
-    # newpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
+    newpkgs.url = "github:nixos/nixpkgs/nixos-unstable";
     home-manager = {
-      url = "github:nix-community/home-manager/release-25.05";
+      url = "github:nix-community/home-manager/release-25.11";
       inputs.nixpkgs.follows = "nixpkgs";
     };
     # musnix.url = "github:musnix/musnix";
