@@ -15,13 +15,13 @@
       nix-ld
 
       # CLI essentials
-      lsof
       zsh
       wl-clipboard
       wl-clip-persist
       killall
       usbutils
-      traceroute
+      pciutils
+      net-tools
       calc
       libqalculate
       fakeroot
