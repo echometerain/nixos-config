@@ -204,7 +204,6 @@
       # Python
       pipx
       # micromamba
-      mamba-cpp
       # (python3.withPackages (python-pkgs:
       #   with python-pkgs; [
       #     pynvim
