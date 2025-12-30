@@ -304,6 +304,7 @@
       spectacle
       ark
       dolphin
+      kio-admin
       kmenuedit
       okular
       kalgebra
