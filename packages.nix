@@ -144,6 +144,8 @@
       appstream
       sqlitebrowser
       quartus-prime-lite
+      ghdl
+      verible
       usb-blaster-udev-rules
       kmymoney
       qwen-code
