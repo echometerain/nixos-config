@@ -149,6 +149,7 @@
       usb-blaster-udev-rules
       kmymoney
       qwen-code
+      xfce.thunar
       # inputs.claude-desktop.packages."${pkgs.system}".claude-desktop
 
       # Misc apps
