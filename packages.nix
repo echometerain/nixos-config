@@ -203,7 +203,7 @@
       
       # Python
       pipx
-      # micromamba
+      micromamba
       # (python3.withPackages (python-pkgs:
       #   with python-pkgs; [
       #     pynvim
