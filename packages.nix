@@ -123,6 +123,7 @@
 
       # User utils
       thunderbird
+      pandoc
       # spyder
       bulky
       gnuradio
