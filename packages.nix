@@ -128,6 +128,7 @@
       bulky
       gnuradio
       candy-icons
+      octaveFull
       # wineWow64Packages.stableFull
       # winetricks
       # flutter
