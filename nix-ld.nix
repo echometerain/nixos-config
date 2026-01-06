@@ -3,9 +3,9 @@
     enable = true;
     libraries = with pkgs; [
 
-      # libcxx
-      stdenv.cc.cc
-      stdenv.cc.cc.lib
+      libcxx
+      # stdenv.cc.cc
+      # stdenv.cc.cc.lib
       
       # Cake Wallet
       lz4
