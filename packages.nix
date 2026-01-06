@@ -219,7 +219,7 @@
       
       # Text
       vale
-      lunarvim
+      # lunarvim
       texlab
       (texlive.combine {
         inherit
