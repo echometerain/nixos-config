@@ -56,8 +56,8 @@
       source = config.lib.file.mkOutOfStoreSymlink "/opt/dotfiles/zathura";
     };
 
-    ".config/lvim/config.lua" = {
-      source = config.lib.file.mkOutOfStoreSymlink "/opt/dotfiles/lvim/config.lua";
+    ".config/nvim" = {
+      source = config.lib.file.mkOutOfStoreSymlink "/opt/dotfiles/nvim";
     };
     ".zshrc" = {
       source = config.lib.file.mkOutOfStoreSymlink "/opt/dotfiles/.zshrc";

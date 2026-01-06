@@ -85,7 +85,7 @@
     XDG_STATE_HOME = "$HOME/.local/state";
     XDG_RUNTIME_DIR = "/run/user/$UID";
     HYPRSHOT_DIR = "$HOME/Pictures/Screenshots";
-    SUDO_EDITOR = "lvim";
+    SUDO_EDITOR = "nvim";
   };
 
   # Font configuration
