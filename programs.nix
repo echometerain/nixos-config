@@ -39,15 +39,15 @@
     };
     neovim = {
       enable = true;
-      configure = {
-        customRC = "source /opt/dotfiles/.vimrc";
-        packages.myVimPackage = with pkgs.vimPlugins; {
-          start = [
-            vim-tmux-navigator
-            vim-sleuth
-          ];
-        };
-      };
+      # configure = {
+      #   customRC = "source /opt/dotfiles/.vimrc";
+      #   packages.myVimPackage = with pkgs.vimPlugins; {
+      #     start = [
+      #       vim-tmux-navigator
+      #       vim-sleuth
+      #     ];
+      #   };
+      # };
       defaultEditor = true;
       viAlias = true;
       vimAlias = true;
