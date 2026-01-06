@@ -41,6 +41,7 @@
       xxd
       zoxide
       graphviz
+      bear
 
       # Networking CLI
       wget
