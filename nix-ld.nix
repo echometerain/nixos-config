@@ -5,7 +5,7 @@
 
       # libcxx
       stdenv.cc.cc
-      # stdenv.cc.cc.lib
+      stdenv.cc.cc.lib
       
       # Cake Wallet
       lz4
