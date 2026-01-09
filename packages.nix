@@ -47,12 +47,11 @@
       wget
       nmap
       networkmanager
-      unzip
-      unar
       ntfs3g
       aria2
       axel
       iw
+      openconnect
 
       # Filesystem CLI
       file
@@ -63,6 +62,8 @@
       cron
       btop
       fd
+      unzip
+      unar
       # ventoy-full
 
       # Fun CLI
