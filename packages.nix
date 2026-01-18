@@ -163,6 +163,7 @@
       firefox
       protonvpn-gui
       freeoffice
+      onlyoffice-desktopeditors
       inputs.zen-browser.packages."${stdenv.hostPlatform.system}".twilight
       # (vivaldi.override {
       #   proprietaryCodecs = true;
