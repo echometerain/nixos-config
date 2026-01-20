@@ -65,7 +65,7 @@
     users.hhwl = {
       isNormalUser = true;
       description = "hhwl";
-      extraGroups = ["plugdev" "networkmanager" "wheel" "dialout" "audio" "scanner" "lp" "docker"];
+      extraGroups = ["plugdev" "networkmanager" "wheel" "dialout" "audio" "scanner" "lp" "docker" "scanner"];
     };
   };
 
