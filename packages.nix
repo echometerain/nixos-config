@@ -307,6 +307,7 @@
       qtimageformats
       kimageformats
       kdenlive
+      kcachegrind
       spectacle
       ark
       dolphin
