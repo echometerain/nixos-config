@@ -4,6 +4,7 @@
     libraries = with pkgs; [
 
       # libcxx
+      libpulseaudio
       stdenv.cc.cc
       # stdenv.cc.cc.lib
       
