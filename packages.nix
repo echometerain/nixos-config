@@ -274,7 +274,6 @@
       yt-dlp
       xournalpp
       rnote
-      stremio-linux-shell
 
       # Audio media
       audacity
