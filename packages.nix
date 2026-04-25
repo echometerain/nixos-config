@@ -154,7 +154,7 @@
       kmymoney
       qwen-code
       xfce.thunar
-      # inputs.claude-desktop.packages."${pkgs.system}".claude-desktop
+      # inputs.claude-desktop.packages."${stdenv.hostPlatform.system}".claude-desktop
 
       # Misc apps
       transmission_4-qt6
