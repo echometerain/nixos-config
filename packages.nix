@@ -239,6 +239,7 @@
       ffmpeg-full
       temurin-bin
       antigravity-fhs
+      gemini-cli
 
       # Learning
       anki-bin
