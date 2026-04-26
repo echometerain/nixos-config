@@ -157,6 +157,7 @@
       # inputs.claude-desktop.packages."${stdenv.hostPlatform.system}".claude-desktop
 
       # Misc apps
+      starc
       transmission_4-qt6
       calibre
       libreoffice-qt6-fresh
