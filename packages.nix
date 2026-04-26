@@ -134,7 +134,6 @@
       # wineWow64Packages.stableFull
       # winetricks
       # flutter
-      # geary
       pavucontrol
       # gnome-shell
       gnome-tweaks
@@ -157,7 +156,6 @@
       # inputs.claude-desktop.packages."${stdenv.hostPlatform.system}".claude-desktop
 
       # Misc apps
-      starc
       transmission_4-qt6
       calibre
       libreoffice-qt6-fresh
@@ -205,7 +203,6 @@
       rust-analyzer
       
       # Git
-      # github-desktop
       git-lfs
       git
       gh
@@ -222,7 +219,6 @@
       
       # Text
       vale
-      # lunarvim
       texlab
       (texlive.combine {
         inherit
@@ -242,7 +238,7 @@
       xcb-util-cursor-HEAD
       ffmpeg-full
       temurin-bin
-      netbeans
+      antigravity-fhs
 
       # Learning
       anki-bin
