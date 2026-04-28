@@ -209,6 +209,7 @@
       
       # Python
       pipx
+      uv
       micromamba
       # (python3.withPackages (python-pkgs:
       #   with python-pkgs; [
