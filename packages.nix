@@ -262,6 +262,7 @@
       neomutt
 
       # Visual media
+      subtitlecomposer
       zathura
       vlc
       (mpv.override {scripts = [mpvScripts.uosc];})
