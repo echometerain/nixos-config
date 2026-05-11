@@ -240,7 +240,7 @@
       xcb-util-cursor-HEAD
       ffmpeg-full
       temurin-bin
-      antigravity-fhs
+      antigravity
       gemini-cli
 
       # Learning
