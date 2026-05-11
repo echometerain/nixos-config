@@ -33,7 +33,6 @@
       fastfetch
       page
       bat
-      lazygit
       asciinema
       asciinema-agg
       ripgrep
@@ -203,6 +202,8 @@
       rust-analyzer
       
       # Git
+      bfg-repo-cleaner
+      lazygit
       git-lfs
       git
       gh
