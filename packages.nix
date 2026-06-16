@@ -150,9 +150,9 @@
       verible
       usb-blaster-udev-rules
       kmymoney
-      qwen-code
       xfce.thunar
       # inputs.claude-desktop.packages."${stdenv.hostPlatform.system}".claude-desktop
+      claude-code
 
       # Misc apps
       transmission_4-qt6
