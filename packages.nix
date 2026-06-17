@@ -1,14 +1,9 @@
 {pkgs, inputs, ...}: {
   environment.systemPackages = let
     sysPkgs = with pkgs; [
-
-      # HTN
-      qemu
-      dialog
-
+      
       # Nix utils
       home-manager
-      nixpkgs-fmt
       alejandra
       patchelf
       nixd
@@ -31,16 +26,11 @@
       tealdeer
       navi
       fastfetch
-      page
       bat
-      asciinema
-      asciinema-agg
       ripgrep
-      ghostscript
       xxd
       zoxide
       graphviz
-      bear
 
       # Networking CLI
       wget
@@ -63,7 +53,6 @@
       fd
       unzip
       unar
-      # ventoy-full
 
       # Fun CLI
       hollywood
@@ -73,7 +62,6 @@
       cowsay
       pipes-rs
       cool-retro-term
-      vimgolf
       cava
 
       # Graphical system utils
@@ -125,21 +113,14 @@
       # User utils
       thunderbird
       pandoc
-      # spyder
       bulky
       gnuradio
       candy-icons
       octaveFull
-      # wineWow64Packages.stableFull
-      # winetricks
-      # flutter
       pavucontrol
-      # gnome-shell
       gnome-tweaks
       grsync
       caffeine-ng
-      # distrobox
-      x11docker
       appimage-run
       rclone
       flatpak-builder
@@ -150,7 +131,7 @@
       verible
       usb-blaster-udev-rules
       kmymoney
-      xfce.thunar
+      thunar
       # inputs.claude-desktop.packages."${stdenv.hostPlatform.system}".claude-desktop
       claude-code
 
@@ -159,29 +140,20 @@
       calibre
       libreoffice-qt6-fresh
       firefox
-      protonvpn-gui
+      proton-vpn
       freeoffice
       onlyoffice-desktopeditors
       inputs.zen-browser.packages."${stdenv.hostPlatform.system}".twilight
-      # (vivaldi.override {
-      #   proprietaryCodecs = true;
-      #   vivaldi-ffmpeg-codecs = pkgs.vivaldi-ffmpeg-codecs;
-      # })
-      # obsidian
       google-chrome
       
       # Web
       libyaml
-      apacheHttpd
       nodejs_24
       bun
       ruby
-      solargraph
       deno
       
       # Low Level
-      yosys
-      # apio
       ghex
       cmake
       gnumake
@@ -209,16 +181,9 @@
       gh
       
       # Python
-      pipx
       uv
       micromamba
-      # (python3.withPackages (python-pkgs:
-      #   with python-pkgs; [
-      #     pynvim
-      #     numpy
-      #   ]))
-      # poetry
-      
+
       # Text
       vale
       texlab
@@ -236,12 +201,10 @@
       # Misc tooling
       vscode
       arduino-ide
-      movit
-      xcb-util-cursor-HEAD
+      libxcb-cursor
       ffmpeg-full
       temurin-bin
-      antigravity
-      gemini-cli
+      monero-gui
 
       # Learning
       anki-bin
@@ -260,7 +223,6 @@
       freeplane
       pdfarranger
       authenticator
-      neomutt
 
       # Visual media
       subtitlecomposer
@@ -285,12 +247,6 @@
       picard
       yabridge
       vital
-
-      # Coins
-      wasabiwallet
-      eigenwallet
-      monero-gui
-      xmrig
 
     ];
     kdePkgs = with pkgs.kdePackages; [

@@ -16,20 +16,20 @@
       harfbuzz
 
       openssl
-      xorg.libXcomposite
-      xorg.libXtst
-      xorg.libXrandr
-      xorg.libXext
-      xorg.libX11
-      xorg.libXfixes
+      libXcomposite
+      libXtst
+      libXrandr
+      libXext
+      libX11
+      libXfixes
       libGL
       libGLU
       libva
       pipewire
-      xorg.libxcb
-      xorg.libXdamage
-      xorg.libxshmfence
-      xorg.libXxf86vm
+      libxcb
+      libXdamage
+      libxshmfence
+      libXxf86vm
       libelf
       sqlite
       fuse
@@ -42,13 +42,13 @@
       bzip2
 
       # Without these it silently fails
-      xorg.libXinerama
-      xorg.libXcursor
-      xorg.libXrender
-      xorg.libXScrnSaver
-      xorg.libXi
-      xorg.libSM
-      xorg.libICE
+      libXinerama
+      libXcursor
+      libXrender
+      libXScrnSaver
+      libXi
+      libSM
+      libICE
       gnome2.GConf
       nspr
       nss
@@ -63,13 +63,13 @@
       libudev0-shim
 
       # Verified games requirements
-      xorg.libXt
-      xorg.libXmu
+      libXt
+      libXmu
       libogg
       libvorbis
       SDL
       SDL2_image
-      glew110
+      glew_1_10
       libidn
       tbb
 
@@ -98,7 +98,7 @@
       libgcrypt
       libvpx
       librsvg
-      xorg.libXft
+      libXft
       libvdpau
       pango
       cairo
