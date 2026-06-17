@@ -182,7 +182,8 @@
       
       # Python
       uv
-      micromamba
+      inputs.newpkgs.legacyPackages."${stdenv.hostPlatform.system}".micromamba
+      # micromamba
 
       # Text
       vale
