@@ -85,4 +85,15 @@
     envfs.enable = true;
 
   };
+
+  systemd.services.alsa-microphone-enable = {
+    description = "Enable ALSA microphone capture";
+    wantedBy = ["multi-user.target"];
+    after = ["pipewire.service"];
+    serviceConfig = {
+      Type = "oneshot";
+      RemainAfterExit = true;
+      ExecStart = "${pkgs.alsa-utils}/bin/amixer -c 0 set Capture 80% cap";
+    };
+  };
 }
