@@ -18,8 +18,11 @@
 
     # Configure keymap in X11
     xserver = {
-      xkb.layout = "us";
-      xkb.variant = "";
+      xkb = {
+        layout = "us";
+        variant = "";
+        options = "caps:swapescape";
+      };
     };
 
     # Enable CUPS to print documents.
