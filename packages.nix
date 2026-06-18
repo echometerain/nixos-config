@@ -274,6 +274,7 @@
       kmenuedit
       okular
       kalgebra
+      qt6ct
     ];
   in
     sysPkgs ++ kdePkgs;
