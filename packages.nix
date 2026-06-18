@@ -20,6 +20,7 @@
       calc
       libqalculate
       fakeroot
+      libnotify
 
       # Misc CLI
       jq
