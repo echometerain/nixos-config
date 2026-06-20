@@ -7,10 +7,8 @@
       alejandra
       patchelf
       nixd
-      nix-ld
 
       # CLI essentials
-      zsh
       wl-clipboard
       wl-clip-persist
       killall
@@ -36,7 +34,6 @@
       # Networking CLI
       wget
       nmap
-      networkmanager
       ntfs3g
       aria2
       axel
@@ -72,7 +69,6 @@
       qdirstat
       kitty
       rsync
-      xwayland
       flatpak
       (rofi.override {
         plugins = with pkgs; [
@@ -85,7 +81,6 @@
       alsa-utils
 
       # Hypr packages
-      hyprland
       inputs.hyprland-qtutils.packages."${stdenv.hostPlatform.system}".default
       hyprpolkitagent
       hyprshot

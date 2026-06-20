@@ -3,7 +3,7 @@
   # manage.
   home.username = "hhwl";
   home.homeDirectory = "/home/hhwl";
-  xdg.configHome = "/home/hhwl";
+  xdg.configHome = "/home/hhwl/.config";
 
   # This value determines the Home Manager release that your configuration is
   # compatible with. This helps avoid breakage when a new Home Manager release

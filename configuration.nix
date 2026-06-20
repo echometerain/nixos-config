@@ -66,7 +66,7 @@
     users.hhwl = {
       isNormalUser = true;
       description = "hhwl";
-      extraGroups = ["plugdev" "networkmanager" "wheel" "dialout" "audio" "scanner" "lp" "docker" "scanner"];
+      extraGroups = ["plugdev" "networkmanager" "wheel" "dialout" "audio" "scanner" "lp" "docker"];
     };
   };
 
@@ -84,7 +84,6 @@
     XDG_CONFIG_HOME = "$HOME/.config";
     XDG_DATA_HOME = "$HOME/.local/share";
     XDG_STATE_HOME = "$HOME/.local/state";
-    XDG_RUNTIME_DIR = "/run/user/$UID";
     HYPRSHOT_DIR = "$HOME/Pictures/Screenshots";
     SUDO_EDITOR = "nvim";
   };
@@ -161,7 +160,7 @@
     firewall = {
       enable = true;
       allowedTCPPorts = [80 443]; # http https
-      allowedUDPPorts = [80 443];
+      allowedUDPPorts = [443];
       allowedTCPPortRanges = [
         {
           from = 1714;
@@ -182,7 +181,7 @@
   powerManagement.enable = true;
   xdg.portal.enable = true;
   environment.sessionVariables.NIXOS_OZONE_WL = "1";
-  qt.platformTheme = "kde";
+  qt.platformTheme.name = "kde";
 
   # Swap configuration
   swapDevices = [

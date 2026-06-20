@@ -21,7 +21,7 @@
         unbind '%'
         set -sg escape-time 10
         set -g repeat-time 1000
-        set -g terminal-features 'XXX:RGB'
+        set -g terminal-features 'xterm-kitty:RGB'
 
 
         set -gF window-status-style "bg=#{@thm_surface_1},fg=#{@thm_fg}"

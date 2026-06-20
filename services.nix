@@ -73,7 +73,7 @@
     gnome.gnome-keyring.enable = true;
 
     # Journald clean
-    SystemdJournal2Gelf.extraOptions = "--vacuum-size=500M";
+    journald.extraConfig = "SystemMaxUse=500M";
 
     # Hypr stuff
     hypridle.enable = true;
