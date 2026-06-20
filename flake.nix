@@ -31,11 +31,12 @@
     nixpkgs,
     ...
   } @ inputs: {
-    nixosConfigurations.default = nixpkgs.lib.nixosSystem {
+    nixosConfigurations.moving-castle = nixpkgs.lib.nixosSystem {
       specialArgs = {inherit inputs;};
       modules = [
+        ./hosts/moving-castle/hardware-configuration.nix
         ./configuration.nix
-	      inputs.clipboard-sync.nixosModules.default
+        inputs.clipboard-sync.nixosModules.default
       ];
     };
   };

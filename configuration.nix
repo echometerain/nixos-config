@@ -8,7 +8,6 @@
   ...
 }: {
   imports = [
-    ./hardware-configuration.nix
     ./packages.nix
     ./programs.nix
     ./nix-ld.nix
