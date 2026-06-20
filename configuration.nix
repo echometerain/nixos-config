@@ -3,6 +3,7 @@
 # and in the NixOS manual (accessible by running ‘nixos-help’).
 {
   pkgs,
+  lib,
   inputs,
   ...
 }: {
@@ -86,6 +87,14 @@
     XDG_RUNTIME_DIR = "/run/user/$UID";
     HYPRSHOT_DIR = "$HOME/Pictures/Screenshots";
     SUDO_EDITOR = "nvim";
+  };
+
+  # GNOME's IBus integration sets these, but IBus 1.5.30+ deprecates them.
+  # Unset so IBus doesn't show the "please unset QT_IM_MODULE/GTK_IM_MODULE" notification.
+  environment.variables = {
+    GTK_IM_MODULE = lib.mkForce "";
+    QT_IM_MODULE = lib.mkForce "";
+    XMODIFIERS = lib.mkForce "";
   };
 
   # Font configuration
