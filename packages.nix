@@ -1,6 +1,8 @@
 {pkgs, inputs, ...}: {
   environment.systemPackages = let
     sysPkgs = with pkgs; [
+
+      cherry-studio
       
       # Nix utils
       home-manager
