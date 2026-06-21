@@ -32,20 +32,22 @@
         canTouchEfiVariables = true;
       };
     };
+    tmp.useTmpfs = true;
     # blacklistedKernelModules = [ "dvb_usb_rtl28xxu" ];
   };
 
   # Nix settings
   nix.settings = {
     experimental-features = ["nix-command" "flakes"];
-    substituters = ["https://hyprland.cachix.org"];
-    trusted-public-keys = ["hyprland.cachix.org-1:a7pgxzMz7+chwVL3/pzj6jIBMioiJM7ypFP8PwtkuGc="];
+    auto-optimise-store = true;
+    extra-substituters = ["https://hyprland.cachix.org"];
+    extra-trusted-public-keys = ["hyprland.cachix.org-1:a7pgxzMz7+chwVL3/pzj6jIBMioiJM7ypFP8PwtkuGc="];
   };
-  nix.optimise.automatic = true;
   nix.gc = {
     automatic = true;
     dates = "weekly";
     options = "--delete-older-than 14d";
+    persistent = true;
   };
 
   # Custom packages
@@ -136,7 +138,6 @@
       enable = true;
       settings.General = {
         Enable = "Source,Sink,Media,Socket";
-        Experimental = true;
       };
     };
   };
@@ -182,7 +183,6 @@
   };
 
   # Misc configuration
-  # virtualisation.docker.enable = true;
   powerManagement.enable = true;
   xdg.portal.enable = true;
   environment.sessionVariables.NIXOS_OZONE_WL = "1";

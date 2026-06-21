@@ -2,8 +2,8 @@
   environment.systemPackages = let
     sysPkgs = with pkgs; [
 
-      cherry-studio
       opencode
+      opencode-desktop
       
       # Nix utils
       home-manager
@@ -98,7 +98,6 @@
       nwg-look
       dunst
       blueman
-      networkmanagerapplet
       cliphist
       brightnessctl
       htop
@@ -138,7 +137,6 @@
       transmission_4-qt6
       calibre
       libreoffice-qt6-fresh
-      firefox
       proton-vpn
       freeoffice
       onlyoffice-desktopeditors
