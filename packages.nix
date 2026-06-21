@@ -182,6 +182,7 @@
       # micromamba
 
       # Text
+      obsidian
       vale
       texlab
       (texlive.combine {
