@@ -3,7 +3,6 @@
     sysPkgs = with pkgs; [
 
       opencode
-      cherry-studio
       
       # Nix utils
       home-manager
