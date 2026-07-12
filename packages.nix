@@ -178,7 +178,7 @@
       
       # Python
       uv
-      micromamba
+      mamba-cpp
 
       # Text
       obsidian
