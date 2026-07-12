@@ -178,7 +178,7 @@
       
       # Python
       uv
-      inputs.newpkgs.legacyPackages."${stdenv.hostPlatform.system}".micromamba
+      micromamba
       # micromamba
 
       # Text
