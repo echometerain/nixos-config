@@ -16,6 +16,7 @@
       killall
       usbutils
       pciutils
+      tcptraceroute
       traceroute
       net-tools
       calc
