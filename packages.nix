@@ -16,6 +16,7 @@
       killall
       usbutils
       pciutils
+      traceroute
       net-tools
       calc
       libqalculate

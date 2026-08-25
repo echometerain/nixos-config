@@ -33,6 +33,7 @@
       };
     };
     tmp.useTmpfs = true;
+    initrd.systemd.emergencyAccess = true;
     # blacklistedKernelModules = [ "dvb_usb_rtl28xxu" ];
   };
 
