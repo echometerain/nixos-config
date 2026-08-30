@@ -16,28 +16,23 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
     # musnix.url = "github:musnix/musnix";
-
-    claude-desktop = {
-      url = "github:k3d3/claude-desktop-linux-flake";
-      inputs = {
-        nixpkgs.follows = "nixpkgs";
-        # flake-utils.follows = "nixpkgs";
-      };
-    };
     clipboard-sync.url = "github:dnut/clipboard-sync";
   };
 
   outputs = {
     nixpkgs,
     ...
-  } @ inputs: {
-    nixosConfigurations.moving-castle = nixpkgs.lib.nixosSystem {
-      specialArgs = {inherit inputs;};
+  } @ inputs:
+  let
+    hosts = [ "moving-castle" "cloud-castle" ];
+  in {
+    nixosConfigurations = nixpkgs.lib.genAttrs hosts (host: nixpkgs.lib.nixosSystem {
+      specialArgs = { inherit inputs; };
       modules = [
-        ./hosts/moving-castle/hardware-configuration.nix
+        ./hosts/${host}/hardware-configuration.nix
         ./configuration.nix
         inputs.clipboard-sync.nixosModules.default
       ];
-    };
+    });
   };
 }
