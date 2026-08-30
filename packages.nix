@@ -2,8 +2,6 @@
   environment.systemPackages = let
     sysPkgs = with pkgs; [
 
-      opencode
-      
       # Nix utils
       home-manager
       alejandra
@@ -133,6 +131,7 @@
       thunar
       # inputs.claude-desktop.packages."${stdenv.hostPlatform.system}".claude-desktop
       claude-code
+      opencode
 
       # Misc apps
       transmission_4-qt6
