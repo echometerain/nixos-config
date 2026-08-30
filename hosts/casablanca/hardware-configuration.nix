@@ -14,8 +14,8 @@
   boot.extraModulePackages = [ ];
   
   networking = {
-    hostname = "casablanca"
-  }
+    hostName = "casablanca";
+  };
 
   fileSystems."/" =
     { device = "/dev/disk/by-uuid/9e44b896-8bc3-4aef-81a1-925054b4e869";
