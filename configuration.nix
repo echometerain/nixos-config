@@ -186,7 +186,6 @@
   powerManagement.enable = true;
   xdg.portal.enable = true;
   environment.sessionVariables.NIXOS_OZONE_WL = "1";
-  qt.platformTheme.name = "kde";
 
   # Swap configuration
   swapDevices = [

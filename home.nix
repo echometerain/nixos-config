@@ -1,4 +1,8 @@
-{config, ...}: {
+{
+  config,
+  pkgs,
+  ...
+}: {
   # Home Manager needs a bit of information about you and the paths it should
   # manage.
   home.username = "hhwl";
@@ -108,6 +112,44 @@
   programs = {
     home-manager.enable = true;
   };
+
+  # Breeze Dark widgets/colors, Candy icons.
+  gtk = {
+    enable = true;
+    colorScheme = "dark";
+    theme = {
+      name = "Breeze-Dark";
+      package = pkgs.kdePackages.breeze-gtk;
+    };
+    iconTheme = {
+      name = "candy-icons";
+      package = pkgs.candy-icons;
+    };
+
+    # GTK 4 ignores gtk-theme-name; Home Manager applies the theme by
+    # importing its CSS into gtk-4.0/gtk.css instead.
+    gtk4.theme = config.gtk.theme;
+  };
+
+  qt = {
+    enable = true;
+    platformTheme.name = "kde";
+    style.name = "Breeze";
+  };
+
+  # plasma-integration reads colors, widget style and icon theme from
+  # kdeglobals. Without a Plasma session nothing else writes it, so build it
+  # from Breeze's own Breeze Dark color scheme.
+  xdg.configFile."kdeglobals".source = pkgs.concatText "kdeglobals" [
+    "${pkgs.kdePackages.breeze}/share/color-schemes/BreezeDark.colors"
+    (pkgs.writeText "kdeglobals-theme" ''
+      [KDE]
+      widgetStyle=Breeze
+
+      [Icons]
+      Theme=candy-icons
+    '')
+  ];
 
   wayland.windowManager.hyprland.systemd.enable = false;
 }
