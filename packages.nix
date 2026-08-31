@@ -25,6 +25,7 @@
       libnotify
 
       # Misc CLI
+      zsh-fzf-tab
       jq
       tealdeer
       navi

@@ -16,24 +16,23 @@
           "colored-man-pages"
           "tmux"
           "you-should-use"
-          "fzf-tab"
         ];
         customPkgs = with pkgs; [
           zsh-powerlevel10k
           zsh-you-should-use
-          zsh-fzf-tab
         ];
-        # preLoaded = ''
-        #   typeset -g POWERLEVEL9K_INSTANT_PROMPT=quiet
-        #   if [[ -r "''${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-''${(%):-%n}.zsh" ]]; then
-        #     source "''${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-''${(%):-%n}.zsh"
-        #   fi
-        # '';
+        preLoaded = ''
+          typeset -g POWERLEVEL9K_INSTANT_PROMPT=quiet
+          if [[ -r "''${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-''${(%):-%n}.zsh" ]]; then
+            source "''${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-''${(%):-%n}.zsh"
+          fi
+        '';
       };
 
       interactiveShellInit = lib.mkAfter ''
         [ -r ~/.shrc ] && source ~/.shrc
         source /opt/dotfiles/.p10k.zsh
+        source ${pkgs.zsh-fzf-tab}/share/zsh-fzf-tab/zsh-fzf-tab.plugin.zsh
 
         ### Fix slowness of pastes with zsh-syntax-highlighting.zsh
         pasteinit() {
