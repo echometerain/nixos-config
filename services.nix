@@ -76,7 +76,8 @@
     journald.extraConfig = "SystemMaxUse=500M";
 
     # Hypr stuff
-    hypridle.enable = true;
+    # Disabled: no hypridle.conf exists anywhere, so it crash-loops on start.
+    hypridle.enable = false;
 
     # Clipboard sync
     clipboard-sync.enable = true;
