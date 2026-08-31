@@ -266,7 +266,6 @@
       ark
       dolphin
       kio-admin
-      kmenuedit
       okular
       kalgebra
       qt6ct

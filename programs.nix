@@ -32,7 +32,7 @@
       interactiveShellInit = lib.mkAfter ''
         [ -r ~/.shrc ] && source ~/.shrc
         source /opt/dotfiles/.p10k.zsh
-        source ${pkgs.zsh-fzf-tab}/share/zsh-fzf-tab/zsh-fzf-tab.plugin.zsh
+        source ${pkgs.zsh-fzf-tab}/share/fzf-tab/fzf-tab.plugin.zsh
 
         ### Fix slowness of pastes with zsh-syntax-highlighting.zsh
         pasteinit() {
