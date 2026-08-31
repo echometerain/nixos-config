@@ -1,6 +1,117 @@
-{pkgs, ...}: {
+{pkgs, lib, ...}: let
+  # ohMyZsh.customPkgs collects $out/share/zsh/{plugins,themes,site-functions},
+  # but nixpkgs ships fzf-tab under $out/share/fzf-tab. Restage it.
+  zsh-fzf-tab-omz = pkgs.runCommand "zsh-fzf-tab-omz" {} ''
+    mkdir -p $out/share/zsh/plugins
+    ln -s ${pkgs.zsh-fzf-tab}/share/fzf-tab $out/share/zsh/plugins/fzf-tab
+  '';
+in {
 # Programs configuration
   programs = {
+    zsh = {
+      enable = true;
+
+      # Replaces the zsh-syntax-highlighting and zsh-autosuggestions oh-my-zsh
+      # plugins; both are sourced straight from /etc/zshrc by their own modules.
+      syntaxHighlighting.enable = true;
+      autosuggestions = {
+        enable = true;
+        highlightStyle = "fg=#ff00ff,bold,underline";
+      };
+
+      ohMyZsh = {
+        enable = true;
+        theme = "powerlevel10k/powerlevel10k";
+        # "fzf" is appended automatically by programs.fzf below.
+        plugins = [
+          "git"
+          "colored-man-pages"
+          "tmux"
+          "you-should-use"
+          "fzf-tab"
+        ];
+        customPkgs = [
+          pkgs.zsh-powerlevel10k
+          pkgs.zsh-you-should-use
+          zsh-fzf-tab-omz
+        ];
+        # oh-my-zsh is sourced from /etc/zshrc, which runs before ~/.zshrc, so
+        # p10k's instant prompt has to be set up here to still be early enough.
+        preLoaded = ''
+          typeset -g POWERLEVEL9K_INSTANT_PROMPT=quiet
+          if [[ -r "''${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-''${(%):-%n}.zsh" ]]; then
+            source "''${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-''${(%):-%n}.zsh"
+          fi
+        '';
+      };
+
+      # Formerly /opt/dotfiles/.zshrc. mkAfter places this past the oh-my-zsh
+      # and syntax-highlighting blocks, preserving the old load order in which
+      # ~/.zshrc ran after /etc/zshrc.
+      interactiveShellInit = lib.mkAfter ''
+        [ -r ~/.shrc ] && source ~/.shrc
+
+        ### Fix slowness of pastes with zsh-syntax-highlighting.zsh
+        pasteinit() {
+          OLD_SELF_INSERT=''${''${(s.:.)widgets[self-insert]}[2,3]}
+          zle -N self-insert url-quote-magic # I wonder if you'd need `.url-quote-magic`?
+        }
+
+        pastefinish() {
+          zle -N self-insert $OLD_SELF_INSERT
+        }
+        zstyle :bracketed-paste-magic paste-init pasteinit
+        zstyle :bracketed-paste-magic paste-finish pastefinish
+        ### Fix slowness of pastes
+
+        # Guarded: /etc/zshrc is read by root's shell too, and neither the xkcd
+        # greeter nor the tmux autostart should fire for root.
+        if [[ $UID != 0 ]]; then
+          if [ "$(nmcli networking connectivity check)" != "none" -a ! -z "''${KITTY_PID+x}" ]; then
+              XKCD_JSON="$(curl -s https://xkcd.com/info.0.json)"
+              NUM="$(echo $XKCD_JSON | jq -r '.num')"
+              if [ "$(cat ~/.last_xkcd 2>/dev/null)" != "$NUM" ]; then
+                  echo $NUM > ~/.last_xkcd
+                  echo $XKCD_JSON | jq -r '.safe_title'
+                  kitten icat --align left "$(echo $XKCD_JSON | jq -r '.img')"
+                  echo $XKCD_JSON | jq -r '.alt'
+                  TMUX="blocked"
+              fi
+          fi
+
+          if [ "$TMUX" = "" ]; then
+              if [ ! -z "$(pidof kitty)" -a "$(pidof tmux)" != "" ]; then
+                  tmux attach-session
+              else
+                  tmux
+              fi
+          elif [ "$TMUX" != "blocked" ]; then
+              fortune
+          fi
+        fi
+
+        # User configuration
+        export MANPATH="/usr/local/man:$MANPATH"
+
+        # bun completions
+        [ -s "$HOME/.bun/_bun" ] && source "$HOME/.bun/_bun"
+
+        export MAMBA_ROOT_PREFIX="$HOME/micromamba"
+        command -v mamba > /dev/null && \
+          eval "$(mamba shell hook --shell zsh --root-prefix "$MAMBA_ROOT_PREFIX" | sed 's/\.mamba-wrapped/mamba/g')"
+
+        eval "$(zoxide init zsh)"
+
+        setopt hist_find_no_dups
+      '';
+    };
+
+    # Replaces the fzf-zsh-plugin oh-my-zsh plugin.
+    fzf = {
+      keybindings = true;
+      fuzzyCompletion = true;
+    };
+
     tmux = {
       enable = true;
       shortcut = "a";
@@ -62,7 +173,6 @@
 
     kdeconnect.enable = true;
     openvpn3.enable = true;
-    zsh.enable = true;
     nm-applet.enable = true;
 
     # Some programs need SUID wrappers, can be configured further or are
