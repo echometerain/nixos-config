@@ -33,6 +33,7 @@
 
       interactiveShellInit = lib.mkAfter ''
         [ -r ~/.shrc ] && source ~/.shrc
+        source /opt/dotfiles/.p10k.zsh
 
         ### Fix slowness of pastes with zsh-syntax-highlighting.zsh
         pasteinit() {
@@ -127,15 +128,6 @@
     };
     neovim = {
       enable = true;
-      # configure = {
-      #   customRC = "source /opt/dotfiles/.vimrc";
-      #   packages.myVimPackage = with pkgs.vimPlugins; {
-      #     start = [
-      #       vim-tmux-navigator
-      #       vim-sleuth
-      #     ];
-      #   };
-      # };
       defaultEditor = true;
       viAlias = true;
       vimAlias = true;

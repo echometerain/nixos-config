@@ -58,10 +58,6 @@
     ".config/nvim" = {
       source = config.lib.file.mkOutOfStoreSymlink "/opt/dotfiles/nvim";
     };
-    # zsh's actual configuration lives in programs.zsh in
-    # /etc/nixos/programs.nix and is loaded from /etc/zshrc. This file only
-    # needs to exist: with no zsh startup file in ~, zsh runs
-    # zsh-newuser-install on every interactive shell.
     ".zshrc".text = ''
       # Intentionally empty -- see programs.zsh in /etc/nixos/programs.nix
     '';
