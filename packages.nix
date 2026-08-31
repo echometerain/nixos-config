@@ -81,7 +81,6 @@
       })
       playerctl
       logitech-udev-rules 
-      seahorse
       alsa-utils
 
       # Hypr packages
@@ -139,8 +138,6 @@
       calibre
       libreoffice-qt6-fresh
       proton-vpn
-      freeoffice
-      onlyoffice-desktopeditors
       inputs.zen-browser.packages."${stdenv.hostPlatform.system}".twilight
       google-chrome
       
@@ -272,6 +269,7 @@
       okular
       kalgebra
       qt6ct
+      kmenuedit
     ];
   in
     sysPkgs ++ kdePkgs;
