@@ -1,18 +1,7 @@
-{pkgs, lib, ...}: let
-  # ohMyZsh.customPkgs collects $out/share/zsh/{plugins,themes,site-functions},
-  # but nixpkgs ships fzf-tab under $out/share/fzf-tab. Restage it.
-  zsh-fzf-tab-omz = pkgs.runCommand "zsh-fzf-tab-omz" {} ''
-    mkdir -p $out/share/zsh/plugins
-    ln -s ${pkgs.zsh-fzf-tab}/share/fzf-tab $out/share/zsh/plugins/fzf-tab
-  '';
-in {
-# Programs configuration
+{pkgs, lib, ...}: {
   programs = {
     zsh = {
       enable = true;
-
-      # Replaces the zsh-syntax-highlighting and zsh-autosuggestions oh-my-zsh
-      # plugins; both are sourced straight from /etc/zshrc by their own modules.
       syntaxHighlighting.enable = true;
       autosuggestions = {
         enable = true;
@@ -22,7 +11,6 @@ in {
       ohMyZsh = {
         enable = true;
         theme = "powerlevel10k/powerlevel10k";
-        # "fzf" is appended automatically by programs.fzf below.
         plugins = [
           "git"
           "colored-man-pages"
@@ -30,24 +18,19 @@ in {
           "you-should-use"
           "fzf-tab"
         ];
-        customPkgs = [
-          pkgs.zsh-powerlevel10k
-          pkgs.zsh-you-should-use
-          zsh-fzf-tab-omz
+        customPkgs = with pkgs; [
+          zsh-powerlevel10k
+          zsh-you-should-use
+          zsh-fzf-tab
         ];
-        # oh-my-zsh is sourced from /etc/zshrc, which runs before ~/.zshrc, so
-        # p10k's instant prompt has to be set up here to still be early enough.
-        preLoaded = ''
-          typeset -g POWERLEVEL9K_INSTANT_PROMPT=quiet
-          if [[ -r "''${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-''${(%):-%n}.zsh" ]]; then
-            source "''${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-''${(%):-%n}.zsh"
-          fi
-        '';
+        # preLoaded = ''
+        #   typeset -g POWERLEVEL9K_INSTANT_PROMPT=quiet
+        #   if [[ -r "''${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-''${(%):-%n}.zsh" ]]; then
+        #     source "''${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-''${(%):-%n}.zsh"
+        #   fi
+        # '';
       };
 
-      # Formerly /opt/dotfiles/.zshrc. mkAfter places this past the oh-my-zsh
-      # and syntax-highlighting blocks, preserving the old load order in which
-      # ~/.zshrc ran after /etc/zshrc.
       interactiveShellInit = lib.mkAfter ''
         [ -r ~/.shrc ] && source ~/.shrc
 
@@ -89,12 +72,6 @@ in {
               fortune
           fi
         fi
-
-        # User configuration
-        export MANPATH="/usr/local/man:$MANPATH"
-
-        # bun completions
-        [ -s "$HOME/.bun/_bun" ] && source "$HOME/.bun/_bun"
 
         export MAMBA_ROOT_PREFIX="$HOME/micromamba"
         command -v mamba > /dev/null && \
