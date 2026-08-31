@@ -24,7 +24,7 @@
     ...
   } @ inputs:
   let
-    hosts = [ "moving-castle" "cloud-castle" ];
+    hosts = [ "moving-castle" "casablanca" ];
   in {
     nixosConfigurations = nixpkgs.lib.genAttrs hosts (host: nixpkgs.lib.nixosSystem {
       specialArgs = { inherit inputs; };
