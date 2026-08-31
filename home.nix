@@ -159,7 +159,7 @@
     sunset = "18:30";
     temperature = {
       day = 5500;
-      night = 3500;
+      night = 4500;
     };
   };
 }
