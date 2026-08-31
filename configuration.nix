@@ -212,6 +212,38 @@
     totem # video player
   ]);
 
+  xdg.mime.defaultApplications = {
+    "audio/*" = "umpv.desktop";
+    "video/*" = "umpv.desktop";
+    "image/*" = "org.gnome.Loupe.desktop";
+    "application/epub+zip" = "com.github.johnfactotum.Foliate.desktop";
+    "application/json" = "org.kde.kate.desktop";
+    "application/octet-stream" = "org.kde.kate.desktop";
+    "application/pdf" = "okularApplication_pdf.desktop";
+    "application/vnd.amazon.mobi8-ebook" = "com.github.johnfactotum.Foliate.desktop";
+    "application/vnd.openxmlformats-officedocument.wordprocessingml.document" = "writer.desktop";
+    "application/x-extension-*" = "zen-twilight.desktop";
+    "application/x-mobipocket-ebook" = "com.github.johnfactotum.Foliate.desktop";
+    "application/xhtml+xml" = "zen-twilight.desktop";
+    "application/zip" = "org.kde.ark.desktop";
+    "message/rfc822" = "userapp-Thunderbird-61D2D3.desktop";
+    "text/csv" = "calc.desktop";
+    "text/html" = "zen-twilight.desktop";
+    "text/plain" = "org.kde.kate.desktop";
+    "text/x-lua" = "org.kde.kate.desktop";
+    "text/x-python" = "org.kde.kate.desktop";
+    "x-scheme-handler/about" = "zen-twilight.desktop";
+    "x-scheme-handler/chrome" = "zen-twilight.desktop";
+    "x-scheme-handler/claude-cli" = "claude-code-url-handler.desktop";
+    "x-scheme-handler/http" = "zen-twilight.desktop";
+    "x-scheme-handler/https" = "zen-twilight.desktop";
+    "x-scheme-handler/mailto" = "userapp-Thunderbird-61D2D3.desktop";
+    "x-scheme-handler/mid" = "userapp-Thunderbird-61D2D3.desktop";
+    "x-scheme-handler/unknown" = "zen-twilight.desktop";
+    "x-scheme-handler/webcal" = "zen-twilight.desktop";
+    "x-scheme-handler/net.thunderbird" = "userapp-Thunderbird-SUGGS3.desktop";
+  };
+
   # # Chinese language support
   # i18n.inputMethod = {
   #   enabled = "fcitx5";
