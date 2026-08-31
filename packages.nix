@@ -245,6 +245,7 @@
     ];
     kdePkgs = with pkgs.kdePackages; [
       ffmpegthumbs
+      kde-cli-tools
       kdegraphics-thumbnailers
       partitionmanager
       kate
