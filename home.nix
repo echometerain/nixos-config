@@ -151,5 +151,15 @@
     '')
   ];
 
-  wayland.windowManager.hyprland.systemd.enable = false;
+  # wayland.windowManager.hyprland.systemd.enable = false;
+
+  services.wlsunset = {
+    enable = true;
+    sunrise = "08:00";
+    sunset = "18:30";
+    temperature = {
+      day = 5500;
+      night = 3500;
+    };
+  };
 }
