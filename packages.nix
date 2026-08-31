@@ -113,7 +113,6 @@
       pandoc
       bulky
       gnuradio
-      candy-icons
       pavucontrol
       gnome-tweaks
       grsync
@@ -245,9 +244,6 @@
 
     ];
     kdePkgs = with pkgs.kdePackages; [
-      breeze
-      breeze-icons
-      breeze-gtk
       ffmpegthumbs
       kdegraphics-thumbnailers
       partitionmanager
@@ -264,7 +260,6 @@
       kio-admin
       okular
       kalgebra
-      qt6ct
       kmenuedit
     ];
   in
