@@ -58,9 +58,9 @@
     ".config/nvim" = {
       source = config.lib.file.mkOutOfStoreSymlink "/opt/dotfiles/nvim";
     };
-    ".zshrc" = {
-      source = config.lib.file.mkOutOfStoreSymlink "/opt/dotfiles/.zshrc";
-    };
+    ".zshrc".text = ''
+      # Intentionally empty -- see programs.zsh in /etc/nixos/programs.nix
+    '';
     ".bashrc" = {
       source = config.lib.file.mkOutOfStoreSymlink "/opt/dotfiles/.bashrc";
     };

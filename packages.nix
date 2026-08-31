@@ -7,6 +7,7 @@
       alejandra
       patchelf
       nixd
+      gnome-boxes
 
       # CLI essentials
       wl-clipboard
@@ -23,6 +24,7 @@
       libnotify
 
       # Misc CLI
+      zsh-fzf-tab
       jq
       tealdeer
       navi
@@ -79,7 +81,6 @@
       })
       playerctl
       logitech-udev-rules 
-      seahorse
       alsa-utils
 
       # Hypr packages
@@ -113,7 +114,6 @@
       bulky
       gnuradio
       candy-icons
-      octaveFull
       pavucontrol
       gnome-tweaks
       grsync
@@ -122,7 +122,6 @@
       rclone
       flatpak-builder
       appstream
-      sqlitebrowser
       quartus-prime-lite
       ghdl
       verible
@@ -138,8 +137,6 @@
       calibre
       libreoffice-qt6-fresh
       proton-vpn
-      freeoffice
-      onlyoffice-desktopeditors
       inputs.zen-browser.packages."${stdenv.hostPlatform.system}".twilight
       google-chrome
       
@@ -253,8 +250,6 @@
       breeze-gtk
       ffmpegthumbs
       kdegraphics-thumbnailers
-      kde-cli-tools
-      plasma-workspace
       partitionmanager
       kate
       kolourpaint
@@ -267,10 +262,10 @@
       ark
       dolphin
       kio-admin
-      kmenuedit
       okular
       kalgebra
       qt6ct
+      kmenuedit
     ];
   in
     sysPkgs ++ kdePkgs;
