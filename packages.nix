@@ -2,13 +2,12 @@
   environment.systemPackages = let
     sysPkgs = with pkgs; [
 
-      opencode
-      
       # Nix utils
       home-manager
       alejandra
       patchelf
       nixd
+      gnome-boxes
 
       # CLI essentials
       wl-clipboard
@@ -115,7 +114,6 @@
       bulky
       gnuradio
       candy-icons
-      octaveFull
       pavucontrol
       gnome-tweaks
       grsync
@@ -124,7 +122,6 @@
       rclone
       flatpak-builder
       appstream
-      sqlitebrowser
       quartus-prime-lite
       ghdl
       verible
@@ -133,6 +130,7 @@
       thunar
       # inputs.claude-desktop.packages."${stdenv.hostPlatform.system}".claude-desktop
       claude-code
+      opencode
 
       # Misc apps
       transmission_4-qt6
@@ -252,8 +250,6 @@
       breeze-gtk
       ffmpegthumbs
       kdegraphics-thumbnailers
-      kde-cli-tools
-      plasma-workspace
       partitionmanager
       kate
       kolourpaint
