@@ -259,6 +259,8 @@
     "x-scheme-handler/net.thunderbird" = "userapp-Thunderbird-SUGGS3.desktop";
   };
 
+  qt.enable = true;
+
   # # Chinese language support
   # i18n.inputMethod = {
   #   enabled = "fcitx5";
