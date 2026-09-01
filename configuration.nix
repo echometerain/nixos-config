@@ -221,6 +221,12 @@
     totem # video player
   ]);
 
+  # uwsm sets XDG_MENU_PREFIX="hyprland-" for the systemd user session, but no
+  # hyprland-applications.menu exists. KService then builds an empty application
+  # catalog, so Dolphin shows no file associations. Point it at the GNOME menu.
+  environment.etc."xdg/menus/hyprland-applications.menu".source =
+    "${pkgs.gnome-menus}/etc/xdg/menus/gnome-applications.menu";
+
   xdg.mime.defaultApplications = {
     "audio/*" = "umpv.desktop";
     "video/*" = "umpv.desktop";
