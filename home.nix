@@ -74,6 +74,9 @@
     ".vimrc" = {
       source = config.lib.file.mkOutOfStoreSymlink "/opt/dotfiles/.vimrc";
     };
+    ".local/share/kxmlgui5/dolphin" = {
+      source = config.lib.file.mkOutOfStoreSymlink "/opt/dotfiles/dolphin";
+    };
 
     # Hyprland iterates ~/.icons at startup and aborts if it is not a
     # directory. Keep it pointed at the real icon dir.
