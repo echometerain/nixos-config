@@ -140,19 +140,8 @@
     style.name = "Breeze";
   };
 
-  # plasma-integration reads colors, widget style and icon theme from
-  # kdeglobals. Without a Plasma session nothing else writes it, so build it
-  # from Breeze's own Breeze Dark color scheme.
-  xdg.configFile."kdeglobals".source = pkgs.concatText "kdeglobals" [
-    "${pkgs.kdePackages.breeze}/share/color-schemes/BreezeDark.colors"
-    (pkgs.writeText "kdeglobals-theme" ''
-      [KDE]
-      widgetStyle=Breeze
-
-      [Icons]
-      Theme=candy-icons
-    '')
-  ];
+  # kdeglobals is supplied as an /etc/xdg cascade default in configuration.nix,
+  # not as a symlink here -- see the comment there.
 
   # wayland.windowManager.hyprland.systemd.enable = false;
 

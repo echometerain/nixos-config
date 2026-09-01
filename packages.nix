@@ -258,6 +258,9 @@
       spectacle
       ark
       dolphin
+      # kbuildsycoca6, without which KService can never rebuild its application
+      # catalog and Dolphin is stuck on a stale, empty ~/.cache/ksycoca6_*.
+      kservice
       kio-admin
       okular
       kalgebra
