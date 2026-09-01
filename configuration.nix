@@ -261,6 +261,27 @@
 
   qt.enable = true;
 
+  # plasma-integration reads colors, widget style and icon theme from
+  # kdeglobals. Without a Plasma session nothing else writes it, so build it
+  # from Breeze's own Breeze Dark color scheme.
+  #
+  # It lives in /etc/xdg (the first entry of XDG_CONFIG_DIRS) so it acts as a
+  # cascade *default*, leaving ~/.config/kdeglobals a real, writable file. A
+  # store symlink there is fatal: KConfig canonicalises the path before creating
+  # its "<file>.lock", so the lock lands in the read-only store and fails, and
+  # any save touching kdeglobals then aborts KConfig::sync() outright -- taking
+  # the app's own rc file down with it ("Couldn't lock global file: dolphinrc").
+  environment.etc."xdg/kdeglobals".source = pkgs.concatText "kdeglobals" [
+    "${pkgs.kdePackages.breeze}/share/color-schemes/BreezeDark.colors"
+    (pkgs.writeText "kdeglobals-theme" ''
+      [KDE]
+      widgetStyle=Breeze
+
+      [Icons]
+      Theme=candy-icons
+    '')
+  ];
+
   # # Chinese language support
   # i18n.inputMethod = {
   #   enabled = "fcitx5";
