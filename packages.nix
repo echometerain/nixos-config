@@ -219,6 +219,7 @@
       authenticator
 
       # Visual media
+      openshot-qt
       subtitlecomposer
       zathura
       vlc
