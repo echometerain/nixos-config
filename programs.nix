@@ -48,8 +48,10 @@
         ### Fix slowness of pastes
 
         # Guarded: /etc/zshrc is read by root's shell too, and neither the xkcd
-        # greeter nor the tmux autostart should fire for root.
-        if [[ $UID != 0 ]]; then
+        # greeter nor the tmux autostart should fire for root. The tty test
+        # covers `zsh -ic ...`, which is interactive (so this file is sourced)
+        # but has no terminal, so tmux would fail with "open terminal failed".
+        if [[ $UID != 0 ]] && [ -t 0 ] && [ -t 1 ]; then
           if [ "$(nmcli networking connectivity check)" != "none" -a ! -z "''${KITTY_PID+x}" ]; then
               XKCD_JSON="$(curl -s https://xkcd.com/info.0.json)"
               NUM="$(echo $XKCD_JSON | jq -r '.num')"
