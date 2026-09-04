@@ -231,6 +231,7 @@
     "audio/*" = "umpv.desktop";
     "video/*" = "umpv.desktop";
     "image/*" = "org.gnome.Loupe.desktop";
+    "inode/directory" = "dolphin.desktop";
     "application/epub+zip" = "com.github.johnfactotum.Foliate.desktop";
     "application/json" = "org.kde.kate.desktop";
     "application/octet-stream" = "org.kde.kate.desktop";
