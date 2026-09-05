@@ -29,7 +29,6 @@
       tealdeer
       navi
       fastfetch
-      bat
       ripgrep
       xxd
       zoxide
