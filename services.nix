@@ -85,6 +85,8 @@
     # Enable /usr/bin
     envfs.enable = true;
 
+    safeeyes.enable = true;
+
   };
 
   systemd.services.alsa-microphone-enable = {
