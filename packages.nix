@@ -43,6 +43,7 @@
       axel
       iw
       openconnect
+      cloudflared
 
       # Filesystem CLI
       file
