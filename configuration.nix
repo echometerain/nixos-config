@@ -210,6 +210,7 @@
     epiphany # web browser
     evince # document viewer
     gedit # text editor
+    gnome-text-editor
     gnome-characters
     gnome-music
     gnome-photos
@@ -243,11 +244,9 @@
     "application/xhtml+xml" = "zen-twilight.desktop";
     "application/zip" = "org.kde.ark.desktop";
     "message/rfc822" = "userapp-Thunderbird-61D2D3.desktop";
+    "text/*" = "org.kde.kate.desktop";
     "text/csv" = "calc.desktop";
     "text/html" = "zen-twilight.desktop";
-    "text/plain" = "org.kde.kate.desktop";
-    "text/x-lua" = "org.kde.kate.desktop";
-    "text/x-python" = "org.kde.kate.desktop";
     "x-scheme-handler/about" = "zen-twilight.desktop";
     "x-scheme-handler/chrome" = "zen-twilight.desktop";
     "x-scheme-handler/claude-cli" = "claude-code-url-handler.desktop";
