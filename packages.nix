@@ -130,6 +130,7 @@
       # inputs.claude-desktop.packages."${stdenv.hostPlatform.system}".claude-desktop
       claude-code
       opencode
+      tuner
 
       # Misc apps
       transmission_4-qt6
