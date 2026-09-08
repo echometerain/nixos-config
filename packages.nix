@@ -88,14 +88,12 @@
       hyprpolkitagent
       hyprshot
       hyprpicker
-      hyprsunset
       hyprpaper
+      hypridle
 
       # Hypr utils
-      swaylock
       wlogout
       waybar
-      nwg-look
       dunst
       blueman
       cliphist
