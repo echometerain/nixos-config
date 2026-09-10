@@ -218,6 +218,7 @@
     gnome-tour
     hitori # sudoku game
     iagno # go game
+    nautilus # file manager; Dolphin is used instead
     tali # poker game
     totem # video player
   ]);
