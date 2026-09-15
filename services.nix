@@ -29,7 +29,6 @@
     printing = {
       enable = true;
       drivers = [pkgs.brlaser pkgs.brgenml1lpr pkgs.brgenml1cupswrapper];
-      cups-pdf.enable = true;
     };
     avahi = {
       enable = true;

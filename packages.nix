@@ -174,7 +174,7 @@
       
       # Python
       uv
-      mamba-cpp
+      pixi
 
       # Text
       obsidian
