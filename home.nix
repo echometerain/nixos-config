@@ -62,6 +62,9 @@
     ".config/nvim" = {
       source = config.lib.file.mkOutOfStoreSymlink "/opt/dotfiles/nvim";
     };
+    ".config/rclone" = {
+      source = config.lib.file.mkOutOfStoreSymlink "/opt/dotfiles/rclone";
+    };
     ".zshrc".text = ''
       # Intentionally empty -- see programs.zsh in /etc/nixos/programs.nix
     '';
